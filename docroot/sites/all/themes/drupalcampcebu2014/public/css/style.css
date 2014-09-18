@@ -12,12 +12,11 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
-
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: white;
+  color: #fff;
   margin-top: 40px;
 }
 
@@ -38,7 +37,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-size: 29px;
-  color: white;
+  color: #fff;
 }
 
 /* line 56, ../sass/partials/_base.scss */
@@ -55,41 +54,29 @@ p {
  * _global.scss
  ******************************************************************************/
 @-webkit-keyframes spin {
-  /* line 6, ../sass/partials/_global.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 7, ../sass/partials/_global.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
-
 @-o-keyframes spin {
-  /* line 11, ../sass/partials/_global.scss */
   from {
     -o-transform: rotate(0deg);
   }
-
-  /* line 12, ../sass/partials/_global.scss */
   to {
     -o-transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
-  /* line 16, ../sass/partials/_global.scss */
   from {
     transform: rotate(0deg);
   }
-
-  /* line 17, ../sass/partials/_global.scss */
   to {
     transform: rotate(360deg);
   }
 }
-
 /* line 20, ../sass/partials/_global.scss */
 .navbar-inverse {
   background-color: black;
@@ -249,7 +236,7 @@ ul.menu li div.logo-title-menu-hidden {
 /* line 143, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
-  color: white;
+  color: #fff;
   font-size: 24px;
 }
 /* line 148, ../sass/partials/_global.scss */
@@ -292,22 +279,29 @@ ul.menu li a:hover {
   background-color: #f1c419;
   padding-bottom: 100px;
 }
-/* line 183, ../sass/partials/_global.scss */
+/* line 181, ../sass/partials/_global.scss */
+.camp-speakers h1 {
+  font-family: chinese rocks;
+  color: white;
+  font-size: 72px;
+  text-align: center;
+}
+/* line 189, ../sass/partials/_global.scss */
 .camp-speakers h6.speaker-description {
   font-size: 22px;
   text-align: center;
 }
-/* line 187, ../sass/partials/_global.scss */
+/* line 193, ../sass/partials/_global.scss */
 .camp-speakers p.speaker-announcement {
   font-size: 24px;
   text-align: center;
 }
 
-/* line 192, ../sass/partials/_global.scss */
+/* line 198, ../sass/partials/_global.scss */
 .col-md-3 {
   margin-top: 55px;
 }
-/* line 194, ../sass/partials/_global.scss */
+/* line 200, ../sass/partials/_global.scss */
 .col-md-3 .img-speaker {
   text-align: center;
   width: 128px;
@@ -316,147 +310,161 @@ ul.menu li a:hover {
   border-radius: 100px;
   margin-left: 25%;
 }
-/* line 201, ../sass/partials/_global.scss */
+/* line 207, ../sass/partials/_global.scss */
 .col-md-3 .img-speaker img {
   width: 118px;
   height: 118px;
   border-radius: 100px;
   margin-top: 5px;
 }
-/* line 208, ../sass/partials/_global.scss */
-.col-md-3 p.speaker-name {
+/* line 214, ../sass/partials/_global.scss */
+.col-md-3 p.speaker-drupalcamp-topic {
   font-size: 24px;
   text-align: center;
   color: #fff;
+  font-family: "chinese rocks", sans-serif;
+  margin-top: 25px;
 }
-/* line 213, ../sass/partials/_global.scss */
-.col-md-3 p.speaker-short-bio {
+/* line 220, ../sass/partials/_global.scss */
+.col-md-3 p.speaker-drupalcamp-topic a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 225, ../sass/partials/_global.scss */
+.col-md-3 p.speaker-drupalcamp {
   font-size: 18px;
   color: #fff;
   text-align: center;
+  line-height: 0px;
 }
-/* line 218, ../sass/partials/_global.scss */
-.col-md-3 .speaker-bio {
+/* line 231, ../sass/partials/_global.scss */
+.col-md-3 .topic-summary {
   font-size: 16px;
   text-align: center;
+  margin-top: 25px;
 }
 
-/* line 224, ../sass/partials/_global.scss */
+/* line 237, ../sass/partials/_global.scss */
 .camp-sessions-wave {
   background: url("../images/blue-wave.png");
   height: 40px;
   margin-top: -39px;
 }
 
-/* line 229, ../sass/partials/_global.scss */
+/* line 242, ../sass/partials/_global.scss */
 .camp-sessions {
   background-color: #0076b0;
 }
-/* line 231, ../sass/partials/_global.scss */
+/* line 244, ../sass/partials/_global.scss */
 .camp-sessions h6 {
   font-family: "SourceSansPro";
   font-size: 22px;
   color: white;
   text-align: center;
 }
-/* line 237, ../sass/partials/_global.scss */
+/* line 250, ../sass/partials/_global.scss */
 .camp-sessions p {
   font-size: 24px;
   color: white;
   text-align: center;
 }
 
-/* line 244, ../sass/partials/_global.scss */
-ul.nav-tabs {
+/* line 258, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs {
   border-bottom: 0px;
   margin: 50px 0px;
 }
-/* line 247, ../sass/partials/_global.scss */
-ul.nav-tabs li {
+/* line 261, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li {
   width: 248px;
   height: 84px;
 }
-/* line 250, ../sass/partials/_global.scss */
-ul.nav-tabs li:nth-child(1) {
+/* line 264, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li:nth-child(1) {
   margin-left: 205px;
 }
-/* line 253, ../sass/partials/_global.scss */
-ul.nav-tabs li a {
+/* line 267, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li a {
   border: none !important;
   background: none !important;
   padding-top: 0;
-  color: white;
+  color: #fff;
   font-family: "chinese rocks", sans-serif;
 }
-/* line 259, ../sass/partials/_global.scss */
-ul.nav-tabs li a span.tab-title {
+/* line 273, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li a span.tab-title {
   font-size: 58px;
   float: left;
 }
-/* line 263, ../sass/partials/_global.scss */
-ul.nav-tabs li a span.tab-left-first {
+/* line 277, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li a span.tab-left-first {
   font-size: 30px;
   float: right;
   line-height: 17px;
   margin-top: 24px;
 }
-/* line 269, ../sass/partials/_global.scss */
-ul.nav-tabs li a span.tab-left-second {
+/* line 283, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li a span.tab-left-second {
   font-size: 20px;
   float: right;
 }
-/* line 275, ../sass/partials/_global.scss */
-ul.nav-tabs li.active {
+/* line 289, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li.active {
   background: url("../images/tab-active.png") no-repeat;
 }
-/* line 277, ../sass/partials/_global.scss */
-ul.nav-tabs li.active a {
+/* line 291, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li.active a {
   color: #f0c419;
 }
-/* line 280, ../sass/partials/_global.scss */
-ul.nav-tabs li.active a:hover {
+/* line 294, ../sass/partials/_global.scss */
+.camp-sessions ul.nav-tabs li.active a:hover {
   background-color: transparent;
   padding-top: 0;
   color: #f0c419;
 }
 
-/* line 288, ../sass/partials/_global.scss */
+/* line 303, ../sass/partials/_global.scss */
 .table {
   margin-left: 60px;
   margin-bottom: 50px;
 }
-/* line 293, ../sass/partials/_global.scss */
+/* line 308, ../sass/partials/_global.scss */
 .table tbody tr .time {
   width: 15%;
   color: #f1c419;
   font-family: "SourceSansPro";
   font-size: 22px;
 }
-/* line 299, ../sass/partials/_global.scss */
+/* line 314, ../sass/partials/_global.scss */
 .table tbody tr td {
   border-top: 0px;
 }
-/* line 302, ../sass/partials/_global.scss */
+/* line 317, ../sass/partials/_global.scss */
 .table tbody tr p {
   text-align: left;
 }
-/* line 305, ../sass/partials/_global.scss */
+/* line 320, ../sass/partials/_global.scss */
 .table tbody tr p.place {
   color: #00496d;
   font-size: 15px;
 }
-/* line 308, ../sass/partials/_global.scss */
+/* line 323, ../sass/partials/_global.scss */
 .table tbody tr p.place span.category {
   color: #f0c419;
 }
-/* line 312, ../sass/partials/_global.scss */
+/* line 327, ../sass/partials/_global.scss */
 .table tbody tr p.speaker {
   color: #fff;
   margin-bottom: 0px;
   font-size: 15px;
 }
 
-/* line 322, ../sass/partials/_global.scss */
+/* line 337, ../sass/partials/_global.scss */
+.tabbable .panel-body {
+  min-height: 220px;
+}
+
+/* line 342, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }

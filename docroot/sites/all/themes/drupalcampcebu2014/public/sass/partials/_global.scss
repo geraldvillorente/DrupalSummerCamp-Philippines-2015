@@ -254,46 +254,48 @@ ul.menu {
     }
 }
 
-ul.nav-tabs {
-  border-bottom: 0px;
-  margin: 50px 0px;
-  li {
-    width: 248px;
-    height: 84px;
-    &:nth-child(1) {
-      margin-left: 205px;
-    }
-    a {
-      border: none !important;
-      background: none !important;
-      padding-top: 0;
-      color: $logo-color-white;
-      font-family: $font-logo;
-      span.tab-title {
-        font-size: 58px;
-        float: left;
+.camp-sessions {
+  ul.nav-tabs {
+    border-bottom: 0px;
+    margin: 50px 0px;
+    li {
+      width: 248px;
+      height: 84px;
+      &:nth-child(1) {
+        margin-left: 205px;
       }
-      span.tab-left-first {
-        font-size: 30px;
-        float: right;
-        line-height: 17px;
-        margin-top: 24px;
-      }
-      span.tab-left-second {
-        font-size: 20px;
-        float: right;
+      a {
+        border: none !important;
+        background: none !important;
+        padding-top: 0;
+        color: $logo-color-white;
+        font-family: $font-logo;
+        span.tab-title {
+          font-size: 58px;
+          float: left;
+        }
+        span.tab-left-first {
+          font-size: 30px;
+          float: right;
+          line-height: 17px;
+          margin-top: 24px;
+        }
+        span.tab-left-second {
+          font-size: 20px;
+          float: right;
+        }
       }
     }
-  }
-  li.active {
-    background: url('../images/tab-active.png') no-repeat;
-    a {
-      color: $logo-color-yellow;
-    }
-    a:hover {
-      background-color: transparent;
-      padding-top: 0;
-      color: $logo-color-yellow;
+    li.active {
+      background: url('../images/tab-active.png') no-repeat;
+      a {
+        color: $logo-color-yellow;
+      }
+      a:hover {
+        background-color: transparent;
+        padding-top: 0;
+        color: $logo-color-yellow;
+      }
     }
   }
 }
@@ -331,6 +333,11 @@ ul.nav-tabs {
   }
 }
 
+.tabbable {
+  .panel-body{
+    min-height: 220px;
+  }
+}
 
 .camp-footer {
   background-color: #1d2734;
