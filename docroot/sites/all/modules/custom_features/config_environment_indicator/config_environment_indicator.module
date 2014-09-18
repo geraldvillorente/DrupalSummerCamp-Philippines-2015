@@ -4,4 +4,4 @@
  * Code for the Environment Indicator feature.
  */
 
-include_once 'config_environment_indicator_feature.features.inc';
+include_once 'config_environment_indicator.features.inc';

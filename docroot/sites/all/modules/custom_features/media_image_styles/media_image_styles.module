@@ -4,4 +4,4 @@
  * Code for the Image styles feature.
  */
 
-include_once 'media_image_styles_feature.features.inc';
+include_once 'media_image_styles.features.inc';

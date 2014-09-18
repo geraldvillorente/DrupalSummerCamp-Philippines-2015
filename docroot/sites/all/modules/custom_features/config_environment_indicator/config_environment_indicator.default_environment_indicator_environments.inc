@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * config_environment_indicator_feature.default_environment_indicator_environments.inc
+ * config_environment_indicator.default_environment_indicator_environments.inc
  */
 
 /**
  * Implements hook_default_environment_indicator_environment().
  */
-function config_environment_indicator_feature_default_environment_indicator_environment() {
+function config_environment_indicator_default_environment_indicator_environment() {
   $export = array();
 
   $environment = new stdClass();

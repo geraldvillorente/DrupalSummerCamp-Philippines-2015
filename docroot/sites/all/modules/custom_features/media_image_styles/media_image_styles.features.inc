@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * media_image_styles_feature.features.inc
+ * media_image_styles.features.inc
  */
 
 /**
  * Implements hook_image_default_styles().
  */
-function media_image_styles_feature_image_default_styles() {
+function media_image_styles_image_default_styles() {
   $styles = array();
 
   // Exported image style: drupal-speakers.

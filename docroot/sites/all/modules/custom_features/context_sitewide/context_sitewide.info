@@ -1,0 +1,9 @@
+name = Context Sitewide
+description = This is for the entire site's general layout
+core = 7.x
+package = Context
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = sitewide
+features[ctools][] = context:context:3
+features[features_api][] = api:2

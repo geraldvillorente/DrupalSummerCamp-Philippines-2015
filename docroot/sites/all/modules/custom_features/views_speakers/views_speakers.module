@@ -4,4 +4,4 @@
  * Code for the Speakers Views feature.
  */
 
-include_once 'views_speakers_views_feature.features.inc';
+include_once 'views_speakers.features.inc';
