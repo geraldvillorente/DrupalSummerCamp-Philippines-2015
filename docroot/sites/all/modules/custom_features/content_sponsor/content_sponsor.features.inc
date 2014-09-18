@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * content_session.features.inc
+ * content_sponsor.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function content_session_ctools_plugin_api($module = NULL, $api = NULL) {
+function content_sponsor_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -16,14 +16,14 @@ function content_session_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function content_session_node_info() {
+function content_sponsor_node_info() {
   $items = array(
-    'session' => array(
-      'name' => t('Session'),
+    'sponsor' => array(
+      'name' => t('Sponsor'),
       'base' => 'node_content',
-      'description' => t('Drupal Camp Cebu session contents.'),
+      'description' => t('Drupal Camp Cebu sponsor contents.'),
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Company name'),
       'help' => '',
     ),
   );
