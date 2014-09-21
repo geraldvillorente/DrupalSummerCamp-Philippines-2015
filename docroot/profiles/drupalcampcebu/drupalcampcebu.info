@@ -29,6 +29,7 @@ dependencies[] = jquery_update
 dependencies[] = link
 dependencies[] = mailchimp
 dependencies[] = module_filter
+dependencies[] = quicktabs
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = url
@@ -36,6 +37,9 @@ dependencies[] = uuid
 dependencies[] = uuid_features
 dependencies[] = webform
 dependencies[] = draggableviews
+
+; Custom
+dependencies[] = drupalcebu2014_map
 
 ; Features
 dependencies[] = content_page
@@ -49,5 +53,7 @@ dependencies[] = config_mailchimp
 dependencies[] = config_user_profile
 dependencies[] = config_environment_indicator
 dependencies[] = context_homepage
+dependencies[] = views_sessions
 dependencies[] = views_speakers
+dependencies[] = views_sponsors
 dependencies[] = media_image_styles

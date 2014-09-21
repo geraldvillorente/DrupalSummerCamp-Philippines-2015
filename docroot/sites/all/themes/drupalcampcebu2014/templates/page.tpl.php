@@ -130,8 +130,10 @@ $images_dir = '/public/images/';
                   </div>
                   <div class="col-md-6">
                     <?php
-                    foreach($primary_nav as $primary_menu_item) {
-                      print render($primary_menu_item);
+                    foreach($primary_nav as $key => $primary_menu_item) {
+                      if (is_numeric($key)) {
+                        print render($primary_menu_item);
+                      }
                     }
                     ?>
                 </div>
@@ -169,290 +171,40 @@ $images_dir = '/public/images/';
 
 <?php if (!empty($page['blue-region'])): ?>
   <div class="camp-sessions-wave"></div>
-  <?php print render($page['blue-region']); ?>
   <div class="camp-sessions">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3>Sessions</h3>
-          <h6>Drupal Camp is a 2-day conference running from 9.30 am - 5.30 pm.<br>
-            A lovely lunch together provides an informal way to get to know other participants and keep<br>the conversation going.</h6>
-          <p>More speakers to be announced over the coming weeks.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-9">
-          <ul id="camp_session_list" class="nav nav-tabs">
-            <li class="active">
-              <a href="#day_one" role="tab" data-toggle="tab">
-                <span class="tab-title">DAY 01</span>
-                <span class="tab-left-first">NOV 14</span>
-                <span class="tab-left-second">SATURDAY</span>
-              </a>
-            </li>
-            <li class="">
-              <a href="#day_two" role="tab" data-toggle="tab">
-                <span class="tab-title">DAY 02</span>
-                <span class="tab-left-first">NOV 15</span>
-                <span class="tab-left-second">SUNDAY</span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="tab-content">
-            <div class="tab-pane fade active in" id="day_one">
-              <table class="table">
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:00 AM</td>
-                  <td>
-                    <h4 class="activity">Registration &amp; Coffee</h4>
-                    <p class="place">Hallway</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Keynote</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">ROOM A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>10:00 AM</td>
-                  <td>
-                    <h4 class="activity">Running Effective Meetings</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><span class="category">CATEGORY A</span> ROOM A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>
-                    <h4 class="activity">The Symphony Way</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><span class="category">CATEGORY A</span> ROOM B</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>
-                    <h4 class="activity">Configuration management in Drupal 8</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><span class="category">CATEGORY A</span> ROOM C</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Google Analytics</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><span class="category">CATEGORY A</span> ROOM A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Lunch</h4>
-                    <p class="place"><span class="category">THANK YOU PROMET INC.</span></p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Introducing the Drupal 8 Console scaffolding module generator</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><p class="place"><span class="category">CATEGORY A</span> ROOM A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Securing Your Drupal Site</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><p class="place"><span class="category">CATEGORY A</span> ROOM A</p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-
-            <div class="tab-pane fade" id="day_two">
-              <table class="table">
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:00 AM</td>
-                  <td>
-                    <h4 class="activity">Day 2 Registration &amp; Coffee</h4>
-                    <p class="speaker">Hallway</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Keynote</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>10:00 AM</td>
-                  <td>
-                    <h4 class="activity">Running Effective Meetings</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place"><i class="fa fa-clock-o"></i>Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>
-                    <h4 class="activity">The Symphony Way</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td>
-                    <h4 class="activity">The Symphony Way</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Keynote</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Keynote</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Keynote</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="time"><i class="fa fa-clock-o"></i><i class="fa fa-clock-o"></i>9:30 AM</td>
-                  <td>
-                    <h4 class="activity">Keynote</h4>
-                    <p class="speaker">By Speaker</p>
-                    <p class="place">Room A</p>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
+          <?php print render($page['blue-region']); ?>
         </div>
       </div>
     </div>
   </div>
 <?php endif; ?>
 
-<?php if(drupal_is_front_page()):?>
+<?php if (!empty($page['map-region'])): ?>
   <div class="camp-venue">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="venue-info">
-            <h3 class="venue-label">Venue</h3>
-            <p class="venue-address">UNIVERSITY OF SAN CARLOS - Talamban Campus. Nasipit, Talamban Cebu City.</p>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3924.8531820579547!2d123.9109376342627!3d10.353622172260941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUniversity+of+San+Carlos%2C+Talamban!5e0!3m2!1sen!2sph!4v1409822043976" width="100%" height="700px" frameborder="0" style="border:0"></iframe>
+          <?php print render($page['map-region']); ?>
         </div>
       </div>
     </div>
   </div>
 <?php endif; ?>
 
-</div>
-
+<?php if (!empty($page['grey-region'])): ?>
 <div class="camp-sponsors">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h3>SPONSORS</h3>
-        <h6>Check out some of the people that made this happen. Interested in <a href="">becoming a sponsor</a>?</h6>
-      </div>
-
-
-      <div class="row gold-sponsors">
-        <p>GOLD</p>
-        <div class="col-md-12">
-          <img src="public/images/logo-small.png">
-        </div>
-      </div>
-
-      <div class="row silver-sponsors">
-        <p>SILVER</p>
-        <div class="col-md-3">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-3">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-3">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-3">
-          <img src="public/images/logo-small.png">
-        </div>
-      </div>
-
-      <div class="row bronze-sponsors">
-        <p>BRONZE</p>
-        <div class="col-md-2">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-2">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-2">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-2">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-2">
-          <img src="public/images/logo-small.png">
-        </div>
-        <div class="col-md-2">
-          <img src="public/images/logo-small.png">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <p>FOOD SPONSORS</p>
-        <div class="row food-sponsors">
-          <img src="public/images/logo-small.png">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <p>SATURDAY NIGHT</p>
-        <div class="row coffee-sponsors">
-          <img src="public/images/logo-small.png">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <p>COFFEE SPONSOR</p>
-        <div class="row saturday-sponsors">
-          <img src="public/images/logo-small.png">
-        </div>
+      <div class="col-md-12 drupalcamp-sponsors">
+        <?php print render($page['grey-region']); ?>
       </div>
     </div>
-
   </div>
 </div>
+<?php endif; ?>
 
 <div class="camp-footer">
   <div class="container">

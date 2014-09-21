@@ -23,7 +23,30 @@ function context_homepage_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'drupalcebu2014_map-drupalcebu2014_map_text' => array(
+          'module' => 'drupalcebu2014_map',
+          'delta' => 'drupalcebu2014_map_text',
+          'region' => 'map-region',
+          'weight' => '-10',
+        ),
+        'views-sponsors-gold_block' => array(
+          'module' => 'views',
+          'delta' => 'sponsors-gold_block',
+          'region' => 'grey-region',
+          'weight' => '-10',
+        ),
+        'quicktabs-sessions' => array(
+          'module' => 'quicktabs',
+          'delta' => 'sessions',
+          'region' => 'blue-region',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 1;
 
   // Translatables

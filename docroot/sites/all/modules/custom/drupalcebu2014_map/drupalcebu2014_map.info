@@ -1,0 +1,4 @@
+name = Drupal Cebu 2014 Map
+description = The map for the event.
+core = 7.x
+package = Drupal Cebu 2014

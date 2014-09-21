@@ -20,6 +20,8 @@ regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
 
 regions[yellow-region]  = 'Yellow region'
+regions[map-region]  = 'Map region'
+regions[grey-region]  = 'Grey region'
 regions[blue-region]  = 'Blue region'
 
 
