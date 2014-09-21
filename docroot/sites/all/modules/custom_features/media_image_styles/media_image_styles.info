@@ -1,7 +1,11 @@
 name = Image styles
-description = This is an image style 128*128 for speakers
+description = Includes all necessary images styles for the site.
 core = 7.x
 package = Media
 dependencies[] = image
 features[features_api][] = api:2
 features[image][] = drupal-speakers
+features[image][] = sponsor-bronze
+features[image][] = sponsor-misc
+features[image][] = sponsor-silver
+features[image][] = sponsors-gold
