@@ -1,7 +1,0 @@
-name = Role Editor
-description = A role configuration for an editor.
-core = 7.x
-package = Roles
-dependencies[] = features
-features[features_api][] = api:2
-features[user_role][] = editor
