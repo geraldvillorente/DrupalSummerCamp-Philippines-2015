@@ -45,6 +45,13 @@ function views_proposals_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h6 class="speaker-description">Here are some proposed sessions submitted for the event. You can help by choosing the ones you liked.</h6>
 <p class="speaker-announcement">If you can\'t see any you are interest in, please <a href="/node/add/session">submit a session</a>.</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<p class="speaker-announcement">The site is now open for submissions of proposed sessions. If interest, <a href="/node/add/session">submit a proposal</a>.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_speaker_node']['id'] = 'reverse_field_speaker_node';
   $handler->display->display_options['relationships']['reverse_field_speaker_node']['table'] = 'users';
