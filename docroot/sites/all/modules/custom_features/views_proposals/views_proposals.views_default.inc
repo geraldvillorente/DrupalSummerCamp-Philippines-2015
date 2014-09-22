@@ -50,8 +50,9 @@ function views_proposals_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<p class="speaker-announcement">The site is now open for submissions of proposed sessions. If interest, <a href="/node/add/session">submit a proposal</a>.</p>';
-  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['empty']['area']['content'] = '<h6 class="speaker-description">The site is now open for submissions of proposed sessions.</h6>
+<p class="speaker-announcement"> If interested, <a href="/node/add/session">submit a proposal</a>.</p>';
+  $handler->display->display_options['empty']['area']['format'] = 'full_html';
   /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_speaker_node']['id'] = 'reverse_field_speaker_node';
   $handler->display->display_options['relationships']['reverse_field_speaker_node']['table'] = 'users';
