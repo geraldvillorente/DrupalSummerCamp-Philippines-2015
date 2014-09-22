@@ -1,0 +1,7 @@
+name = Flag Session Approval
+description = Session approval flag configuration
+core = 7.x
+package = Flags
+dependencies[] = flag
+features[features_api][] = api:2
+features[flag][] = session_approval

@@ -31,5 +31,4 @@ features[field_instance][] = user-user-field_user_first_name
 features[field_instance][] = user-user-field_user_last_name
 features[field_instance][] = user-user-field_user_mailchimp
 features[field_instance][] = user-user-field_user_position
-features[user_permission][] = access user profiles
 features[variable][] = user_register
