@@ -31,6 +31,7 @@ dependencies[] = link
 dependencies[] = mailchimp
 dependencies[] = module_filter
 dependencies[] = quicktabs
+dependencies[] = secure_permissions
 dependencies[] = strongarm
 dependencies[] = views
 dependencies[] = url
@@ -41,13 +42,14 @@ dependencies[] = draggableviews
 
 ; Custom
 dependencies[] = drupalcebu2014_map
+dependencies[] = drupalcebu2014_permissions
 
 ; Features
 dependencies[] = config_ckeditor_profiles
 dependencies[] = config_environment_indicator
 dependencies[] = config_imce_profiles
 dependencies[] = config_mailchimp
-dependencies[] = config_permissions
+dependencies[] = config_secure_permissions
 dependencies[] = config_user_profile
 dependencies[] = content_page
 dependencies[] = content_session

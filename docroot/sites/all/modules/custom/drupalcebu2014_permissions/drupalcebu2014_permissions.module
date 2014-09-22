@@ -1,0 +1,206 @@
+<?php
+
+/**
+ * @file Secure Permissions Data
+ * Module file for secure permissions in code.
+ */
+
+/**
+ * Define site roles in code.
+ *
+ * Create a drupalcebu2014_permissions module directory and place this function
+ * in drupalcebu2014_permissions.module.
+ *
+ * @return
+ *   An array defining all the roles for the site.
+ */
+function drupalcebu2014_permissions_secure_permissions_roles() {
+  return array(
+    'anonymous user',
+    'authenticated user',
+    'editor',
+    'administrator',
+  );
+}
+
+/**
+ * Define site permissions in code.
+ *
+ * Create a drupalcebu2014_permissions module directory and place this function
+ * in drupalcebu2014_permissions.module.
+ *
+ * @param $role
+ *   The role for which the permissions are being requested.
+ *
+ * @return
+ *   An array defining all the permissions for the site.
+ */
+function drupalcebu2014_permissions_secure_permissions($role) {
+  $permissions = array(
+    'anonymous user' => array(
+      'access content',
+      'access user profiles',
+      'view field_day',
+      'view field_time',
+      'view own field_day',
+      'view own field_time',
+    ),
+    'authenticated user' => array(
+      'access content',
+      'access user profiles',
+      'view field_day',
+      'view field_time',
+      'view own field_day',
+      'view own field_time',
+    ),
+    'editor' => array(
+      'access administration menu',
+      'access administration pages',
+      'access all webform results',
+      'access content',
+      'access content overview',
+      'access draggableviews',
+      'access own webform results',
+      'access own webform submissions',
+      'administer nodes',
+      'create field_day',
+      'create field_time',
+      'create page content',
+      'create session content',
+      'create sponsor content',
+      'create webform content',
+      'delete own page content',
+      'delete own session content',
+      'delete own sponsor content',
+      'delete own webform submissions',
+      'display drupal links',
+      'edit all webform submissions',
+      'edit any page content',
+      'edit any session content',
+      'edit any sponsor content',
+      'edit any webform content',
+      'edit field_day',
+      'edit field_time',
+      'edit own field_day',
+      'edit own field_time',
+      'edit own page content',
+      'edit own session content',
+      'edit own sponsor content',
+      'edit own webform content',
+      'edit own webform submissions',
+      'flag session_approval',
+      'revert revisions',
+      'unflag session_approval',
+      'view field_day',
+      'view own field_day',
+      'view own unpublished content',
+      'view revisions',
+    ),
+    'administrator' => array(
+      'access administration menu',
+      'access administration pages',
+      'access all views',
+      'access all webform results',
+      'access content',
+      'access content overview',
+      'access draggableviews',
+      'access own webform results',
+      'access own webform submissions',
+      'access private fields',
+      'access site in maintenance mode',
+      'access site reports',
+      'access user profiles',
+      'administer actions',
+      'administer blocks',
+      'administer ckeditor',
+      'administer content types',
+      'administer disqus',
+      'administer features',
+      'administer field permissions',
+      'administer fieldgroups',
+      'administer filters',
+      'administer flags',
+      'administer image styles',
+      'administer imce',
+      'administer mailchimp',
+      'administer menu',
+      'administer module filter',
+      'administer modules',
+      'administer nodes',
+      'administer permissions',
+      'administer quicktabs',
+      'administer site configuration',
+      'administer software updates',
+      'administer taxonomy',
+      'administer themes',
+      'administer users',
+      'administer uuid',
+      'administer views',
+      'block IP addresses',
+      'bypass node access',
+      'cancel account',
+      'change own username',
+      'create field_day',
+      'create field_time',
+      'create page content',
+      'create session content',
+      'create sponsor content',
+      'create webform content',
+      'customize ckeditor',
+      'delete all webform submissions',
+      'delete any page content',
+      'delete any session content',
+      'delete any sponsor content',
+      'delete any webform content',
+      'delete own page content',
+      'delete own session content',
+      'delete own sponsor content',
+      'delete own webform content',
+      'delete own webform submissions',
+      'delete revisions',
+      'delete terms in 1',
+      'delete terms in 2',
+      'delete terms in 3',
+      'delete terms in 4',
+      'display disqus comments on profile',
+      'display drupal links',
+      'edit all webform submissions',
+      'edit any page content',
+      'edit any session content',
+      'edit any sponsor content',
+      'edit any webform content',
+      'edit field_day',
+      'edit field_time',
+      'edit own field_day',
+      'edit own field_time',
+      'edit own page content',
+      'edit own session content',
+      'edit own sponsor content',
+      'edit own webform content',
+      'edit own webform submissions',
+      'edit terms in 1',
+      'edit terms in 2',
+      'edit terms in 3',
+      'edit terms in 4',
+      'flag session_approval',
+      'flush caches',
+      'generate features',
+      'manage features',
+      'rename features',
+      'revert revisions',
+      'select account cancellation method',
+      'toggle disqus comments',
+      'unflag session_approval',
+      'use flag import',
+      'use text format filtered_html',
+      'use text format full_html',
+      'view disqus comments',
+      'view own unpublished content',
+      'view revisions',
+      'view the administration theme',
+    ),
+  );
+  if (isset($permissions[$role])) {
+    return $permissions[$role];
+  }
+}

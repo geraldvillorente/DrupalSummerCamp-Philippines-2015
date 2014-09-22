@@ -1,0 +1,6 @@
+name = Drupal Cebu 2014 Secure Permissions Data
+description = Role and permission settings for the site.
+core = 7.x
+package = Drupal Cebu 2014
+dependencies[] = secure_permissions
+files[] = secure_permissions_data.module
