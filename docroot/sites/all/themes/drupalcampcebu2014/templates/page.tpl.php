@@ -83,7 +83,7 @@ $images_dir = '/public/images/';
   <div class="container">
     <div class="camp-logo">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-5">
           <div class="logo-container">
             <img class="logo-whale" src="<?php print $base_path . drupal_get_path('theme', 'drupalcampcebu2014') .
               $images_dir . 'campcebu-whale-alone.png'; ?>">
@@ -91,12 +91,12 @@ $images_dir = '/public/images/';
               $images_dir . 'campcebu-sun-alone.png'; ?>">
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 col-sm-6">
           <div class="drupalcamp-title">
             <span style="color: white;">DRUPAL</span><span style="color: #f0c419">CAMP</span> <span style="color: #3b97d3" class="cebu">CEBU</span>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-4">
           <div class="venue-container">
             <span style="color: white;" class="date">15/16 NOVEMBER 2014</span> <span style="color: #3b97d3;" class="uni">UNIVERSITY OF</span> <span style="color: #3b97d3;" class="uni-name">SAN CARLOS</span> <span style="color: white;" class="cebucity">CEBU CITY</span>
           </div>
