@@ -77,6 +77,18 @@ global $base_path;
 $images_dir = '/public/images/';
 ?>
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
+
+<head>
+  <title><?php print $head_title; ?></title>
+  <?php print $head; ?>
+  <?php print $styles; ?>
+  <?php print $scripts; ?>
+</head>
+<body class="<?php print $classes; ?>">
+
 <div class="main-container">
 
 <div class="above-the-fold">
@@ -114,38 +126,6 @@ $images_dir = '/public/images/';
     </div>
   </div>
 
-  <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-    <div class="nav-container">
-      <div class="nav">
-        <div class="camp-menu">
-          <div class="row">
-            <div class="col-md-12">
-              <?php if (!empty($primary_nav)): ?>
-                <ul class="menu">
-                  <div class="col-md-3">
-                    <li class="logo-title-menu logo-title-menu-hidden">
-                      <span class="title-1st">DRUPAL</span><span class="title-2nd">CAMP</span>
-                      <span class="title-3rd">CEBU</span>
-                    </li>
-                  </div>
-                  <div class="col-md-6">
-                    <?php
-                    foreach($primary_nav as $key => $primary_menu_item) {
-                      if (is_numeric($key)) {
-                        print render($primary_menu_item);
-                      }
-                    }
-                    ?>
-                </div>
-              </ul>
-              <?php endif; ?>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <?php endif; ?>
-
 </div>
 
 <div class="camp-speakers-wave"></div>
@@ -156,11 +136,51 @@ $images_dir = '/public/images/';
     <div class="row">
       <div class="col-md-12 drupalcamp-speakers">
         <?php if (!empty($title)): ?>
-          <h1 class="page-header"><?php print $title; ?></h1>
+          <h1 class="page-header">More info soon ...</h1>
         <?php endif; ?>
 <!--        <h3>Speakers</h3>-->
         <?php print $messages; ?>
-        <?php print render($page['content']); ?>
+                            <p class="speaker-announcement">
+                        We are still working on this site but you can already find more about the group and 
+                        Drupal events in Cebu on <a href="http://meetup.com/drupal-ph/">meetup.com</a>, our <a href="https://www.facebook.com/groups/drupalcebu/">facebook group</a> and <a href="http://drupalcebu.org">website drupalcebu.org</a>.<br>
+                        We tweet <a href="https://twitter.com/DrupalCampCebu">@drupalcampcebu</a> or with <a href="https://twitter.com/hashtag/DrupalcampCebu">#drupalcampcebu</a>
+                    </p>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//prometsource.us8.list-manage.com/subscribe/post?u=d7c17f85aa93351e7a79703df&amp;id=1be4349981" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h2>Join Drupal Cebu Newsletter</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+    <label for="mce-FNAME">First Name </label>
+    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+    <label for="mce-LNAME">Last Name </label>
+    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d7c17f85aa93351e7a79703df_1be4349981" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
         <?php if (!empty($page['yellow-region'])): ?>
           <?php print render($page['yellow-region']); ?>
         <?php endif; ?>
@@ -169,42 +189,6 @@ $images_dir = '/public/images/';
   </div>
 </div>
 
-<?php if (!empty($page['blue-region'])): ?>
-  <div class="camp-sessions-wave"></div>
-  <div class="camp-sessions">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <?php print render($page['blue-region']); ?>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php endif; ?>
-
-<?php if (!empty($page['map-region'])): ?>
-  <div class="camp-venue">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <?php print render($page['map-region']); ?>
-        </div>
-      </div>
-    </div>
-  </div>
-<?php endif; ?>
-
-<?php if (!empty($page['grey-region'])): ?>
-<div class="camp-sponsors">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 drupalcamp-sponsors">
-        <?php print render($page['grey-region']); ?>
-      </div>
-    </div>
-  </div>
-</div>
-<?php endif; ?>
 
 <div class="camp-footer">
   <div class="container">
@@ -225,15 +209,16 @@ $images_dir = '/public/images/';
     </div> <!-- row -->
     <div class="row">
       <div class="col-md-12">
-        <p class="copyright">&copy; Copyright 2014 Drupalcamp Cebu. All rights reserved. 
-          Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>.<br>
-          Logo by <a href="http://ph.linkedin.com/in/lordgeltzdale">Lord Geltzdale de Vera</a>. 
-          Design by <a href="https://www.linkedin.com/pub/reina-figuracion/50/446/522">Rein Figuracion</a>. 
-          Web development by these <a href="https://github.com/Luukyb/DrupalcampCebu2014/graphs/contributors">amazing guys!</a></p>
+                    <p class="copyright">&copy; Copyright 2014 Drupalcamp Cebu. All rights reserved. Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>.<br>
+                    Logo by <a href="http://ph.linkedin.com/in/lordgeltzdale">Lord Geltzdale de Vera</a>. Design by <a href="https://www.linkedin.com/pub/reina-figuracion/50/446/522">Rein Figuracion</a>. Web development by these <a href="https://github.com/Luukyb/DrupalcampCebu2014/graphs/contributors">amazing guys!</a></p>
       </div>
     </div> <!-- row -->
   </div> <!-- container -->
 </div> <!-- camp-footer -->
+
+
+</body>
+</html>
 
 <script type="text/javascript">
   // Function to fix the menu when scrolling.
