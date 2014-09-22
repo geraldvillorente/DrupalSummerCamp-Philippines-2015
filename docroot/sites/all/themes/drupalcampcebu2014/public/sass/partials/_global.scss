@@ -163,10 +163,13 @@ ul.menu {
       font-family: $font-logo;
       font-size: 24px;
       padding: 25px;
-            padding-top: 4px;
+      padding-top: 4px;
       padding-left: 10px;
     }
     a:hover {
+      background: url('../images/register-tab.png') no-repeat;
+    }
+    a.active {
       background: url('../images/register-tab.png') no-repeat;
     }
   }
@@ -339,8 +342,18 @@ ul.menu {
   }
 }
 
+.image-widget-data {
+  .btn {
+    float: right;
+    position: relative;
+    margin-top: -34px;
+  }
+  .btn.btn-danger {
+    float: none;
+    margin-top: 0;
+  }
+}
+
 .camp-footer {
   background-color: #1d2734;
 }
-
-

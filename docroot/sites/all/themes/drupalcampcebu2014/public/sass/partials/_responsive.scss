@@ -1,0 +1,173 @@
+/*******************************************************************************
+ * _responsive.scss
+ ******************************************************************************/
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .above-the-fold {
+    height: 790px;
+    .col-md-4 {
+      width: 31.333333%;
+    }
+    .col-md-5 {
+      width: 42%;
+    }
+    .col-md-3 {
+      width: 26%;
+      background-size: 68% 87%;
+      height: 300px;
+    }
+    .header-intro-text {
+      margin-bottom: -25px;
+    }
+    .logo-container {
+      img  {
+        width: 90%;
+      }
+    }
+    .drupalcamp-title span {
+      font-size: 83px !important;
+      line-height: 83px;
+      &.cebu {
+        font-size: 216px !important;
+        line-height: 133px !important;
+      }
+    }
+    .venue-container {
+      span {
+        &.date {
+          font-size: 28px !important;
+        }
+        &.uni {
+          font-size: 45px !important;
+          line-height: 40px !important;
+        }
+        &.uni-name {
+          font-size: 56px !important;
+          line-height: 53px !important;
+        }
+        &.cebucity {
+          font-size: 70px !important;
+          line-height: 57px !important;
+        }
+      }
+    }   
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .above-the-fold {
+    height: 950px;
+    .logo-container {
+      img {
+        width: 95%;
+      }
+    }
+    .header-intro-text {
+      margin-bottom: -20px;
+    }
+    .col-md-3 {
+      height: 100px;
+      background-size: 68% 68%;
+      clear: both;
+      width: 100%;
+      span {
+        font-size: 35px !important;
+        margin-right: 5px;
+        &:nth-child(4) {
+          margin-right: 0px;
+        }
+      }
+    }
+    .venue-container {
+      margin-top: 0px !important;
+    }
+    ul.menu {
+      .logo-title-menu-hidden {
+        float: left;
+        margin-top: -7px;
+      }
+    }
+    .drupalcamp-title span {
+      font-size: 90px !important;
+      &.cebu {
+        font-size: 245px !important;
+      }
+    }
+  }
+  .camp-speakers {
+    .speaker-info {
+      .img-speaker {
+        margin-left: 30%;
+      }
+    }
+  }   
+}
+
+
+@media (max-width: 768px) {
+  .above-the-fold {
+    height: 1561px;
+    .logo-container,
+    .drupalcamp-title,
+    .venue-container {
+      width: 360px;
+      display: block;
+      margin: auto;
+    }
+    .drupalcamp-title span {
+      font-size: 80px !important;
+      &.cebu {
+        font-size: 205px !important;
+        line-height: 115px;
+      }
+    }
+    .col-sm-5,
+    .col-sm-6 {
+      width: 90%;
+      display: block;
+      margin: auto;
+    }
+    .col-sm-4 {
+      width: 350px;
+      display: block;
+      margin: auto;
+      margin-top: -50px;
+      height: 380px;
+      background-size: 68% 89%;
+      .venue-container {
+        span {
+          &.date {
+            font-size: 46px;
+            line-height: 110px;
+          }
+          &.uni {
+            font-size: 68px;
+            line-height: 0px;
+          }
+          &.uni-name {
+            font-size: 80px;
+            line-height: 75px;
+          }
+          &.cebucity {
+            font-size: 98px;
+            line-height: 80px;
+          }
+        }
+      }
+    }
+    .header-intro-text {
+      margin: 0 20px;
+    }
+    ul.menu {
+      .logo-title-menu-hidden {
+        float: left;
+      }
+    }
+  }
+  .speaker-info {
+    .img-speaker {
+      display: block;
+      margin: auto !important;
+    }
+  }
+}
