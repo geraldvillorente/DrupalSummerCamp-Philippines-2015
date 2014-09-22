@@ -12,12 +12,11 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
-
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: white;
+  color: #fff;
   margin-top: 40px;
 }
 
@@ -38,7 +37,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-size: 29px;
-  color: white;
+  color: #fff;
 }
 
 /* line 56, ../sass/partials/_base.scss */
@@ -55,41 +54,29 @@ p {
  * _global.scss
  ******************************************************************************/
 @-webkit-keyframes spin {
-  /* line 6, ../sass/partials/_global.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 7, ../sass/partials/_global.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
-
 @-o-keyframes spin {
-  /* line 11, ../sass/partials/_global.scss */
   from {
     -o-transform: rotate(0deg);
   }
-
-  /* line 12, ../sass/partials/_global.scss */
   to {
     -o-transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
-  /* line 16, ../sass/partials/_global.scss */
   from {
     transform: rotate(0deg);
   }
-
-  /* line 17, ../sass/partials/_global.scss */
   to {
     transform: rotate(360deg);
   }
 }
-
 /* line 20, ../sass/partials/_global.scss */
 .navbar-inverse {
   background-color: black;
@@ -249,7 +236,7 @@ ul.menu li div.logo-title-menu-hidden {
 /* line 143, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
-  color: white;
+  color: #fff;
   font-size: 24px;
 }
 /* line 148, ../sass/partials/_global.scss */
@@ -299,7 +286,7 @@ ul.menu li a.active {
 /* line 184, ../sass/partials/_global.scss */
 .camp-speakers h1 {
   font-family: chinese rocks;
-  color: white;
+  color: #fff;
   font-size: 72px;
   text-align: center;
 }
@@ -405,7 +392,7 @@ ul.menu li a.active {
   border: none !important;
   background: none !important;
   padding-top: 0;
-  color: white;
+  color: #fff;
   font-family: "chinese rocks", sans-serif;
 }
 /* line 276, ../sass/partials/_global.scss */
@@ -724,7 +711,7 @@ ul.menu li a.active {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
-  z-index: 9999;
+  z-index: 1;
   position: relative;
 }
 /* line 23, ../sass/partials/_venue.scss */
@@ -882,7 +869,7 @@ ul.menu li a.active {
   .above-the-fold {
     height: 1561px;
   }
-  /* line 112, ../sass/partials/_responsive.scss */
+  /* line 110, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -899,7 +886,7 @@ ul.menu li a.active {
     font-size: 205px !important;
     line-height: 115px;
   }
-  /* line 125, ../sass/partials/_responsive.scss */
+  /* line 124, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;
