@@ -37,6 +37,13 @@ function views_sessions_views_default_views() {
   $handler->display->display_options['relationships']['field_speaker_target_id']['id'] = 'field_speaker_target_id';
   $handler->display->display_options['relationships']['field_speaker_target_id']['table'] = 'field_data_field_speaker';
   $handler->display->display_options['relationships']['field_speaker_target_id']['field'] = 'field_speaker_target_id';
+  /* Relationship: Flags: session_approval */
+  $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
+  $handler->display->display_options['relationships']['flag_content_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['flag_content_rel']['field'] = 'flag_content_rel';
+  $handler->display->display_options['relationships']['flag_content_rel']['label'] = 'Approved';
+  $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'session_approval';
+  $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
   /* Field: Content: Time */
   $handler->display->display_options['fields']['field_time']['id'] = 'field_time';
   $handler->display->display_options['fields']['field_time']['table'] = 'field_data_field_time';
@@ -105,6 +112,12 @@ function views_sessions_views_default_views() {
   $handler->display->display_options['filters']['field_day_tid']['expose']['operator'] = 'field_day_tid_op';
   $handler->display->display_options['filters']['field_day_tid']['expose']['identifier'] = 'field_day_tid';
   $handler->display->display_options['filters']['field_day_tid']['vocabulary'] = 'day';
+  /* Filter criterion: Flags: Flagged */
+  $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
+  $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
+  $handler->display->display_options['filters']['flagged']['value'] = '1';
 
   /* Display: Day 1 */
   $handler = $view->new_display('block', 'Day 1', 'block');
@@ -137,6 +150,12 @@ function views_sessions_views_default_views() {
   $handler->display->display_options['filters']['field_day_tid']['expose']['operator'] = 'field_day_tid_op';
   $handler->display->display_options['filters']['field_day_tid']['expose']['identifier'] = 'field_day_tid';
   $handler->display->display_options['filters']['field_day_tid']['vocabulary'] = 'day';
+  /* Filter criterion: Flags: Flagged */
+  $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
+  $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
+  $handler->display->display_options['filters']['flagged']['value'] = '1';
 
   /* Display: Day 2 */
   $handler = $view->new_display('block', 'Day 2', 'block_1');

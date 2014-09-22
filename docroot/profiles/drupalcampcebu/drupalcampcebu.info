@@ -23,6 +23,7 @@ dependencies[] = entityreference
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = field_permissions
+dependencies[] = flag
 dependencies[] = imagecache_token
 dependencies[] = imce
 dependencies[] = imce_uploader
@@ -34,6 +35,7 @@ dependencies[] = metatag_views
 dependencies[] = metatag_opengraph
 dependencies[] = module_filter
 dependencies[] = quicktabs
+dependencies[] = secure_permissions
 dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = views
@@ -45,8 +47,15 @@ dependencies[] = draggableviews
 
 ; Custom
 dependencies[] = drupalcebu2014_map
+dependencies[] = drupalcebu2014_permissions
 
 ; Features
+dependencies[] = config_ckeditor_profiles
+dependencies[] = config_environment_indicator
+dependencies[] = config_imce_profiles
+dependencies[] = config_mailchimp
+dependencies[] = config_secure_permissions
+dependencies[] = config_user_profile
 dependencies[] = content_page
 dependencies[] = content_session
 dependencies[] = content_sponsor
@@ -59,7 +68,8 @@ dependencies[] = config_metatag
 dependencies[] = config_user_profile
 dependencies[] = config_environment_indicator
 dependencies[] = context_homepage
+dependencies[] = flag_session_approval
+dependencies[] = media_image_styles
 dependencies[] = views_sessions
 dependencies[] = views_speakers
 dependencies[] = views_sponsors
-dependencies[] = media_image_styles
