@@ -59,6 +59,7 @@ dependencies[] = context_sitewide
 dependencies[] = context_homepage
 dependencies[] = flag_session_approval
 dependencies[] = media_image_styles
+dependencies[] = views_proposals
 dependencies[] = views_sessions
 dependencies[] = views_speakers
 dependencies[] = views_sponsors
