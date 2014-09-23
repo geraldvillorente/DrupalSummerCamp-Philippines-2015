@@ -3,21 +3,6 @@
  ******************************************************************************/
 
 .camp-venue {
-  &::before {
-    background: url("../images/blue-wave.png") no-repeat 0 20px;
-    content: "";
-    display: block;
-    height: 70px;
-    margin-bottom: -57px;
-    margin-top: -10px;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    z-index: 1;
-    position: relative;
-  }
   margin-bottom: -45px;
   position: relative;
   .container {

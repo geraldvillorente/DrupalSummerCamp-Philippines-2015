@@ -1,3 +1,32 @@
-.speaker-info {
-  // margin-bottom: 70px;
+.camp-speakers-wave {
+  background: url('../images/yellow-wave.png');
+  height: 40px;
+  margin-top: -115px;
+}
+.camp-speakers {
+  h1 {
+  font-family: chinese rocks;
+  color: $logo-color-white;
+  font-size: 72px;
+  text-align: center;
+  }
+  background-color: #f1c419;
+  h6.speaker-description {
+    font-size: 22px;
+    text-align: center;
+  }
+  p.speaker-announcement {
+    font-size: 24px;
+    text-align: center;
+  }
+  &::after {
+    background: url('../images/clear-yellow-wave.png');
+    height: 57px;
+    margin-top: 60px;
+    margin-bottom: -57px;
+    content: "";
+    display: block;
+    z-index: 1;
+    position: relative;
+  }
 }

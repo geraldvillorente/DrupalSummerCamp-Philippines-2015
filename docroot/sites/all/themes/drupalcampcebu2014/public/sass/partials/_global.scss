@@ -47,7 +47,7 @@ ul.navbar-nav {
     .logo-whale {
       position: absolute;
       margin-top: 50px;
-      z-index: 999;
+      z-index: 1;
     }
     .logo-sun {
       -webkit-animation: spin 30s infinite linear;
@@ -173,29 +173,8 @@ ul.menu {
       background: url('../images/register-tab.png') no-repeat;
     }
   }
-}
-
-.camp-speakers-wave {
-  background: url('../images/yellow-wave.png');
-  height: 40px;
-  margin-top: -115px;
-}
-.camp-speakers {
-  h1 {
-  font-family: chinese rocks;
-  color: $logo-color-white;
-  font-size: 72px;
-  text-align: center;
-  }
-  background-color: #f1c419;
-  padding-bottom: 100px;
-  h6.speaker-description {
-    font-size: 22px;
-    text-align: center;
-  }
-  p.speaker-announcement {
-    font-size: 24px;
-    text-align: center;
+  div.col-md-12 {
+    clear: both;
   }
 }
 .col-md-3 {
@@ -237,71 +216,6 @@ ul.menu {
     margin-top: 25px;
   }
 }
-.camp-sessions-wave {
-  background: url('../images/blue-wave.png');
-  height: 40px;
-  margin-top: -39px;
-}
-.camp-sessions {
-  background-color: #0076b0;
-    h6 {
-      font-family: "SourceSansPro";
-      font-size: 22px;
-      color: white;
-      text-align: center;
-    }
-    p {
-      font-size: 24px;
-      color: white;
-      text-align: center;
-    }
-}
-
-.camp-sessions {
-  ul.nav-tabs {
-    border-bottom: 0px;
-    margin: 50px 0px;
-    li {
-      width: 248px;
-      height: 84px;
-      &:nth-child(1) {
-        margin-left: 205px;
-      }
-      a {
-        border: none !important;
-        background: none !important;
-        padding-top: 0;
-        color: $logo-color-white;
-        font-family: $font-logo;
-        span.tab-title {
-          font-size: 58px;
-          float: left;
-        }
-        span.tab-left-first {
-          font-size: 30px;
-          float: right;
-          line-height: 17px;
-          margin-top: 24px;
-        }
-        span.tab-left-second {
-          font-size: 20px;
-          float: right;
-        }
-      }
-    }
-    li.active {
-      background: url('../images/tab-active.png') no-repeat;
-      a {
-        color: $logo-color-yellow;
-      }
-      a:hover {
-        background-color: transparent;
-        padding-top: 0;
-        color: $logo-color-yellow;
-      }
-    }
-  }
-}
 
 .table {
   margin-left: 60px;
@@ -338,7 +252,7 @@ ul.menu {
 
 .tabbable {
   .panel-body{
-    min-height: 220px;
+    min-height: 280px;
   }
 }
 
