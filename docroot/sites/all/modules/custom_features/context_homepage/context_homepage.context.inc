@@ -44,12 +44,6 @@ function context_homepage_context_default_contexts() {
           'region' => 'grey-region',
           'weight' => '-10',
         ),
-        'quicktabs-sessions' => array(
-          'module' => 'quicktabs',
-          'delta' => 'sessions',
-          'region' => 'blue-region',
-          'weight' => '-10',
-        ),
       ),
     ),
   );

@@ -81,10 +81,18 @@
     .venue-container {
       margin-top: 0px !important;
     }
-    ul.menu {
-      .logo-title-menu-hidden {
-        float: left;
-        margin-top: -7px;
+    .nav {
+      height: auto;
+      padding-bottom: 0;
+      ul.menu {
+        .logo-title-menu-hidden {
+          clear: both;
+          text-align: center;
+          margin-top: -7px;
+        }
+        .col-md-3 {
+          height: auto;
+        }
       }
     }
     .drupalcamp-title span {
@@ -158,9 +166,17 @@
     .header-intro-text {
       margin: 0 20px;
     }
-    ul.menu {
-      .logo-title-menu-hidden {
-        float: left;
+    .nav {
+      height: auto;
+      padding-bottom: 0;
+      ul.menu {
+        .logo-title-menu-hidden {
+          clear: both;
+          text-align: center;
+        }
+        .col-md-12 {
+          margin-top: 42px;
+        }
       }
     }
   }
