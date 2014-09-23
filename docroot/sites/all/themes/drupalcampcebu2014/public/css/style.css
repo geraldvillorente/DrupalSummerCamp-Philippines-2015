@@ -381,26 +381,30 @@ ul.menu li a.active {
 }
 /* line 253, ../sass/partials/_global.scss */
 .camp-sessions p {
-  font-size: 24px;
+  font-size: 15px;
   color: white;
   text-align: center;
 }
+/* line 258, ../sass/partials/_global.scss */
+.camp-sessions p.sessions_description_bottom {
+  font-size: 24px;
+}
 
-/* line 261, ../sass/partials/_global.scss */
+/* line 264, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs {
   border-bottom: 0px;
   margin: 50px 0px;
 }
-/* line 264, ../sass/partials/_global.scss */
+/* line 267, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li {
   width: 248px;
   height: 84px;
 }
-/* line 267, ../sass/partials/_global.scss */
+/* line 270, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li:nth-child(1) {
   margin-left: 205px;
 }
-/* line 270, ../sass/partials/_global.scss */
+/* line 273, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li a {
   border: none !important;
   background: none !important;
@@ -408,92 +412,123 @@ ul.menu li a.active {
   color: white;
   font-family: "chinese rocks", sans-serif;
 }
-/* line 276, ../sass/partials/_global.scss */
+/* line 279, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li a span.tab-title {
   font-size: 58px;
   float: left;
 }
-/* line 280, ../sass/partials/_global.scss */
+/* line 283, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li a span.tab-left-first {
   font-size: 30px;
   float: right;
   line-height: 17px;
   margin-top: 24px;
 }
-/* line 286, ../sass/partials/_global.scss */
+/* line 289, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li a span.tab-left-second {
   font-size: 20px;
   float: right;
 }
-/* line 292, ../sass/partials/_global.scss */
+/* line 295, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li.active {
   background: url("../images/tab-active.png") no-repeat;
 }
-/* line 294, ../sass/partials/_global.scss */
+/* line 297, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li.active a {
   color: #f0c419;
 }
-/* line 297, ../sass/partials/_global.scss */
+/* line 300, ../sass/partials/_global.scss */
 .camp-sessions ul.nav-tabs li.active a:hover {
   background-color: transparent;
   padding-top: 0;
   color: #f0c419;
 }
 
-/* line 306, ../sass/partials/_global.scss */
+/* line 309, ../sass/partials/_global.scss */
 .table {
   margin-left: 60px;
   margin-bottom: 50px;
+  margin-top: 180px;
 }
-/* line 311, ../sass/partials/_global.scss */
+/* line 315, ../sass/partials/_global.scss */
+.table tbody tr a.activity {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-size: 29px;
+  color: white;
+}
+/* line 323, ../sass/partials/_global.scss */
 .table tbody tr .time {
   width: 15%;
   color: #f1c419;
   font-family: "SourceSansPro";
   font-size: 22px;
 }
-/* line 317, ../sass/partials/_global.scss */
+/* line 329, ../sass/partials/_global.scss */
 .table tbody tr td {
   border-top: 0px;
 }
-/* line 320, ../sass/partials/_global.scss */
+/* line 331, ../sass/partials/_global.scss */
+.table tbody tr td a.activity {
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-size: 29px;
+  text-decoration: none;
+}
+/* line 341, ../sass/partials/_global.scss */
+.table tbody tr td h4 a {
+  color: white;
+  text-decoration: none;
+}
+/* line 346, ../sass/partials/_global.scss */
+.table tbody tr td span.date-display-single {
+  font-size: 22px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+}
+/* line 352, ../sass/partials/_global.scss */
 .table tbody tr p {
   text-align: left;
 }
-/* line 323, ../sass/partials/_global.scss */
+/* line 355, ../sass/partials/_global.scss */
 .table tbody tr p.place {
   color: #00496d;
   font-size: 15px;
 }
-/* line 326, ../sass/partials/_global.scss */
+/* line 358, ../sass/partials/_global.scss */
 .table tbody tr p.place span.category {
   color: #f0c419;
 }
-/* line 330, ../sass/partials/_global.scss */
+/* line 362, ../sass/partials/_global.scss */
 .table tbody tr p.speaker {
   color: #fff;
   margin-bottom: 0px;
   font-size: 15px;
 }
 
-/* line 340, ../sass/partials/_global.scss */
+/* line 372, ../sass/partials/_global.scss */
 .tabbable .panel-body {
   min-height: 220px;
 }
 
-/* line 346, ../sass/partials/_global.scss */
+/* line 378, ../sass/partials/_global.scss */
 .image-widget-data .btn {
   float: right;
   position: relative;
   margin-top: -34px;
 }
-/* line 351, ../sass/partials/_global.scss */
+/* line 383, ../sass/partials/_global.scss */
 .image-widget-data .btn.btn-danger {
   float: none;
   margin-top: 0;
 }
 
-/* line 357, ../sass/partials/_global.scss */
+/* line 389, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }

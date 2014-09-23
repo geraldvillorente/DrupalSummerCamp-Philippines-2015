@@ -38,11 +38,23 @@ function context_homepage_context_default_contexts() {
           'region' => 'grey-region',
           'weight' => '-10',
         ),
-        'quicktabs-sessions' => array(
-          'module' => 'quicktabs',
-          'delta' => 'sessions',
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => '1',
           'region' => 'blue-region',
           'weight' => '-10',
+        ),
+        'views-sessions-day_one' => array(
+          'module' => 'views',
+          'delta' => 'sessions-day_one',
+          'region' => 'blue-region',
+          'weight' => '-9',
+        ),
+        'views-sessions-day_two' => array(
+          'module' => 'views',
+          'delta' => 'sessions-day_two',
+          'region' => 'blue-region',
+          'weight' => '-8',
         ),
       ),
     ),

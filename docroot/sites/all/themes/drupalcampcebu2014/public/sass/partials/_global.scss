@@ -251,9 +251,12 @@ ul.menu {
       text-align: center;
     }
     p {
-      font-size: 24px;
+      font-size: 15px;
       color: white;
       text-align: center;
+    }
+    p.sessions_description_bottom {
+      font-size: 24px;
     }
 }
 
@@ -306,8 +309,17 @@ ul.menu {
 .table {
   margin-left: 60px;
   margin-bottom: 50px;
+  margin-top: 180px;
   tbody {
     tr {
+     a.activity {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-style: italic;
+      font-size: 29px;
+      color: white;
+    }
     .time {
       width: 15%;
       color: #f1c419;
@@ -316,6 +328,26 @@ ul.menu {
     }
     td {
       border-top: 0px;
+      a.activity {
+        color: $logo-color-white;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-style: italic;
+        font-size: 29px;
+        text-decoration: none;
+      }
+      h4 {
+        a {
+          color: $logo-color-white;
+          text-decoration: none;
+        }
+      }
+      span.date-display-single {
+        font-size: 22px;
+        font-family: $font-text;
+        font-style: normal;
+      }
     }
     p {
       text-align: left;
