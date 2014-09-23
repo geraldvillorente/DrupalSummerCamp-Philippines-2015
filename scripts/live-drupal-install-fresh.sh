@@ -4,7 +4,5 @@ drush site-install drupalcampcebu --account-name=admincampcebu --account-pass=Dr
 
 echo "enabling modules for dev server"
 
-drush en field_ui -y
-drush en views_ui -y
-drush en devel -y
-drush en shield -y
+drush en config_mailchimp -y
+drush en config_google_analytics -y
