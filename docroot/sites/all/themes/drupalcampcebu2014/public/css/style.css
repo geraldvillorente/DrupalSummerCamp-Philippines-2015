@@ -609,16 +609,6 @@ ul.menu div.col-md-12 {
   z-index: 1;
   position: relative;
 }
-/* line 32, ../sass/partials/_speakers.scss */
-.camp-speakers h1.cebuano-title {
-  margin-bottom: 0px;
-}
-/* line 35, ../sass/partials/_speakers.scss */
-.camp-speakers h2.english-title {
-  margin-top: 0px;
-  font-weight: bold;
-  font-size: 37px;
-}
 
 /* line 1, ../sass/partials/_sessions.scss */
 .camp-sessions {
