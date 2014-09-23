@@ -128,7 +128,7 @@ $images_dir = '/public/images/';
                       <span class="title-3rd">CEBU</span>
                     </li>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                     <?php
                     foreach($primary_nav as $key => $primary_menu_item) {
                       if (is_numeric($key)) {
