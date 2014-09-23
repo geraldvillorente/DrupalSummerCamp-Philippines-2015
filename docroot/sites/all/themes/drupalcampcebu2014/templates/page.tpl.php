@@ -212,14 +212,14 @@ $images_dir = '/public/images/';
       <div class="col-md-7">
         <h3>ABOUT</h3>
         <p class="footer-description">This camp is brought to you by the Drupal Cebu User Group.
-          All the sources of this website based on Drupal are Open Source, under GNU GENERAL PUBLIC LICENSE on <a href="#">github.com</a></p>
+          All the sources of this website based on Drupal are Open Source, under GNU GENERAL PUBLIC LICENSE on <a href="https://github.com/Luukyb/DrupalcampCebu2014">github.com</a></p>
       </div>
       <div class="col-md-5">
         <h3>CONNECT</h3>
         <p class="footer-description">We tweet
           <a href="#">@DrupalcampCebu</a><br>
-          <a href="#">Drupal Cebu on Facebook</a><br>
-          More about the <a href="#">Drupal cebu user group</a>
+          <a href="https://www.facebook.com/groups/drupalcebu/">Drupal Cebu on Facebook</a><br>
+          More about the <a href="https://www.facebook.com/groups/drupalcebu/">Drupal Cebu user group</a>
         </p>
       </div>
     </div> <!-- row -->
