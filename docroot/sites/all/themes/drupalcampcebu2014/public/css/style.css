@@ -818,38 +818,39 @@ ul.menu div.col-md-12 {
   }
   /* line 84, ../sass/partials/_responsive.scss */
   .above-the-fold .nav {
-    height: 90px;
+    height: auto;
+    padding-bottom: 0;
   }
-  /* line 87, ../sass/partials/_responsive.scss */
+  /* line 88, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .logo-title-menu-hidden {
     clear: both;
     text-align: center;
     margin-top: -7px;
   }
-  /* line 92, ../sass/partials/_responsive.scss */
+  /* line 93, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .col-md-3 {
     height: auto;
   }
-  /* line 97, ../sass/partials/_responsive.scss */
+  /* line 98, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span {
     font-size: 90px !important;
   }
-  /* line 99, ../sass/partials/_responsive.scss */
+  /* line 100, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span.cebu {
     font-size: 245px !important;
   }
 
-  /* line 106, ../sass/partials/_responsive.scss */
+  /* line 107, ../sass/partials/_responsive.scss */
   .camp-speakers .speaker-info .img-speaker {
     margin-left: 30%;
   }
 }
 @media (max-width: 768px) {
-  /* line 115, ../sass/partials/_responsive.scss */
+  /* line 116, ../sass/partials/_responsive.scss */
   .above-the-fold {
     height: 1561px;
   }
-  /* line 117, ../sass/partials/_responsive.scss */
+  /* line 118, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -857,23 +858,23 @@ ul.menu div.col-md-12 {
     display: block;
     margin: auto;
   }
-  /* line 124, ../sass/partials/_responsive.scss */
+  /* line 125, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span {
     font-size: 80px !important;
   }
-  /* line 126, ../sass/partials/_responsive.scss */
+  /* line 127, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span.cebu {
     font-size: 205px !important;
     line-height: 115px;
   }
-  /* line 131, ../sass/partials/_responsive.scss */
+  /* line 132, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;
     display: block;
     margin: auto;
   }
-  /* line 137, ../sass/partials/_responsive.scss */
+  /* line 138, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 {
     width: 350px;
     display: block;
@@ -882,49 +883,46 @@ ul.menu div.col-md-12 {
     height: 380px;
     background-size: 68% 89%;
   }
-  /* line 146, ../sass/partials/_responsive.scss */
+  /* line 147, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.date {
     font-size: 46px;
     line-height: 110px;
   }
-  /* line 150, ../sass/partials/_responsive.scss */
+  /* line 151, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.uni {
     font-size: 68px;
     line-height: 0px;
   }
-  /* line 154, ../sass/partials/_responsive.scss */
+  /* line 155, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.uni-name {
     font-size: 80px;
     line-height: 75px;
   }
-  /* line 158, ../sass/partials/_responsive.scss */
+  /* line 159, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.cebucity {
     font-size: 98px;
     line-height: 80px;
   }
-  /* line 165, ../sass/partials/_responsive.scss */
+  /* line 166, ../sass/partials/_responsive.scss */
   .above-the-fold .header-intro-text {
     margin: 0 20px;
   }
-  /* line 168, ../sass/partials/_responsive.scss */
+  /* line 169, ../sass/partials/_responsive.scss */
   .above-the-fold .nav {
-    height: 110px;
+    height: auto;
+    padding-bottom: 0;
   }
-  /* line 171, ../sass/partials/_responsive.scss */
+  /* line 173, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .logo-title-menu-hidden {
     clear: both;
     text-align: center;
   }
-  /* line 175, ../sass/partials/_responsive.scss */
+  /* line 177, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .col-md-12 {
     margin-top: 42px;
   }
-  /* line 178, ../sass/partials/_responsive.scss */
-  .above-the-fold .nav ul.menu .col-md-12 li a {
-    font-size: 18px;
-  }
 
-  /* line 187, ../sass/partials/_responsive.scss */
+  /* line 184, ../sass/partials/_responsive.scss */
   .speaker-info .img-speaker {
     display: block;
     margin: auto !important;
