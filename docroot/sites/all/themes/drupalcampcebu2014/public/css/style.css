@@ -12,6 +12,7 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
+
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
@@ -64,6 +65,7 @@ p {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-o-keyframes spin {
   /* line 11, ../sass/partials/_global.scss */
   from {
@@ -75,6 +77,7 @@ p {
     -o-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   /* line 16, ../sass/partials/_global.scss */
   from {
@@ -86,6 +89,7 @@ p {
     transform: rotate(360deg);
   }
 }
+
 /* line 20, ../sass/partials/_global.scss */
 .navbar-inverse {
   background-color: black;
@@ -593,6 +597,16 @@ ul.menu div.col-md-12 {
   z-index: 1;
   position: relative;
 }
+/* line 32, ../sass/partials/_speakers.scss */
+.camp-speakers h1.cebuano-title {
+  margin-bottom: 0px;
+}
+/* line 35, ../sass/partials/_speakers.scss */
+.camp-speakers h2.english-title {
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 37px;
+}
 
 /* line 1, ../sass/partials/_sessions.scss */
 .camp-sessions {
@@ -859,7 +873,7 @@ ul.menu div.col-md-12 {
   .above-the-fold {
     height: 1561px;
   }
-  /* line 118, ../sass/partials/_responsive.scss */
+  /* line 120, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -876,7 +890,7 @@ ul.menu div.col-md-12 {
     font-size: 205px !important;
     line-height: 115px;
   }
-  /* line 132, ../sass/partials/_responsive.scss */
+  /* line 133, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;

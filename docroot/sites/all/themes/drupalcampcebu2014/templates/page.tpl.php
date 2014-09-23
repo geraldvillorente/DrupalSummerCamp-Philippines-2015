@@ -75,6 +75,10 @@
 
 global $base_path;
 $images_dir = '/public/images/';
+
+if (isset($node) && ($node->type == 'page')) {
+  $cebuano_title_field = field_view_field('node', $node, 'field_cebuano_title', array('label'=>'hidden'));
+}
 ?>
 
 <div class="main-container">
@@ -156,7 +160,23 @@ $images_dir = '/public/images/';
     <div class="row">
       <div class="col-md-12 drupalcamp-speakers">
         <?php if (!empty($title)): ?>
-          <h1 class="page-header"><?php print $title; ?></h1>
+          
+            <?php 
+            // print $title; 
+
+            if ($cebuano_title_field) {
+              print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
+            }
+            else {
+              print '<h1 class="page-header">' . $title . '</h1>';
+            }
+
+            ?>
+          <?php 
+            if ($cebuano_title_field) {
+              print '<h2 class="english-title">' . $title . '</h2>';
+            }
+          ?>
         <?php endif; ?>
 <!--        <h3>Speakers</h3>-->
         <?php print $messages; ?>
