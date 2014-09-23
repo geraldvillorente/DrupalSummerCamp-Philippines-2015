@@ -217,9 +217,9 @@ $images_dir = '/public/images/';
       <div class="col-md-5">
         <h3>CONNECT</h3>
         <p class="footer-description">We tweet
-          <a href="#">@DrupalcampCebu</a><br>
+          <a href="https://twitter.com/DrupalCampCebu">@DrupalcampCebu</a><br>
           <a href="https://www.facebook.com/groups/drupalcebu/">Drupal Cebu on Facebook</a><br>
-          More about the <a href="https://www.facebook.com/groups/drupalcebu/">Drupal Cebu user group</a>
+          More about the <a href="http://drupalcebu.org">Drupal Cebu user group</a>
         </p>
       </div>
     </div> <!-- row -->
