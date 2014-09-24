@@ -47,7 +47,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Gold</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Gold</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -115,11 +115,26 @@ function views_sponsors_views_default_views() {
   $handler = $view->new_display('page', 'Sponsor Page Gold', 'gold_page');
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
+  $handler->display->display_options['header']['area_1']['id'] = 'area_1';
+  $handler->display->display_options['header']['area_1']['table'] = 'views';
+  $handler->display->display_options['header']['area_1']['field'] = 'area';
+  $handler->display->display_options['header']['area_1']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_1']['content'] = '<p class="speaker-announcement">A Drupal Camp’s success is usually made possible by the generosity of sponsors. Their donation lower the ticket prices for attendees and allow us to facilitate more sessions and provide free food and freebies to our attendees.</p>
+<p class="speaker-announcement">What’s in it for sponsors? Well this event will give you opportunities to:</p>
+<ul class="speaker-announcement">
+<li>Network and build relationships</li>
+<li>Touch base with the community and partners</li>
+<li>Promote and advertise your company</li>
+<li>Show your commitment to Drupal and to the open source community</li>
+</ul>
+<p class="speaker-announcement">If you would like to reserve a sponsorship spot, please contact jinky@drupalcampcebu.com or contact +639152300076.</p>';
+  $handler->display->display_options['header']['area_1']['format'] = 'full_html';
+  /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Gold</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Gold</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'sponsors';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -158,7 +173,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Silver</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Silver</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -247,7 +262,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Bronze</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Bronze</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -336,7 +351,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Food Sponsors</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Food Sponsors</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -425,7 +440,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Saturday Night</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Saturday Night</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -514,7 +529,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Coffee Sponsor</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Coffee Sponsor</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */

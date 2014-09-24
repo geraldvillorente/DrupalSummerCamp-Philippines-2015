@@ -1,67 +1,67 @@
 <?php
 /**
  * @file
- * content_session.strongarm.inc
+ * content_page.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function content_session_strongarm() {
+function content_page_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_session';
+  $strongarm->name = 'additional_settings__active_tab_page';
   $strongarm->value = 'edit-webform';
-  $export['additional_settings__active_tab_session'] = $strongarm;
+  $export['additional_settings__active_tab_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_session';
+  $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_session'] = $strongarm;
+  $export['menu_options_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_session';
+  $strongarm->name = 'menu_parent_page';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_session'] = $strongarm;
+  $export['menu_parent_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_session';
+  $strongarm->name = 'node_options_page';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_session'] = $strongarm;
+  $export['node_options_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_session';
+  $strongarm->name = 'node_preview_page';
   $strongarm->value = '1';
-  $export['node_preview_session'] = $strongarm;
+  $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_session';
+  $strongarm->name = 'node_submitted_page';
   $strongarm->value = 0;
-  $export['node_submitted_session'] = $strongarm;
+  $export['node_submitted_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'webform_node_session';
+  $strongarm->name = 'webform_node_page';
   $strongarm->value = 0;
-  $export['webform_node_session'] = $strongarm;
+  $export['webform_node_page'] = $strongarm;
 
   return $export;
 }
