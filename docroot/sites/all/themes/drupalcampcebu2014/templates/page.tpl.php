@@ -164,7 +164,7 @@ if (isset($node) && ($node->type == 'page')) {
             <?php 
             // print $title; 
 
-            if ($cebuano_title_field) {
+            if (isset($cebuano_title_field)) {
               print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
             }
             else {
@@ -173,7 +173,7 @@ if (isset($node) && ($node->type == 'page')) {
 
             ?>
           <?php 
-            if ($cebuano_title_field) {
+            if (isset($cebuano_title_field)) {
               print '<h2 class="english-title">' . $title . '</h2>';
             }
           ?>
