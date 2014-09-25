@@ -32,6 +32,12 @@ function context_sitewide_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
+        'views-sponsors-gold_block' => array(
+          'module' => 'views',
+          'delta' => 'sponsors-gold_block',
+          'region' => 'grey-region',
+          'weight' => '-10',
+        ),
       ),
     ),
   );

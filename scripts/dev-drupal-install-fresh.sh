@@ -7,4 +7,5 @@ echo "enabling modules for dev server"
 drush en field_ui -y
 drush en views_ui -y
 drush en devel -y
+drush en context_ui -y
 drush en shield -y

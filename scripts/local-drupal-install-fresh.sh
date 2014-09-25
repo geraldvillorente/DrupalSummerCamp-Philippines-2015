@@ -7,3 +7,4 @@ echo "enabling modules for local"
 drush en field_ui -y
 drush en views_ui -y
 drush en devel -y
+drush en context_ui -y

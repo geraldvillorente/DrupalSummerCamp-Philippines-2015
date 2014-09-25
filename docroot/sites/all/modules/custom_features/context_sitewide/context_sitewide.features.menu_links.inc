@@ -54,7 +54,7 @@ function context_sitewide_menu_default_menu_links() {
   $menu_links['main-menu_venue:venue'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'venue',
-    'router_path' => 'venue',
+    'router_path' => '',
     'link_title' => 'Venue',
     'options' => array(
       'attributes' => array(
