@@ -12,11 +12,12 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
+
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 40px;
 }
 
@@ -37,7 +38,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-size: 29px;
-  color: #fff;
+  color: white;
 }
 
 /* line 56, ../sass/partials/_base.scss */
@@ -54,29 +55,41 @@ p {
  * _global.scss
  ******************************************************************************/
 @-webkit-keyframes spin {
+  /* line 6, ../sass/partials/_global.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
+
+  /* line 7, ../sass/partials/_global.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-o-keyframes spin {
+  /* line 11, ../sass/partials/_global.scss */
   from {
     -o-transform: rotate(0deg);
   }
+
+  /* line 12, ../sass/partials/_global.scss */
   to {
     -o-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
+  /* line 16, ../sass/partials/_global.scss */
   from {
     transform: rotate(0deg);
   }
+
+  /* line 17, ../sass/partials/_global.scss */
   to {
     transform: rotate(360deg);
   }
 }
+
 /* line 20, ../sass/partials/_global.scss */
 .navbar-inverse {
   background-color: black;
@@ -281,7 +294,7 @@ ul.menu li div.logo-title-menu-hidden {
 /* line 181, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
-  color: #fff;
+  color: white;
   font-size: 24px;
 }
 /* line 186, ../sass/partials/_global.scss */
@@ -320,24 +333,16 @@ ul.menu div.col-md-12 {
   clear: both;
 }
 
-<<<<<<< HEAD
-/* line 218, ../sass/partials/_global.scss */
-.col-md-3 {
-  margin-top: 55px;
-}
-/* line 220, ../sass/partials/_global.scss */
-=======
-/* line 192, ../sass/partials/_global.scss */
+/* line 221, ../sass/partials/_global.scss */
 .region-content .content .field-item {
   font-size: 22px;
 }
 
-/* line 198, ../sass/partials/_global.scss */
+/* line 227, ../sass/partials/_global.scss */
 .col-md-3 {
   margin-top: 55px;
 }
-/* line 200, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 229, ../sass/partials/_global.scss */
 .col-md-3 .img-speaker {
   text-align: center;
   width: 128px;
@@ -346,22 +351,14 @@ ul.menu div.col-md-12 {
   border-radius: 100px;
   margin-left: 25%;
 }
-<<<<<<< HEAD
-/* line 227, ../sass/partials/_global.scss */
-=======
-/* line 207, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 236, ../sass/partials/_global.scss */
 .col-md-3 .img-speaker img {
   width: 118px;
   height: 118px;
   border-radius: 100px;
   margin-top: 5px;
 }
-<<<<<<< HEAD
-/* line 234, ../sass/partials/_global.scss */
-=======
-/* line 214, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 243, ../sass/partials/_global.scss */
 .col-md-3 p.speaker-drupalcamp-topic {
   font-size: 24px;
   text-align: center;
@@ -369,135 +366,79 @@ ul.menu div.col-md-12 {
   font-family: "chinese rocks", sans-serif;
   margin-top: 25px;
 }
-<<<<<<< HEAD
-/* line 240, ../sass/partials/_global.scss */
-=======
-/* line 220, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 249, ../sass/partials/_global.scss */
 .col-md-3 p.speaker-drupalcamp-topic a {
   color: #fff;
   text-decoration: none;
 }
-<<<<<<< HEAD
-/* line 245, ../sass/partials/_global.scss */
-=======
-/* line 225, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 254, ../sass/partials/_global.scss */
 .col-md-3 p.speaker-drupalcamp {
   font-size: 18px;
   color: #fff;
   text-align: center;
   line-height: 0px;
 }
-<<<<<<< HEAD
-/* line 251, ../sass/partials/_global.scss */
-=======
-/* line 231, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 260, ../sass/partials/_global.scss */
 .col-md-3 .topic-summary {
   font-size: 16px;
   text-align: center;
   margin-top: 25px;
 }
 
-<<<<<<< HEAD
-/* line 258, ../sass/partials/_global.scss */
-=======
-/* line 238, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 267, ../sass/partials/_global.scss */
 .table {
   margin-left: 60px;
   margin-bottom: 50px;
 }
-<<<<<<< HEAD
-/* line 263, ../sass/partials/_global.scss */
-=======
-/* line 243, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 272, ../sass/partials/_global.scss */
 .table tbody tr .time {
   width: 15%;
   color: #f1c419;
   font-family: "SourceSansPro";
   font-size: 22px;
 }
-<<<<<<< HEAD
-/* line 269, ../sass/partials/_global.scss */
+/* line 278, ../sass/partials/_global.scss */
 .table tbody tr td {
   border-top: 0px;
 }
-/* line 272, ../sass/partials/_global.scss */
+/* line 281, ../sass/partials/_global.scss */
 .table tbody tr p {
   text-align: left;
 }
-/* line 275, ../sass/partials/_global.scss */
-=======
-/* line 249, ../sass/partials/_global.scss */
-.table tbody tr td {
-  border-top: 0px;
-}
-/* line 252, ../sass/partials/_global.scss */
-.table tbody tr p {
-  text-align: left;
-}
-/* line 255, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 284, ../sass/partials/_global.scss */
 .table tbody tr p.place {
   color: #00496d;
   font-size: 15px;
 }
-<<<<<<< HEAD
-/* line 278, ../sass/partials/_global.scss */
+/* line 287, ../sass/partials/_global.scss */
 .table tbody tr p.place span.category {
   color: #f0c419;
 }
-/* line 282, ../sass/partials/_global.scss */
-=======
-/* line 258, ../sass/partials/_global.scss */
-.table tbody tr p.place span.category {
-  color: #f0c419;
-}
-/* line 262, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 291, ../sass/partials/_global.scss */
 .table tbody tr p.speaker {
   color: #fff;
   margin-bottom: 0px;
   font-size: 15px;
 }
 
-<<<<<<< HEAD
-/* line 292, ../sass/partials/_global.scss */
-=======
-/* line 272, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 301, ../sass/partials/_global.scss */
 .tabbable .panel-body {
   min-height: 280px;
 }
 
-<<<<<<< HEAD
-/* line 298, ../sass/partials/_global.scss */
-=======
-/* line 278, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 307, ../sass/partials/_global.scss */
 .image-widget-data .btn {
   float: right;
   position: relative;
   margin-top: -34px;
 }
-<<<<<<< HEAD
-/* line 303, ../sass/partials/_global.scss */
-=======
-/* line 283, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 312, ../sass/partials/_global.scss */
 .image-widget-data .btn.btn-danger {
   float: none;
   margin-top: 0;
 }
 
-<<<<<<< HEAD
-/* line 309, ../sass/partials/_global.scss */
-=======
-/* line 289, ../sass/partials/_global.scss */
->>>>>>> develop
+/* line 318, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }
@@ -691,7 +632,7 @@ ul.menu div.col-md-12 {
 /* line 7, ../sass/partials/_speakers.scss */
 .camp-speakers h1 {
   font-family: chinese rocks;
-  color: #fff;
+  color: white;
   font-size: 72px;
   text-align: center;
 }
@@ -758,7 +699,7 @@ ul.menu div.col-md-12 {
   border: none !important;
   background: none !important;
   padding-top: 0;
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
 }
 /* line 33, ../sass/partials/_sessions.scss */
@@ -1001,11 +942,7 @@ ul.menu div.col-md-12 {
   .above-the-fold {
     height: 1520px;
   }
-<<<<<<< HEAD
   /* line 127, ../sass/partials/_responsive.scss */
-=======
-  /* line 118, ../sass/partials/_responsive.scss */
->>>>>>> develop
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -1022,11 +959,7 @@ ul.menu div.col-md-12 {
     font-size: 205px !important;
     line-height: 115px;
   }
-<<<<<<< HEAD
   /* line 140, ../sass/partials/_responsive.scss */
-=======
-  /* line 132, ../sass/partials/_responsive.scss */
->>>>>>> develop
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;
