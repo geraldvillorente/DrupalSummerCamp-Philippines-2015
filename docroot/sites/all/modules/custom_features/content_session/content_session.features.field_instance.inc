@@ -182,6 +182,7 @@ function content_session_field_default_field_instances() {
   $field_instances['node-session-field_speaker'] = array(
     'bundle' => 'session',
     'default_value' => NULL,
+    'default_value_function' => '',
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -206,17 +207,18 @@ function content_session_field_default_field_instances() {
     'label' => 'Speaker',
     'required' => 1,
     'settings' => array(
+      'behaviors' => array(
+        'current' => array(
+          'status' => 0,
+        ),
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
       'weight' => 4,
     ),
   );

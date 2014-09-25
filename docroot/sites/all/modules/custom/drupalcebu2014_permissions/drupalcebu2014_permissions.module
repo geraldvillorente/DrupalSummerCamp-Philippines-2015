@@ -8,26 +8,26 @@
 /**
  * Define site roles in code.
  *
- * Create a drupalcebu2014_permissions module directory and place this function
- * in drupalcebu2014_permissions.module.
+ * Create a secure_permissions_data module directory and place this function
+ * in secure_permissions_data.module.
  *
  * @return
  *   An array defining all the roles for the site.
  */
-function drupalcebu2014_permissions_secure_permissions_roles() {
+function secure_permissions_data_secure_permissions_roles() {
   return array(
     'anonymous user',
     'authenticated user',
-    'editor',
     'administrator',
+    'editor',
   );
 }
 
 /**
  * Define site permissions in code.
  *
- * Create a drupalcebu2014_permissions module directory and place this function
- * in drupalcebu2014_permissions.module.
+ * Create a secure_permissions_data module directory and place this function
+ * in secure_permissions_data.module.
  *
  * @param $role
  *   The role for which the permissions are being requested.
@@ -35,7 +35,7 @@ function drupalcebu2014_permissions_secure_permissions_roles() {
  * @return
  *   An array defining all the permissions for the site.
  */
-function drupalcebu2014_permissions_secure_permissions($role) {
+function secure_permissions_data_secure_permissions($role) {
   $permissions = array(
     'anonymous user' => array(
       'access content',
@@ -48,53 +48,13 @@ function drupalcebu2014_permissions_secure_permissions($role) {
     'authenticated user' => array(
       'access content',
       'access user profiles',
+      'create session content',
+      'delete own session content',
+      'edit own session content',
       'view field_day',
       'view field_time',
       'view own field_day',
       'view own field_time',
-    ),
-    'editor' => array(
-      'access administration menu',
-      'access administration pages',
-      'access all webform results',
-      'access content',
-      'access content overview',
-      'access draggableviews',
-      'access own webform results',
-      'access own webform submissions',
-      'administer nodes',
-      'create field_day',
-      'create field_time',
-      'create page content',
-      'create session content',
-      'create sponsor content',
-      'create webform content',
-      'delete own page content',
-      'delete own session content',
-      'delete own sponsor content',
-      'delete own webform submissions',
-      'display drupal links',
-      'edit all webform submissions',
-      'edit any page content',
-      'edit any session content',
-      'edit any sponsor content',
-      'edit any webform content',
-      'edit field_day',
-      'edit field_time',
-      'edit own field_day',
-      'edit own field_time',
-      'edit own page content',
-      'edit own session content',
-      'edit own sponsor content',
-      'edit own webform content',
-      'edit own webform submissions',
-      'flag session_approval',
-      'revert revisions',
-      'unflag session_approval',
-      'view field_day',
-      'view own field_day',
-      'view own unpublished content',
-      'view revisions',
     ),
     'administrator' => array(
       'access administration menu',
@@ -198,6 +158,49 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'view own unpublished content',
       'view revisions',
       'view the administration theme',
+    ),
+    'editor' => array(
+      'access administration menu',
+      'access administration pages',
+      'access all webform results',
+      'access content',
+      'access content overview',
+      'access draggableviews',
+      'access own webform results',
+      'access own webform submissions',
+      'administer nodes',
+      'create field_day',
+      'create field_time',
+      'create page content',
+      'create session content',
+      'create sponsor content',
+      'create webform content',
+      'delete own page content',
+      'delete own session content',
+      'delete own sponsor content',
+      'delete own webform submissions',
+      'display drupal links',
+      'edit all webform submissions',
+      'edit any page content',
+      'edit any session content',
+      'edit any sponsor content',
+      'edit any webform content',
+      'edit field_day',
+      'edit field_time',
+      'edit own field_day',
+      'edit own field_time',
+      'edit own page content',
+      'edit own session content',
+      'edit own sponsor content',
+      'edit own webform content',
+      'edit own webform submissions',
+      'flag session_approval',
+      'revert revisions',
+      'unflag session_approval',
+      'view field_day',
+      'view own field_day',
+      'view own unpublished content',
+      'view revisions',
     ),
   );
   if (isset($permissions[$role])) {

@@ -184,6 +184,9 @@ if (isset($node) && ($node->type == 'page')) {
         <?php endif; ?>
 <!--        <h3>Speakers</h3>-->
         <?php print $messages; ?>
+        <?php if (!empty($tabs)): ?>
+          <?php print render($tabs); ?>
+        <?php endif; ?>
         <?php print render($page['content']); ?>
         <?php if (!empty($page['yellow-region'])): ?>
           <?php print render($page['yellow-region']); ?>

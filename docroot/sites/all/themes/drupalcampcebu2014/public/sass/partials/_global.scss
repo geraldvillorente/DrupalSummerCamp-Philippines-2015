@@ -34,6 +34,25 @@ ul.navbar-nav {
   color: #fff;
 }
 
+.camp-speakers .nav {
+  height: 50px;
+}
+.camp-speakers .nav-tabs {
+  li {
+    font-family: $font-logo;
+    font-size: 20px;
+    a {
+      color: $logo-color-white;
+    }
+  }
+  .active a {
+    color: $logo-color-yellow;
+  }
+  a:hover {
+    background-color: $logo-color-yellow;
+  }
+}
+
 .register-container {
   background-color: blue;
 }

@@ -145,7 +145,17 @@ function content_session_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_speaker',
-    'foreign keys' => array(),
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'foreign keys' => array(
+      'users' => array(
+        'columns' => array(
+          'target_id' => 'uid',
+        ),
+        'table' => 'users',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
