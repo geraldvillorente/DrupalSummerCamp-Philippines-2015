@@ -50,10 +50,31 @@ function context_sitewide_menu_default_menu_links() {
     'weight' => 5,
     'customized' => 1,
   );
+  // Exported menu link: main-menu_venue:venue
+  $menu_links['main-menu_venue:venue'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'venue',
+    'router_path' => 'venue',
+    'link_title' => 'Venue',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_venue:venue',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 3,
+    'customized' => 1,
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Homepage');
   t('Register');
+  t('Venue');
 
 
   return $menu_links;
