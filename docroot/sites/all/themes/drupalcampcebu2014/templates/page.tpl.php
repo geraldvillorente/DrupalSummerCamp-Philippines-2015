@@ -104,11 +104,16 @@ if (isset($node) && ($node->type == 'page')) {
           <div class="venue-container">
             <span style="color: white;" class="date">15/16 NOVEMBER 2014</span> <span style="color: #3b97d3;" class="uni">UNIVERSITY OF</span> <span style="color: #3b97d3;" class="uni-name">SAN CARLOS</span> <span style="color: white;" class="cebucity">CEBU CITY</span>
           </div>
+           <div class="book-now-tab">
+            <p class="book-now-tab-text"><a href="#">BOOK NOW FOR</a></p>
+            <p class="book-now-tab-price"><a href="#">P250</a></p>
+          </div>
         </div>
-
-        <div class="header-intro-text">
+      </div>
+      <div class="row">
+        <div class="header-intro-text col-md-12">
           <div class="row">
-            <div class="col-md-12">
+            <div>
               <p>Drupalcamp Cebu is a 1.5 day conference organized by  the Drupal Cebu User Group. This is the first Drupalcamp in the Philippines, outside of Manila. We wish to bring together a variety of people interested in learning and growing skills in open-source, web development, business, DevOps, web design and more with great speakers and sessions.<br>
                 Join us to learn, attend great sessions for various levels of experience, social events and Cebu&#39;s specialities &#59;)</p>
             </div>
@@ -116,39 +121,38 @@ if (isset($node) && ($node->type == 'page')) {
         </div>
       </div>
     </div>
-  </div>
-
-  <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-    <div class="nav-container">
-      <div class="nav">
-        <div class="camp-menu">
-          <div class="row">
-            <div class="col-md-12">
-              <?php if (!empty($primary_nav)): ?>
-                <ul class="menu">
-                  <div class="col-md-3">
-                    <li class="logo-title-menu logo-title-menu-hidden">
-                      <span class="title-1st">DRUPAL</span><span class="title-2nd">CAMP</span>
-                      <span class="title-3rd">CEBU</span>
-                    </li>
-                  </div>
-                  <div class="col-md-12">
-                    <?php
-                    foreach($primary_nav as $key => $primary_menu_item) {
-                      if (is_numeric($key)) {
-                        print render($primary_menu_item);
+      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      <div class="nav-container">
+        <div class="nav">
+          <div class="camp-menu">
+            <div class="row">
+              <div class="col-md-12">
+                <?php if (!empty($primary_nav)): ?>
+                  <ul class="menu">
+                    <div class="col-md-3">
+                      <li class="logo-title-menu logo-title-menu-hidden">
+                        <span class="title-1st">DRUPAL</span><span class="title-2nd">CAMP</span>
+                        <span class="title-3rd">CEBU</span>
+                      </li>
+                    </div>
+                    <div class="col-md-12">
+                      <?php
+                      foreach($primary_nav as $key => $primary_menu_item) {
+                        if (is_numeric($key)) {
+                          print render($primary_menu_item);
+                        }
                       }
-                    }
-                    ?>
-                </div>
-              </ul>
-              <?php endif; ?>
+                      ?>
+                  </div>
+                </ul>
+                <?php endif; ?>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   <?php endif; ?>
+  </div>
 
 </div>
 
@@ -260,7 +264,7 @@ if (isset($node) && ($node->type == 'page')) {
   jQuery("document").ready(function($){
     var nav = $('.nav-container');
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 670) {
+      if ($(this).scrollTop() > 710) {
         nav.addClass("f-nav");
         nav.addClass("logo-title-menu");
         $( ".logo-title-menu-hidden" ).removeClass("hide");

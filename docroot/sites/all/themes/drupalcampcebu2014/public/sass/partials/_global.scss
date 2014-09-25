@@ -97,6 +97,34 @@ ul.navbar-nav {
         line-height: 67px;
       }
     }
+    .book-now-tab {
+      background-image: url('../images/book-now-bg.png');
+      width: 166px;
+      height: 147px;
+      position: absolute;
+      margin-top: -22px;
+      margin-left: 116px;
+      a {
+        color: $logo-color-white;
+        text-decoration: none;
+      }
+      p.book-now-tab-text {
+        color: $logo-color-white;
+        font-family: $font-logo;
+        font-size: 26px;
+        transform: rotate(-16deg);
+        margin-top: 21px;
+        margin-left: 10px;
+      }
+      p.book-now-tab-price {
+        color: $logo-color-white;
+        font-family: $font-logo;
+        transform: rotate(-15deg);
+        font-size: 75px;
+        margin-left: 21px;
+        margin-top: -37px;
+      }
+    }
   }
 }
 
@@ -113,7 +141,8 @@ h2.english-title {
   color: $color-grey;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 51px;
+  margin-top: 30px;
 }
 
 .page-header {
