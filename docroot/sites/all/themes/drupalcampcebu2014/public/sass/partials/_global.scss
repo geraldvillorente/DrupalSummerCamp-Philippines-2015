@@ -100,6 +100,15 @@ ul.navbar-nav {
   }
 }
 
+h1.cebuano-title {
+    margin-bottom: 0px;
+  }
+h2.english-title {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 37px;
+  }
+  
 .header-intro-text p {
   color: $color-grey;
   font-size: 20px;
@@ -177,6 +186,15 @@ ul.menu {
     clear: both;
   }
 }
+
+.region-content {
+  .content {
+    .field-item {
+      font-size: 22px;
+    }
+  }
+}
+
 .col-md-3 {
   margin-top: 55px;
   .img-speaker {

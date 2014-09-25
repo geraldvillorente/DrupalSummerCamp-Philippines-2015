@@ -47,7 +47,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Gold</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Gold</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -83,10 +83,12 @@ function views_sponsors_views_default_views() {
     'image_style' => 'sponsors-gold',
     'image_link' => '',
   );
-  /* Sort criterion: Content: Title */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Sort criterion: Draggableviews: Weight */
+  $handler->display->display_options['sorts']['weight']['id'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['field'] = 'weight';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'sponsors_sort:page';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -115,11 +117,26 @@ function views_sponsors_views_default_views() {
   $handler = $view->new_display('page', 'Sponsor Page Gold', 'gold_page');
   $handler->display->display_options['defaults']['header'] = FALSE;
   /* Header: Global: Text area */
+  $handler->display->display_options['header']['area_1']['id'] = 'area_1';
+  $handler->display->display_options['header']['area_1']['table'] = 'views';
+  $handler->display->display_options['header']['area_1']['field'] = 'area';
+  $handler->display->display_options['header']['area_1']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_1']['content'] = '<p class="speaker-announcement">A Drupal Camp’s success is usually made possible by the generosity of sponsors. Their donation lower the ticket prices for attendees and allow us to facilitate more sessions and provide free food and freebies to our attendees.</p>
+<p class="speaker-announcement">What’s in it for sponsors? Well this event will give you opportunities to:</p>
+<ul class="speaker-announcement">
+<li>Network and build relationships</li>
+<li>Touch base with the community and partners</li>
+<li>Promote and advertise your company</li>
+<li>Show your commitment to Drupal and to the open source community</li>
+</ul>
+<p class="speaker-announcement">If you would like to reserve a sponsorship spot, please contact jinky@drupalcampcebu.com or contact +639152300076.</p>';
+  $handler->display->display_options['header']['area_1']['format'] = 'full_html';
+  /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Gold</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Gold</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'sponsors';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -158,7 +175,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Silver</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Silver</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -247,7 +264,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Bronze</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Bronze</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -336,7 +353,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Food Sponsors</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Food Sponsors</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -425,7 +442,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Saturday Night</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Saturday Night</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -514,7 +531,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p>Coffee Sponsor</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Coffee Sponsor</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -583,6 +600,88 @@ function views_sponsors_views_default_views() {
   );
   $handler->display->display_options['attachment_position'] = 'after';
   $export['sponsors'] = $view;
+
+  $view = new view();
+  $view->name = 'sponsors_sort';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Sponsors Sort';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Sponsors Sort';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['access']['perm'] = 'administer nodes';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'table';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Draggableviews: Content */
+  $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
+  $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
+  $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['draggableviews']['draggableviews']['save_button_label'] = 'update';
+  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
+  /* Field: Content: Logo */
+  $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
+  $handler->display->display_options['fields']['field_logo']['table'] = 'field_data_field_logo';
+  $handler->display->display_options['fields']['field_logo']['field'] = 'field_logo';
+  $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_logo']['settings'] = array(
+    'image_style' => 'sponsor-bronze',
+    'image_link' => '',
+  );
+  /* Field: Content: Website */
+  $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
+  $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
+  $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
+  $handler->display->display_options['fields']['field_website']['settings'] = array(
+    'trim_length' => '80',
+    'nofollow' => 0,
+  );
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'sponsor' => 'sponsor',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'admin/content/sponsors';
+  $handler->display->display_options['menu']['type'] = 'tab';
+  $handler->display->display_options['menu']['title'] = 'Sponsors Sort';
+  $handler->display->display_options['menu']['weight'] = '3';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $export['sponsors_sort'] = $view;
 
   return $export;
 }

@@ -105,12 +105,18 @@
       }
     }
     .row {
+      font-size: 24px;
+      text-align: left;
       p {
-        color: #fff;
-        font-size: 48px;
-        text-align: center;
-        margin: 50px 0 20px;
-        font-family: $font-logo;
+        font-size: 24px;
+        text-align: left;
+        &.sponsor-category {
+          color: #fff;
+          font-size: 48px;
+          text-align: center;
+          margin: 50px 0 20px;
+          font-family: $font-logo;
+        }
       }
       @mixin sponsor_img {
         margin: 15px auto;

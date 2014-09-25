@@ -75,6 +75,10 @@
 
 global $base_path;
 $images_dir = '/public/images/';
+
+if (isset($node) && ($node->type == 'page')) {
+  $cebuano_title_field = field_view_field('node', $node, 'field_cebuano_title', array('label'=>'hidden'));
+}
 ?>
 
 <div class="main-container">
@@ -156,7 +160,23 @@ $images_dir = '/public/images/';
     <div class="row">
       <div class="col-md-12 drupalcamp-speakers">
         <?php if (!empty($title)): ?>
-          <h1 class="page-header"><?php print $title; ?></h1>
+          
+            <?php 
+            // print $title; 
+
+            if ($cebuano_title_field) {
+              print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
+            }
+            else {
+              print '<h1 class="page-header">' . $title . '</h1>';
+            }
+
+            ?>
+          <?php 
+            if ($cebuano_title_field) {
+              print '<h2 class="english-title">' . $title . '</h2>';
+            }
+          ?>
         <?php endif; ?>
 <!--        <h3>Speakers</h3>-->
         <?php print $messages; ?>
@@ -217,9 +237,9 @@ $images_dir = '/public/images/';
       <div class="col-md-5">
         <h3>CONNECT</h3>
         <p class="footer-description">We tweet
-          <a href="#">@DrupalcampCebu</a><br>
+          <a href="https://twitter.com/DrupalCampCebu">@DrupalcampCebu</a><br>
           <a href="https://www.facebook.com/groups/drupalcebu/">Drupal Cebu on Facebook</a><br>
-          More about the <a href="https://www.facebook.com/groups/drupalcebu/">Drupal Cebu user group</a>
+          More about the <a href="http://drupalcebu.org">Drupal Cebu user group</a>
         </p>
       </div>
     </div> <!-- row -->
