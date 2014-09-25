@@ -6,6 +6,7 @@ dependencies[] = content_page
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
+dependencies[] = metatag
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text

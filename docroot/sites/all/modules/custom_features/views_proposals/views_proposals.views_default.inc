@@ -152,6 +152,12 @@ function views_proposals_views_default_views() {
   $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '0';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['filters']['status_1']['table'] = 'node';
+  $handler->display->display_options['filters']['status_1']['field'] = 'status';
+  $handler->display->display_options['filters']['status_1']['relationship'] = 'reverse_field_speaker_node';
+  $handler->display->display_options['filters']['status_1']['value'] = '1';
 
   /* Display: Proposals */
   $handler = $view->new_display('page', 'Proposals', 'page');
@@ -192,6 +198,12 @@ function views_proposals_views_default_views() {
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['relationship'] = 'reverse_field_speaker_node';
   $handler->display->display_options['filters']['promote']['value'] = '1';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status_1']['id'] = 'status_1';
+  $handler->display->display_options['filters']['status_1']['table'] = 'node';
+  $handler->display->display_options['filters']['status_1']['field'] = 'status';
+  $handler->display->display_options['filters']['status_1']['relationship'] = 'reverse_field_speaker_node';
+  $handler->display->display_options['filters']['status_1']['value'] = '1';
   $handler->display->display_options['block_description'] = 'Featured Proposals';
   $export['proposals'] = $view;
 
