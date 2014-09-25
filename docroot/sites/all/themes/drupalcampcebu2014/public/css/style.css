@@ -192,38 +192,71 @@ ul.navbar-nav {
   font-size: 80px;
   line-height: 67px;
 }
+/* line 100, ../sass/partials/_global.scss */
+.above-the-fold .col-md-3 .book-now-tab {
+  background-image: url("../images/book-now-bg.png");
+  width: 166px;
+  height: 147px;
+  position: absolute;
+  margin-top: -22px;
+  margin-left: 116px;
+}
+/* line 107, ../sass/partials/_global.scss */
+.above-the-fold .col-md-3 .book-now-tab a {
+  color: white;
+  text-decoration: none;
+}
+/* line 111, ../sass/partials/_global.scss */
+.above-the-fold .col-md-3 .book-now-tab p.book-now-tab-text {
+  color: white;
+  font-family: "chinese rocks", sans-serif;
+  font-size: 26px;
+  transform: rotate(-16deg);
+  margin-top: 21px;
+  margin-left: 10px;
+}
+/* line 119, ../sass/partials/_global.scss */
+.above-the-fold .col-md-3 .book-now-tab p.book-now-tab-price {
+  color: white;
+  font-family: "chinese rocks", sans-serif;
+  transform: rotate(-15deg);
+  font-size: 75px;
+  margin-left: 21px;
+  margin-top: -37px;
+}
 
-/* line 103, ../sass/partials/_global.scss */
+/* line 131, ../sass/partials/_global.scss */
 h1.cebuano-title {
   margin-bottom: 0px;
 }
 
-/* line 106, ../sass/partials/_global.scss */
+/* line 134, ../sass/partials/_global.scss */
 h2.english-title {
   margin-top: 0px;
   font-weight: bold;
   font-size: 37px;
 }
 
-/* line 112, ../sass/partials/_global.scss */
+/* line 140, ../sass/partials/_global.scss */
 .header-intro-text p {
   color: #e3e3e3;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 75px;
+  margin-bottom: 51px;
+  margin-top: 30px;
 }
 
-/* line 119, ../sass/partials/_global.scss */
+/* line 148, ../sass/partials/_global.scss */
 .page-header {
   border: none;
 }
 
-/* line 123, ../sass/partials/_global.scss */
+/* line 152, ../sass/partials/_global.scss */
 .nav-container {
   background-color: #1d2734;
 }
 
-/* line 127, ../sass/partials/_global.scss */
+/* line 156, ../sass/partials/_global.scss */
 .f-nav {
   z-index: 9999;
   position: fixed;
@@ -234,50 +267,50 @@ h2.english-title {
   padding: 5px 0px 7px;
 }
 
-/* line 136, ../sass/partials/_global.scss */
+/* line 165, ../sass/partials/_global.scss */
 .nav {
   height: 42px;
 }
 
-/* line 140, ../sass/partials/_global.scss */
+/* line 169, ../sass/partials/_global.scss */
 ul.menu {
   margin-top: 6px;
   text-align: center;
 }
-/* line 143, ../sass/partials/_global.scss */
+/* line 172, ../sass/partials/_global.scss */
 ul.menu div.col-md-3 {
   background: none;
   height: 0px;
   margin-top: 0px;
 }
-/* line 148, ../sass/partials/_global.scss */
+/* line 177, ../sass/partials/_global.scss */
 ul.menu li {
   display: inline;
 }
-/* line 149, ../sass/partials/_global.scss */
+/* line 178, ../sass/partials/_global.scss */
 ul.menu li div.logo-title-menu-hidden {
   float: left;
 }
-/* line 152, ../sass/partials/_global.scss */
+/* line 181, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
   color: white;
   font-size: 24px;
 }
-/* line 157, ../sass/partials/_global.scss */
+/* line 186, ../sass/partials/_global.scss */
 ul.menu li span.title-2nd {
   font-family: "chinese rocks", sans-serif;
   color: #3c97d3;
   font-size: 24px;
 }
-/* line 162, ../sass/partials/_global.scss */
+/* line 191, ../sass/partials/_global.scss */
 ul.menu li span.title-3rd {
   font-family: "chinese rocks", sans-serif;
   color: #f0c419;
   font-size: 24px;
   padding-right: 25px;
 }
-/* line 169, ../sass/partials/_global.scss */
+/* line 198, ../sass/partials/_global.scss */
 ul.menu li a {
   color: #ececec;
   text-decoration: none;
@@ -287,24 +320,24 @@ ul.menu li a {
   padding-top: 4px;
   padding-left: 10px;
 }
-/* line 178, ../sass/partials/_global.scss */
+/* line 207, ../sass/partials/_global.scss */
 ul.menu li a:hover {
   background: url("../images/register-tab.png") no-repeat;
 }
-/* line 181, ../sass/partials/_global.scss */
+/* line 210, ../sass/partials/_global.scss */
 ul.menu li a.active {
   background: url("../images/register-tab.png") no-repeat;
 }
-/* line 185, ../sass/partials/_global.scss */
+/* line 214, ../sass/partials/_global.scss */
 ul.menu div.col-md-12 {
   clear: both;
 }
 
-/* line 189, ../sass/partials/_global.scss */
+/* line 218, ../sass/partials/_global.scss */
 .col-md-3 {
   margin-top: 55px;
 }
-/* line 191, ../sass/partials/_global.scss */
+/* line 220, ../sass/partials/_global.scss */
 .col-md-3 .img-speaker {
   text-align: center;
   width: 128px;
@@ -313,14 +346,14 @@ ul.menu div.col-md-12 {
   border-radius: 100px;
   margin-left: 25%;
 }
-/* line 198, ../sass/partials/_global.scss */
+/* line 227, ../sass/partials/_global.scss */
 .col-md-3 .img-speaker img {
   width: 118px;
   height: 118px;
   border-radius: 100px;
   margin-top: 5px;
 }
-/* line 205, ../sass/partials/_global.scss */
+/* line 234, ../sass/partials/_global.scss */
 .col-md-3 p.speaker-drupalcamp-topic {
   font-size: 24px;
   text-align: center;
@@ -328,79 +361,79 @@ ul.menu div.col-md-12 {
   font-family: "chinese rocks", sans-serif;
   margin-top: 25px;
 }
-/* line 211, ../sass/partials/_global.scss */
+/* line 240, ../sass/partials/_global.scss */
 .col-md-3 p.speaker-drupalcamp-topic a {
   color: #fff;
   text-decoration: none;
 }
-/* line 216, ../sass/partials/_global.scss */
+/* line 245, ../sass/partials/_global.scss */
 .col-md-3 p.speaker-drupalcamp {
   font-size: 18px;
   color: #fff;
   text-align: center;
   line-height: 0px;
 }
-/* line 222, ../sass/partials/_global.scss */
+/* line 251, ../sass/partials/_global.scss */
 .col-md-3 .topic-summary {
   font-size: 16px;
   text-align: center;
   margin-top: 25px;
 }
 
-/* line 229, ../sass/partials/_global.scss */
+/* line 258, ../sass/partials/_global.scss */
 .table {
   margin-left: 60px;
   margin-bottom: 50px;
 }
-/* line 234, ../sass/partials/_global.scss */
+/* line 263, ../sass/partials/_global.scss */
 .table tbody tr .time {
   width: 15%;
   color: #f1c419;
   font-family: "SourceSansPro";
   font-size: 22px;
 }
-/* line 240, ../sass/partials/_global.scss */
+/* line 269, ../sass/partials/_global.scss */
 .table tbody tr td {
   border-top: 0px;
 }
-/* line 243, ../sass/partials/_global.scss */
+/* line 272, ../sass/partials/_global.scss */
 .table tbody tr p {
   text-align: left;
 }
-/* line 246, ../sass/partials/_global.scss */
+/* line 275, ../sass/partials/_global.scss */
 .table tbody tr p.place {
   color: #00496d;
   font-size: 15px;
 }
-/* line 249, ../sass/partials/_global.scss */
+/* line 278, ../sass/partials/_global.scss */
 .table tbody tr p.place span.category {
   color: #f0c419;
 }
-/* line 253, ../sass/partials/_global.scss */
+/* line 282, ../sass/partials/_global.scss */
 .table tbody tr p.speaker {
   color: #fff;
   margin-bottom: 0px;
   font-size: 15px;
 }
 
-/* line 263, ../sass/partials/_global.scss */
+/* line 292, ../sass/partials/_global.scss */
 .tabbable .panel-body {
   min-height: 280px;
 }
 
-/* line 269, ../sass/partials/_global.scss */
+/* line 298, ../sass/partials/_global.scss */
 .image-widget-data .btn {
   float: right;
   position: relative;
   margin-top: -34px;
 }
-/* line 274, ../sass/partials/_global.scss */
+/* line 303, ../sass/partials/_global.scss */
 .image-widget-data .btn.btn-danger {
   float: none;
   margin-top: 0;
 }
 
-/* line 280, ../sass/partials/_global.scss */
+/* line 309, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }
@@ -752,130 +785,140 @@ ul.menu div.col-md-12 {
  * _responsive.scss
  ******************************************************************************/
 @media (max-width: 1200px) and (min-width: 992px) {
-  /* line 6, ../sass/partials/_responsive.scss */
+  /* line 5, ../sass/partials/_responsive.scss */
   .above-the-fold {
-    height: 790px;
+    height: 850px;
   }
-  /* line 8, ../sass/partials/_responsive.scss */
+  /* line 7, ../sass/partials/_responsive.scss */
   .above-the-fold .col-md-4 {
     width: 31.333333%;
   }
-  /* line 11, ../sass/partials/_responsive.scss */
+  /* line 10, ../sass/partials/_responsive.scss */
+  .above-the-fold .test {
+    margin-top: 580;
+  }
+  /* line 13, ../sass/partials/_responsive.scss */
   .above-the-fold .col-md-5 {
     width: 42%;
   }
-  /* line 14, ../sass/partials/_responsive.scss */
+  /* line 16, ../sass/partials/_responsive.scss */
   .above-the-fold .col-md-3 {
     width: 26%;
     background-size: 68% 87%;
     height: 300px;
   }
-  /* line 19, ../sass/partials/_responsive.scss */
+  /* line 21, ../sass/partials/_responsive.scss */
   .above-the-fold .header-intro-text {
     margin-bottom: -25px;
+    margin-top: 40px;
   }
-  /* line 23, ../sass/partials/_responsive.scss */
+  /* line 26, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container img {
     width: 90%;
   }
-  /* line 27, ../sass/partials/_responsive.scss */
+  /* line 30, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span {
     font-size: 83px !important;
     line-height: 83px;
   }
-  /* line 30, ../sass/partials/_responsive.scss */
+  /* line 33, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span.cebu {
     font-size: 216px !important;
     line-height: 133px !important;
   }
-  /* line 37, ../sass/partials/_responsive.scss */
+  /* line 40, ../sass/partials/_responsive.scss */
   .above-the-fold .venue-container span.date {
     font-size: 28px !important;
   }
-  /* line 40, ../sass/partials/_responsive.scss */
+  /* line 43, ../sass/partials/_responsive.scss */
   .above-the-fold .venue-container span.uni {
     font-size: 45px !important;
     line-height: 40px !important;
   }
-  /* line 44, ../sass/partials/_responsive.scss */
+  /* line 47, ../sass/partials/_responsive.scss */
   .above-the-fold .venue-container span.uni-name {
     font-size: 56px !important;
     line-height: 53px !important;
   }
-  /* line 48, ../sass/partials/_responsive.scss */
+  /* line 51, ../sass/partials/_responsive.scss */
   .above-the-fold .venue-container span.cebucity {
     font-size: 70px !important;
     line-height: 57px !important;
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
-  /* line 58, ../sass/partials/_responsive.scss */
-  .above-the-fold {
-    height: 950px;
-  }
   /* line 61, ../sass/partials/_responsive.scss */
+  .above-the-fold {
+    height: 1020px;
+  }
+  /* line 64, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container img {
     width: 95%;
   }
-  /* line 65, ../sass/partials/_responsive.scss */
+  /* line 68, ../sass/partials/_responsive.scss */
   .above-the-fold .header-intro-text {
     margin-bottom: -20px;
   }
-  /* line 68, ../sass/partials/_responsive.scss */
+  /* line 71, ../sass/partials/_responsive.scss */
   .above-the-fold .col-md-3 {
     height: 100px;
     background-size: 68% 68%;
     clear: both;
     width: 100%;
   }
-  /* line 73, ../sass/partials/_responsive.scss */
+  /* line 76, ../sass/partials/_responsive.scss */
   .above-the-fold .col-md-3 span {
     font-size: 35px !important;
     margin-right: 5px;
   }
-  /* line 76, ../sass/partials/_responsive.scss */
+  /* line 79, ../sass/partials/_responsive.scss */
   .above-the-fold .col-md-3 span:nth-child(4) {
     margin-right: 0px;
   }
-  /* line 81, ../sass/partials/_responsive.scss */
+  /* line 84, ../sass/partials/_responsive.scss */
   .above-the-fold .venue-container {
     margin-top: 0px !important;
   }
-  /* line 84, ../sass/partials/_responsive.scss */
+  /* line 87, ../sass/partials/_responsive.scss */
   .above-the-fold .nav {
     height: auto;
     padding-bottom: 0;
   }
-  /* line 88, ../sass/partials/_responsive.scss */
+  /* line 91, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .logo-title-menu-hidden {
     clear: both;
     text-align: center;
     margin-top: -7px;
   }
-  /* line 93, ../sass/partials/_responsive.scss */
+  /* line 96, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .col-md-3 {
     height: auto;
   }
-  /* line 98, ../sass/partials/_responsive.scss */
+  /* line 101, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span {
     font-size: 90px !important;
   }
-  /* line 100, ../sass/partials/_responsive.scss */
+  /* line 103, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span.cebu {
     font-size: 245px !important;
   }
-
   /* line 107, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-md-3 .book-now-tab {
+    margin-top: -195px;
+    margin-left: 550px;
+  }
+
+  /* line 114, ../sass/partials/_responsive.scss */
   .camp-speakers .speaker-info .img-speaker {
     margin-left: 30%;
   }
 }
 @media (max-width: 768px) {
-  /* line 116, ../sass/partials/_responsive.scss */
+  /* line 123, ../sass/partials/_responsive.scss */
   .above-the-fold {
-    height: 1561px;
+    height: 1520px;
   }
-  /* line 120, ../sass/partials/_responsive.scss */
+  /* line 127, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -883,23 +926,23 @@ ul.menu div.col-md-12 {
     display: block;
     margin: auto;
   }
-  /* line 125, ../sass/partials/_responsive.scss */
+  /* line 132, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span {
     font-size: 80px !important;
   }
-  /* line 127, ../sass/partials/_responsive.scss */
+  /* line 134, ../sass/partials/_responsive.scss */
   .above-the-fold .drupalcamp-title span.cebu {
     font-size: 205px !important;
     line-height: 115px;
   }
-  /* line 133, ../sass/partials/_responsive.scss */
+  /* line 140, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;
     display: block;
     margin: auto;
   }
-  /* line 138, ../sass/partials/_responsive.scss */
+  /* line 145, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 {
     width: 350px;
     display: block;
@@ -908,46 +951,55 @@ ul.menu div.col-md-12 {
     height: 380px;
     background-size: 68% 89%;
   }
-  /* line 147, ../sass/partials/_responsive.scss */
+  /* line 154, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.date {
     font-size: 46px;
     line-height: 110px;
   }
-  /* line 151, ../sass/partials/_responsive.scss */
+  /* line 158, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.uni {
     font-size: 68px;
     line-height: 0px;
   }
-  /* line 155, ../sass/partials/_responsive.scss */
+  /* line 162, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.uni-name {
     font-size: 80px;
     line-height: 75px;
   }
-  /* line 159, ../sass/partials/_responsive.scss */
+  /* line 166, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-4 .venue-container span.cebucity {
     font-size: 98px;
     line-height: 80px;
   }
-  /* line 166, ../sass/partials/_responsive.scss */
+  /* line 172, ../sass/partials/_responsive.scss */
+  .above-the-fold .col-sm-4 .book-now-tab {
+    margin-top: -12px;
+    margin-left: 97px;
+  }
+  /* line 177, ../sass/partials/_responsive.scss */
   .above-the-fold .header-intro-text {
     margin: 0 20px;
   }
-  /* line 169, ../sass/partials/_responsive.scss */
+  /* line 179, ../sass/partials/_responsive.scss */
+  .above-the-fold .header-intro-text p {
+    margin-top: 80px;
+  }
+  /* line 183, ../sass/partials/_responsive.scss */
   .above-the-fold .nav {
     height: auto;
     padding-bottom: 0;
   }
-  /* line 173, ../sass/partials/_responsive.scss */
+  /* line 187, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .logo-title-menu-hidden {
     clear: both;
     text-align: center;
   }
-  /* line 177, ../sass/partials/_responsive.scss */
+  /* line 191, ../sass/partials/_responsive.scss */
   .above-the-fold .nav ul.menu .col-md-12 {
     margin-top: 42px;
   }
 
-  /* line 184, ../sass/partials/_responsive.scss */
+  /* line 198, ../sass/partials/_responsive.scss */
   .speaker-info .img-speaker {
     display: block;
     margin: auto !important;

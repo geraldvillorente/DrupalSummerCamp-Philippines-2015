@@ -1,12 +1,14 @@
 /*******************************************************************************
  * _responsive.scss
  ******************************************************************************/
-
 @media (max-width: 1200px) and (min-width: 992px) {
   .above-the-fold {
-    height: 790px;
+    height: 850px;
     .col-md-4 {
       width: 31.333333%;
+    }
+    .test {
+      margin-top : 580;
     }
     .col-md-5 {
       width: 42%;
@@ -18,6 +20,7 @@
     }
     .header-intro-text {
       margin-bottom: -25px;
+      margin-top: 40px;
     }
     .logo-container {
       img  {
@@ -50,13 +53,13 @@
           line-height: 57px !important;
         }
       }
-    }   
+    }
   }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
   .above-the-fold {
-    height: 950px;
+    height: 1020px;
     .logo-container {
       img {
         width: 95%;
@@ -101,6 +104,10 @@
         font-size: 245px !important;
       }
     }
+    .col-md-3 .book-now-tab {
+      margin-top: -195px;
+      margin-left: 550px;
+    }
   }
   .camp-speakers {
     .speaker-info {
@@ -114,7 +121,7 @@
 
 @media (max-width: 768px) {
   .above-the-fold {
-    height: 1561px;
+    height: 1520px;
     .logo-container,
     .drupalcamp-title,
     .venue-container {
@@ -162,9 +169,16 @@
           }
         }
       }
+      .book-now-tab {
+        margin-top: -12px;
+        margin-left: 97px;
+      }
     }
     .header-intro-text {
       margin: 0 20px;
+      p {
+        margin-top: 80px;
+      }
     }
     .nav {
       height: auto;
