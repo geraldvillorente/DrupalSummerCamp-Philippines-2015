@@ -37,3 +37,11 @@
     }
   }
 }
+
+.map-overlay {
+  background: transparent;
+  height: 700px;
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+}
