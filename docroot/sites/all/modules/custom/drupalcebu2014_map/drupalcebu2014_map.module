@@ -17,7 +17,7 @@ function drupalcebu2014_map_menu() {
     'access arguments' => array('administer site configuration'),
     'type' => MENU_NORMAL_ITEM,
    );
-  $items['venue'] = array(
+  $items['venue/map'] = array(
     'title' => 'Venue',
     'page callback' => 'drupalcebu2014_map_page',
     'access arguments' => array('access content'),
@@ -34,7 +34,7 @@ function drupalcebu2014_map_admin() {
   $form['drupalcebu2014_map_venue'] = array(
     '#type' => 'text_format',
     '#title' => t('Venue'),
-    '#default_value' => variable_get('drupalcebu2014_map_venue', _drupalcebu2014_map_default(FALSE)),
+    '#default_value' => variable_get('drupalcebu2014_map_venue', ''),
     '#rows' => 10,
     '#description' => t('Configure the contents of the venue, inclucing mao and directions, here.'),
     '#format' => 'full_html',
@@ -74,7 +74,7 @@ function drupalcebu2014_map_block_configure($delta = '') {
       '#title' => t('Map Content'),
       '#row' => 5,
       '#description' => t('This text will appear in the map block.'),
-      '#default_value' => variable_get('drupalcebu2014_map_text', _drupalcebu2014_map_default(TRUE)),
+      '#default_value' => variable_get('drupalcebu2014_map_text', ''),
       '#format' => 'full_html',
     );
   }
@@ -104,32 +104,9 @@ function drupalcebu2014_map_block_view($delta = '') {
   switch ($delta) {
     case 'drupalcebu2014_map_text':
       $block['content'] = array(
-        '#markup' => variable_get('drupalcebu2014_map_text', _drupalcebu2014_map_default(TRUE)),
+        '#markup' => variable_get('drupalcebu2014_map_text', ''),
       );
       break;
   }
   return $block;
-}
-
-/**
- * Provides default value for map content
- */
-function _drupalcebu2014_map_default($block = TRUE) {
-  if ($block) {
-    $mark_up = '
-      <div class="venue-info">
-        <h3 class="venue-label">Venue</h3>
-        <p class="venue-address">UNIVERSITY OF SAN CARLOS - Talamban Campus. Nasipit, Talamban Cebu City.</p>
-      </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3924.8531820579547!2d123.9109376342627!3d10.353622172260941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUniversity+of+San+Carlos%2C+Talamban!5e0!3m2!1sen!2sph!4v1409822043976" width="100%" height="700px" frameborder="0" style="border:0"></iframe>';
-
-  }
-  else {
-    $mark_up = '
-    <div class="venue-info">
-      <p class="venue-address">UNIVERSITY OF SAN CARLOS - Talamban Campus. Nasipit, Talamban Cebu City.</p>
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3924.8531820579547!2d123.9109376342627!3d10.353622172260941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUniversity+of+San+Carlos%2C+Talamban!5e0!3m2!1sen!2sph!4v1409822043976" width="100%" height="700px" frameborder="0" style="border:0"></iframe>';
-  }
-  return $mark_up;
 }
