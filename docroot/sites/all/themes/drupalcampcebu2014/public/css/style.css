@@ -667,28 +667,33 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   display: block;
   max-width: 140px;
 }
-/* line 148, ../sass/partials/_sponsors.scss */
+/* line 147, ../sass/partials/_sponsors.scss */
+.page-sponsors .content .row.partners {
+  clear: both;
+}
+/* line 151, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .food-sponsors {
   text-align: center;
 }
-/* line 150, ../sass/partials/_sponsors.scss */
+/* line 153, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .food-sponsors img {
   max-width: 55%;
 }
-/* line 154, ../sass/partials/_sponsors.scss */
+/* line 157, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .coffee-sponsors {
   text-align: center;
 }
-/* line 156, ../sass/partials/_sponsors.scss */
+/* line 159, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .coffee-sponsors img {
   max-width: 55%;
 }
-/* line 160, ../sass/partials/_sponsors.scss */
+/* line 163, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .saturday-sponsors {
   text-align: center;
   margin-bottom: 75px;
+  height: 1px;
 }
-/* line 163, ../sass/partials/_sponsors.scss */
+/* line 167, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .saturday-sponsors img {
   max-width: 55%;
 }
