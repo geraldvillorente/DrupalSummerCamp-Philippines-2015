@@ -92,7 +92,7 @@ function views_registration_views_default_views() {
 
 <h2>How to Register</h2>
 
-<p>Please go to the Event Registration tab and fill in the required information and sign up to attend.</p>
+<p>Please go to the <a href="/user/register">Event Registration</a> tab and fill in the required information and sign up to attend.</p>
 
 <h2>Payment Methods</h2>
 
