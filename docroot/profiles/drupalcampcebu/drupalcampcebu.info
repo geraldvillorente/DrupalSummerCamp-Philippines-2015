@@ -73,6 +73,7 @@ dependencies[] = flag_partner
 dependencies[] = flag_session_approval
 dependencies[] = media_image_styles
 dependencies[] = views_proposals
+dependencies[] = views_registration
 dependencies[] = views_sessions
 dependencies[] = views_speakers
 dependencies[] = views_sponsors
