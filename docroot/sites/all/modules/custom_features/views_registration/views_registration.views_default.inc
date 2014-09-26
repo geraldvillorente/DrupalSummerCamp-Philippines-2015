@@ -32,6 +32,9 @@ function views_registration_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['row_class'] = 'col-md-3 col-xs-12 col-sm-6 speaker-info';
+  $handler->display->display_options['style_options']['default_row_class'] = FALSE;
+  $handler->display->display_options['style_options']['row_class_special'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -150,7 +153,7 @@ function views_registration_views_default_views() {
   $handler->display->display_options['fields']['field_user_last_name']['element_type'] = '0';
   $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_type'] = 'p';
-  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_class'] = 'speaker-drupalcamp';
+  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_class'] = 'speaker-drupalcamp-topic';
   $handler->display->display_options['fields']['field_user_last_name']['element_default_classes'] = FALSE;
   /* Sort criterion: User: Created date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
