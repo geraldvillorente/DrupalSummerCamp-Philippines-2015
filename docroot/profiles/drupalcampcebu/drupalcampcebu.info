@@ -69,6 +69,7 @@ dependencies[] = config_user_profile
 dependencies[] = config_environment_indicator
 dependencies[] = context_homepage
 dependencies[] = flag_favorite
+dependencies[] = flag_partner
 dependencies[] = flag_session_approval
 dependencies[] = media_image_styles
 dependencies[] = views_proposals
