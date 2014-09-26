@@ -129,15 +129,12 @@ if (isset($node) && ($node->type == 'page')) {
               <div class="col-md-12">
                 <?php if (!empty($primary_nav)): ?>
                   <ul class="menu">
-                    <div class="col-md-3">
-                      <a href="<?php print $front_page; ?>">
+                      <a class="menu-logo-text" href="<?php print $front_page; ?>">
                         <li class="logo-title-menu logo-title-menu-hidden">
                           <span class="title-1st">DRUPAL</span><span class="title-2nd">CAMP</span>
                           <span class="title-3rd">CEBU</span>
                         </li>
                       </a>
-                    </div>
-                    <div class="col-md-9">
                       <?php
                       foreach($primary_nav as $key => $primary_menu_item) {
                         if (is_numeric($key)) {
@@ -145,7 +142,6 @@ if (isset($node) && ($node->type == 'page')) {
                         }
                       }
                       ?>
-                  </div>
                 </ul>
                 <?php endif; ?>
               </div>
