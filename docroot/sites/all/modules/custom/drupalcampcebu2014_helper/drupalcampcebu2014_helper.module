@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Provides extra helpers for the drupalcamp Cebu site.
+ */
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ * 
+ * Assign the speaker to a default value when creating a new session.
+ */
+function drupalcampcebu2014_helper_form_session_node_form_alter(&$form, &$form_state, $form_id) {
+  GLOBAL $user;
+  if (!isset($form['field_speaker']['und']['#entity']->nid)) {
+    $form['field_speaker']['und']['#value'] = $user->uid;
+  }
+}

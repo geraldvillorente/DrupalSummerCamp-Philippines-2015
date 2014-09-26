@@ -1,0 +1,4 @@
+name = Drupalcamp Cebu 2014 Helper
+description = Provides extra helpers for the drupalcamp Cebu site.
+core = 7.x
+package = "Drupalcamp Cebu 2014"
