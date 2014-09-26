@@ -1,7 +1,20 @@
 /*******************************************************************************
  * _responsive.scss
  ******************************************************************************/
+
+@media (min-width: 1200px) {
+  /* - This media query is by default in bootstrap - */
+  .menu-logo-text {
+    position: absolute;
+    left: 10%;
+  }
+}
+
 @media (max-width: 1200px) and (min-width: 992px) {
+  .menu-logo-text {
+    position: absolute;
+    left: 10%;
+  }
   .above-the-fold {
     height: 850px;
     .col-md-4 {
