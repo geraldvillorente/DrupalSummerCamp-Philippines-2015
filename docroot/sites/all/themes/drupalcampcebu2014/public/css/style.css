@@ -432,23 +432,69 @@ ul.menu div.col-md-12 {
 }
 
 /* line 320, ../sass/partials/_global.scss */
+.toboggan-unified #login-links {
+  min-height: 100px;
+  width: 500px;
+  margin: 30px auto 10px;
+  clear: both;
+}
+/* line 325, ../sass/partials/_global.scss */
+.toboggan-unified #login-links a {
+  border: none;
+  background: none;
+  float: left;
+  color: #fff;
+  font-family: "chinese rocks";
+  font-size: 30px;
+  width: 248px;
+  height: 84px;
+  position: relative;
+  text-decoration: none;
+  line-height: 30px;
+}
+/* line 337, ../sass/partials/_global.scss */
+.toboggan-unified #login-links a:hover {
+  border: none;
+  background: none;
+}
+/* line 341, ../sass/partials/_global.scss */
+.toboggan-unified #login-links a.lt-active {
+  background: url("../images/tab-active.png") no-repeat;
+  color: #f0c419;
+  border: none;
+  display: block;
+}
+/* line 346, ../sass/partials/_global.scss */
+.toboggan-unified #login-links a.lt-active:hover {
+  background: url("../images/tab-active.png") no-repeat;
+  color: #f0c419;
+  border: none;
+  display: block;
+}
+/* line 353, ../sass/partials/_global.scss */
+.toboggan-unified #login-links a#login-link {
+  line-height: 50px;
+}
+
+/* line 362, ../sass/partials/_global.scss */
+a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 .tabbable .panel-body {
   min-height: 325px;
 }
 
-/* line 326, ../sass/partials/_global.scss */
+/* line 368, ../sass/partials/_global.scss */
 .image-widget-data .btn {
   float: right;
   position: relative;
   margin-top: -34px;
 }
-/* line 331, ../sass/partials/_global.scss */
+/* line 373, ../sass/partials/_global.scss */
 .image-widget-data .btn.btn-danger {
   float: none;
   margin-top: 0;
 }
 
-/* line 337, ../sass/partials/_global.scss */
+/* line 379, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }
