@@ -177,6 +177,12 @@ function views_registration_views_default_views() {
   /* Display: Registration */
   $handler = $view->new_display('page', 'Registration', 'page');
   $handler->display->display_options['path'] = 'registration';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Registration';
+  $handler->display->display_options['menu']['weight'] = '5';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['registration'] = $view;
 
   return $export;
