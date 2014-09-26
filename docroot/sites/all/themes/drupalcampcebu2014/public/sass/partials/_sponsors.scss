@@ -144,6 +144,9 @@
           }
         }
       }
+      &.partners {
+        clear: both;
+      }
     }
     .food-sponsors {
       text-align: center;
@@ -160,6 +163,7 @@
     .saturday-sponsors {
       text-align: center;
       margin-bottom: 75px;
+      height: 1px;
       img {
         max-width: 55%;
       }

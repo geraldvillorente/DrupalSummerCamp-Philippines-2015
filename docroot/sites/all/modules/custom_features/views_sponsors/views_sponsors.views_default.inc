@@ -589,7 +589,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    4 => '4',
+    18 => '18',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -686,7 +686,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    4 => '4',
+    18 => '18',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -706,7 +706,7 @@ function views_sponsors_views_default_views() {
   /* Display: Accommodation Partner */
   $handler = $view->new_display('attachment', 'Accommodation Partner', 'accommodation');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'row silver-sponsors';
+  $handler->display->display_options['css_class'] = 'row partners';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -789,7 +789,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    1 => '1',
+    16 => '16',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -892,7 +892,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    18 => '18',
+    17 => '17',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
