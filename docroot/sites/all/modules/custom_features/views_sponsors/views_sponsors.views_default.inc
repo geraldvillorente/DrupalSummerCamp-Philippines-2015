@@ -603,7 +603,7 @@ function views_sponsors_views_default_views() {
   /* Display: Community Partner */
   $handler = $view->new_display('attachment', 'Community Partner', 'community');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'row bronze-sponsors';
+  $handler->display->display_options['css_class'] = 'col-md-6';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -706,7 +706,7 @@ function views_sponsors_views_default_views() {
   /* Display: Accommodation Partner */
   $handler = $view->new_display('attachment', 'Accommodation Partner', 'accommodation');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'row bronze-sponsors';
+  $handler->display->display_options['css_class'] = 'col-md-6';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -800,16 +800,16 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '1';
   $handler->display->display_options['displays'] = array(
+    'gold_page' => 'gold_page',
+    'gold_block' => 'gold_block',
     'default' => 0,
-    'gold_page' => 0,
-    'gold_block' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
 
   /* Display: Newspaper Partner */
   $handler = $view->new_display('attachment', 'Newspaper Partner', 'newspaper');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'row bronze-sponsors';
+  $handler->display->display_options['css_class'] = 'col-md-4';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
