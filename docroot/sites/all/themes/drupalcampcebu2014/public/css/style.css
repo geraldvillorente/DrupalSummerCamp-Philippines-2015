@@ -443,13 +443,21 @@ ul.menu div.col-md-12 {
 }
 
 /* line 331, ../sass/partials/_global.scss */
+.toboggan-unified #login-message {
+  font-family: "chinese rocks", sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 72px;
+}
+/* line 338, ../sass/partials/_global.scss */
 .toboggan-unified #login-links {
   min-height: 100px;
   width: 500px;
   margin: 30px auto 10px;
   clear: both;
 }
-/* line 336, ../sass/partials/_global.scss */
+/* line 343, ../sass/partials/_global.scss */
 .toboggan-unified #login-links a {
   border: none;
   background: none;
@@ -463,49 +471,49 @@ ul.menu div.col-md-12 {
   text-decoration: none;
   line-height: 30px;
 }
-/* line 348, ../sass/partials/_global.scss */
+/* line 355, ../sass/partials/_global.scss */
 .toboggan-unified #login-links a:hover {
   border: none;
   background: none;
 }
-/* line 352, ../sass/partials/_global.scss */
+/* line 359, ../sass/partials/_global.scss */
 .toboggan-unified #login-links a.lt-active {
   background: url("../images/tab-active.png") no-repeat;
   color: #f0c419;
   border: none;
   display: block;
 }
-/* line 357, ../sass/partials/_global.scss */
+/* line 364, ../sass/partials/_global.scss */
 .toboggan-unified #login-links a.lt-active:hover {
   background: url("../images/tab-active.png") no-repeat;
   color: #f0c419;
   border: none;
   display: block;
 }
-/* line 364, ../sass/partials/_global.scss */
+/* line 371, ../sass/partials/_global.scss */
 .toboggan-unified #login-links a#login-link {
   line-height: 50px;
 }
 
-/* line 373, ../sass/partials/_global.scss */
+/* line 380, ../sass/partials/_global.scss */
 a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 .tabbable .panel-body {
   min-height: 325px;
 }
 
-/* line 379, ../sass/partials/_global.scss */
+/* line 386, ../sass/partials/_global.scss */
 .image-widget-data .btn {
   float: right;
   position: relative;
   margin-top: -34px;
 }
-/* line 384, ../sass/partials/_global.scss */
+/* line 391, ../sass/partials/_global.scss */
 .image-widget-data .btn.btn-danger {
   float: none;
   margin-top: 0;
 }
 
-/* line 390, ../sass/partials/_global.scss */
+/* line 397, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }

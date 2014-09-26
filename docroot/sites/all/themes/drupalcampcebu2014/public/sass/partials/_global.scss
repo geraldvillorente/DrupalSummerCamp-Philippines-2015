@@ -328,6 +328,13 @@ ul.menu {
 }
 
 .toboggan-unified {
+  #login-message {
+    font-family: $font-logo;
+    text-align: center;
+    color: $logo-color-white;
+    margin-top: 40px;
+    font-size: $main-title-font-size;
+  }
   #login-links {
     min-height: 100px;
     width: 500px;
