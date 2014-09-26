@@ -571,6 +571,7 @@ $conf['theme_default'] = 'drupalcampcebu2014';
 
 // Homepage.
 $conf['site_frontpage'] = 'speakers/featured';
+$conf['registration_page'] = 'registration';
 
 // Map Content
 $conf['drupalcebu2014_map_text'] = '<div class="venue-info">

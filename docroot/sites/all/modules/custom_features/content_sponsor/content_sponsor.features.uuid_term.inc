@@ -11,11 +11,38 @@ function content_sponsor_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
+    'name' => 'Accommodation partner',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 6,
+    'uuid' => '3efe4d0b-6d53-4822-8745-7350bdd054a2',
+    'vocabulary_machine_name' => 'sponsor_type',
+    'metatags' => array(),
+  );
+  $terms[] = array(
     'name' => 'Saturday night sponsor',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 4,
     'uuid' => '5b38173d-9eea-47cf-ae35-9e9109d272ed',
+    'vocabulary_machine_name' => 'sponsor_type',
+    'metatags' => array(),
+  );
+  $terms[] = array(
+    'name' => 'Newspaper partner',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 8,
+    'uuid' => '5ff2ac72-f632-45b7-810e-9bb3636fc6cb',
+    'vocabulary_machine_name' => 'sponsor_type',
+    'metatags' => array(),
+  );
+  $terms[] = array(
+    'name' => 'Community partner',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => 7,
+    'uuid' => '600b021f-cf9f-40bc-9396-36d046011037',
     'vocabulary_machine_name' => 'sponsor_type',
     'metatags' => array(),
   );
