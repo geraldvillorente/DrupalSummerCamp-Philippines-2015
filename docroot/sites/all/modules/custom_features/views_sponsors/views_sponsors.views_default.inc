@@ -353,7 +353,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Food Sponsors</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Food Sponsor</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -442,7 +442,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Saturday Night</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Party Sponsor</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -511,8 +511,8 @@ function views_sponsors_views_default_views() {
   );
   $handler->display->display_options['attachment_position'] = 'after';
 
-  /* Display: Coffee */
-  $handler = $view->new_display('attachment', 'Coffee', 'coffee');
+  /* Display: Community Sponsor */
+  $handler = $view->new_display('attachment', 'Community Sponsor', 'coffee');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'col-md-4';
   $handler->display->display_options['pager']['type'] = 'some';
@@ -531,7 +531,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Coffee Sponsor</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Community Sponsor</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
@@ -589,7 +589,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    3 => '3',
+    4 => '4',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -686,7 +686,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    16 => '16',
+    4 => '4',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -697,16 +697,16 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '1';
   $handler->display->display_options['displays'] = array(
-    'gold_page' => 'gold_page',
-    'gold_block' => 'gold_block',
     'default' => 0,
+    'gold_page' => 0,
+    'gold_block' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
 
   /* Display: Accommodation Partner */
   $handler = $view->new_display('attachment', 'Accommodation Partner', 'accommodation');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'col-md-6';
+  $handler->display->display_options['css_class'] = 'row silver-sponsors';
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -789,7 +789,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    17 => '17',
+    1 => '1',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -801,8 +801,8 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['flagged']['value'] = '1';
   $handler->display->display_options['displays'] = array(
     'gold_page' => 'gold_page',
-    'gold_block' => 'gold_block',
     'default' => 0,
+    'gold_block' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
 
