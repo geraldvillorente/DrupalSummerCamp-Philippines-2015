@@ -14,7 +14,7 @@
  * @return
  *   An array defining all the roles for the site.
  */
-function secure_permissions_data_secure_permissions_roles() {
+function drupalcebu2014_permissions_secure_permissions_roles() {
   return array(
     'anonymous user',
     'authenticated user',
@@ -35,7 +35,7 @@ function secure_permissions_data_secure_permissions_roles() {
  * @return
  *   An array defining all the permissions for the site.
  */
-function secure_permissions_data_secure_permissions($role) {
+function drupalcebu2014_permissions_secure_permissions($role) {
   $permissions = array(
     'anonymous user' => array(
       'access content',

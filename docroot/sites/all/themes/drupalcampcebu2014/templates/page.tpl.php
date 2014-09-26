@@ -106,7 +106,7 @@ if (isset($node) && ($node->type == 'page')) {
           </div>
            <div class="book-now-tab">
             <p class="book-now-tab-text"><a href="#">BOOK NOW FOR</a></p>
-            <p class="book-now-tab-price"><a href="#">P250</a></p>
+            <p class="book-now-tab-price"><a href="<?php print url(variable_get('registration_page', '')); ?>">P250</a></p>
           </div>
         </div>
       </div>
