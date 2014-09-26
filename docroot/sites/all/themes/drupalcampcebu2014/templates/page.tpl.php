@@ -125,7 +125,6 @@ else {
           </div>
         </div>
       </div>
-      <?php if($is_front): ?>
       <div class="row">
         <div class="header-intro-text col-md-12">
           <div class="row">
@@ -136,7 +135,6 @@ else {
           </div>
         </div>
       </div>
-      <?php endif; ?>
     </div>
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="nav-container">
