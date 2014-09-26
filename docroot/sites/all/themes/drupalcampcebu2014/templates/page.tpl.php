@@ -79,11 +79,26 @@ $images_dir = '/public/images/';
 if (isset($node) && ($node->type == 'page')) {
   $cebuano_title_field = field_view_field('node', $node, 'field_cebuano_title', array('label'=>'hidden'));
 }
+if ($is_front) {
+  $above_fold_class = 'class="above-the-fold frontpage"';
+}
+else {
+  $above_fold_class = 'class="above-the-fold"';
+}
 ?>
 
 <div class="main-container">
 
-<div class="above-the-fold">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div <?php print $above_fold_class; ?>>
   <div class="container">
     <div class="camp-logo">
       <div class="row">
@@ -110,6 +125,7 @@ if (isset($node) && ($node->type == 'page')) {
           </div>
         </div>
       </div>
+      <?php if($is_front): ?>
       <div class="row">
         <div class="header-intro-text col-md-12">
           <div class="row">
@@ -120,6 +136,7 @@ if (isset($node) && ($node->type == 'page')) {
           </div>
         </div>
       </div>
+      <?php endif; ?>
     </div>
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="nav-container">
@@ -155,8 +172,6 @@ if (isset($node) && ($node->type == 'page')) {
 </div>
 
 <div class="camp-speakers-wave"></div>
-
-
 <div class="camp-speakers">
   <div class="container">
     <div class="row">
@@ -190,8 +205,18 @@ if (isset($node) && ($node->type == 'page')) {
           <?php print render($page['yellow-region']); ?>
         <?php endif; ?>
       </div>
+      <div class="col-md-12 fb-and-twitter-button">
+      <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>" 
+        data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+      </div>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </d iv>
     </div>
   </div>
+</div>
 </div>
 
 <?php if (!empty($page['blue-region'])): ?>
