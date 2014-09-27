@@ -16,7 +16,7 @@
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 40px;
 }
 
@@ -37,7 +37,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-size: 29px;
-  color: #fff;
+  color: white;
 }
 
 /* line 56, ../sass/partials/_base.scss */
@@ -54,25 +54,34 @@ p {
  * _global.scss
  ******************************************************************************/
 @-webkit-keyframes spin {
+  /* line 6, ../sass/partials/_global.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
+
+  /* line 7, ../sass/partials/_global.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
 @-o-keyframes spin {
+  /* line 11, ../sass/partials/_global.scss */
   from {
     -o-transform: rotate(0deg);
   }
+
+  /* line 12, ../sass/partials/_global.scss */
   to {
     -o-transform: rotate(360deg);
   }
 }
 @keyframes spin {
+  /* line 16, ../sass/partials/_global.scss */
   from {
     transform: rotate(0deg);
   }
+
+  /* line 17, ../sass/partials/_global.scss */
   to {
     transform: rotate(360deg);
   }
@@ -116,7 +125,7 @@ ul.navbar-nav {
 }
 /* line 49, ../sass/partials/_global.scss */
 .camp-speakers .nav-tabs li a {
-  color: #fff;
+  color: white;
 }
 /* line 53, ../sass/partials/_global.scss */
 .camp-speakers .nav-tabs .active a {
@@ -238,12 +247,12 @@ ul.navbar-nav {
 }
 /* line 147, ../sass/partials/_global.scss */
 .above-the-fold .col-md-3 .book-now-tab a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 /* line 151, ../sass/partials/_global.scss */
 .above-the-fold .col-md-3 .book-now-tab p.book-now-tab-text {
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
   font-size: 26px;
   transform: rotate(-16deg);
@@ -252,7 +261,7 @@ ul.navbar-nav {
 }
 /* line 159, ../sass/partials/_global.scss */
 .above-the-fold .col-md-3 .book-now-tab p.book-now-tab-price {
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
   transform: rotate(-15deg);
   font-size: 75px;
@@ -329,7 +338,7 @@ ul.menu li div.logo-title-menu-hidden {
 /* line 221, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
-  color: #fff;
+  color: white;
   font-size: 24px;
 }
 /* line 226, ../sass/partials/_global.scss */
@@ -465,7 +474,7 @@ ul.menu div.col-md-12 {
 .toboggan-unified #login-message {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 40px;
   font-size: 72px;
 }
@@ -731,7 +740,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 /* line 7, ../sass/partials/_speakers.scss */
 .camp-speakers h1 {
   font-family: chinese rocks;
-  color: #fff;
+  color: white;
   font-size: 72px;
   text-align: center;
 }
@@ -755,6 +764,11 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   display: block;
   z-index: 1;
   position: relative;
+}
+
+/* line 33, ../sass/partials/_speakers.scss */
+.tabbable {
+  min-height: 350px;
 }
 
 /* line 1, ../sass/partials/_sessions.scss */
@@ -798,7 +812,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   border: none !important;
   background: none !important;
   padding-top: 0;
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
 }
 /* line 33, ../sass/partials/_sessions.scss */
