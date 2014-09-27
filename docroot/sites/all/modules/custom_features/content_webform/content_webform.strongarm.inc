@@ -14,7 +14,7 @@ function content_webform_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_webform';
-  $strongarm->value = 'edit-webform';
+  $strongarm->value = 'edit-submission';
   $export['additional_settings__active_tab_webform'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -53,7 +53,7 @@ function content_webform_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_webform';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_webform'] = $strongarm;
 
   $strongarm = new stdClass();

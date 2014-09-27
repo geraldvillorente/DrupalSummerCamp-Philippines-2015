@@ -13,6 +13,13 @@ function content_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_page';
+  $strongarm->value = 'edit-diff';
+  $export['additional_settings__active_tab_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__page';
   $strongarm->value = array(
     'view_modes' => array(
@@ -39,13 +46,6 @@ function content_page_strongarm() {
     ),
   );
   $export['field_bundle_settings_node__page'] = $strongarm;
-  
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_page';
-  $strongarm->value = 'edit-webform';
-  $export['additional_settings__active_tab_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -76,7 +76,7 @@ function content_page_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_page';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
