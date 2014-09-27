@@ -12,6 +12,7 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
+
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
@@ -64,6 +65,7 @@ p {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-o-keyframes spin {
   /* line 11, ../sass/partials/_global.scss */
   from {
@@ -75,6 +77,7 @@ p {
     -o-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   /* line 16, ../sass/partials/_global.scss */
   from {
@@ -86,6 +89,7 @@ p {
     transform: rotate(360deg);
   }
 }
+
 /* line 20, ../sass/partials/_global.scss */
 .region-content .content .field-item {
   font-size: 22px;
@@ -768,7 +772,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 
 /* line 33, ../sass/partials/_speakers.scss */
 .tabbable {
-  min-height: 350px;
+  min-height: 410px;
 }
 
 /* line 1, ../sass/partials/_sessions.scss */
@@ -794,20 +798,24 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   text-align: center;
 }
 /* line 18, ../sass/partials/_sessions.scss */
+.camp-sessions .bootstrap-tabs-processed {
+  min-height: 2350px;
+}
+/* line 21, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs {
   border-bottom: 0px;
   margin: 50px 0px;
 }
-/* line 21, ../sass/partials/_sessions.scss */
+/* line 24, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li {
   width: 248px;
   height: 84px;
 }
-/* line 24, ../sass/partials/_sessions.scss */
+/* line 27, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li:nth-child(1) {
   margin-left: 205px;
 }
-/* line 27, ../sass/partials/_sessions.scss */
+/* line 30, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li a {
   border: none !important;
   background: none !important;
@@ -815,38 +823,38 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   color: white;
   font-family: "chinese rocks", sans-serif;
 }
-/* line 33, ../sass/partials/_sessions.scss */
+/* line 36, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li a span.tab-title {
   font-size: 58px;
   float: left;
 }
-/* line 37, ../sass/partials/_sessions.scss */
+/* line 40, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li a span.tab-left-first {
   font-size: 30px;
   float: right;
   line-height: 17px;
   margin-top: 24px;
 }
-/* line 43, ../sass/partials/_sessions.scss */
+/* line 46, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li a span.tab-left-second {
   font-size: 20px;
   float: right;
 }
-/* line 49, ../sass/partials/_sessions.scss */
+/* line 52, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li.active {
   background: url("../images/tab-active.png") no-repeat;
 }
-/* line 51, ../sass/partials/_sessions.scss */
+/* line 54, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li.active a {
   color: #f0c419;
 }
-/* line 54, ../sass/partials/_sessions.scss */
+/* line 57, ../sass/partials/_sessions.scss */
 .camp-sessions ul.nav-tabs li.active a:hover {
   background-color: transparent;
   padding-top: 0;
   color: #f0c419;
 }
-/* line 61, ../sass/partials/_sessions.scss */
+/* line 64, ../sass/partials/_sessions.scss */
 .camp-sessions::after {
   background: url("../images/blue-wave.png") no-repeat 0 20px;
   content: "";
@@ -1069,7 +1077,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   .above-the-fold {
     height: 1520px;
   }
-  /* line 138, ../sass/partials/_responsive.scss */
+  /* line 140, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -1086,7 +1094,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
     font-size: 205px !important;
     line-height: 115px;
   }
-  /* line 152, ../sass/partials/_responsive.scss */
+  /* line 153, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;
