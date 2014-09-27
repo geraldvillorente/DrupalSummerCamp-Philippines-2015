@@ -57,6 +57,22 @@ ul.navbar-nav {
     background-color: $logo-color-yellow;
   }
 }
+.fb-and-twitter-button {
+  text-align: center;
+}
+
+.fb-like {
+  text-align: center;
+  margin-top: 35px;
+  margin-left: -105px;
+  }
+.twitter-share-button {
+  position: absolute;
+  margin-top: -19px;
+  margin-left: 30px;
+}
+
+
 
 .register-container {
   background-color: blue;
@@ -248,6 +264,12 @@ ul.menu {
   }
 }
 
+.view {
+  .view-header {
+    font-size: 22px;
+  }
+}
+
 .col-md-3 {
   margin-top: 55px;
   .img-speaker {
@@ -322,6 +344,13 @@ ul.menu {
 }
 
 .toboggan-unified {
+  #login-message {
+    font-family: $font-logo;
+    text-align: center;
+    color: $logo-color-white;
+    margin-top: 40px;
+    font-size: $main-title-font-size;
+  }
   #login-links {
     min-height: 100px;
     width: 500px;

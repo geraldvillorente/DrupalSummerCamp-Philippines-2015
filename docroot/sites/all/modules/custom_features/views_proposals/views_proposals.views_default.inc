@@ -162,7 +162,6 @@ function views_proposals_views_default_views() {
   /* Display: Proposals */
   $handler = $view->new_display('page', 'Proposals', 'page');
   $handler->display->display_options['path'] = 'proposals';
-  $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Proposals';
   $handler->display->display_options['menu']['weight'] = '4';
   $handler->display->display_options['menu']['name'] = 'main-menu';
@@ -440,7 +439,7 @@ function views_proposals_views_default_views() {
   $handler->display->display_options['fields']['field_user_company']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_user_company']['element_class'] = 'speaker-short-bio';
   $handler->display->display_options['fields']['field_user_company']['element_label_colon'] = FALSE;
-  /* Field: User: Position */
+  /* Field: User: Profession */
   $handler->display->display_options['fields']['field_user_position']['id'] = 'field_user_position';
   $handler->display->display_options['fields']['field_user_position']['table'] = 'field_data_field_user_position';
   $handler->display->display_options['fields']['field_user_position']['field'] = 'field_user_position';
