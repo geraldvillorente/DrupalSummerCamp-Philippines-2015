@@ -34,7 +34,6 @@ dependencies[] = metatag
 dependencies[] = metatag_views
 dependencies[] = metatag_opengraph
 dependencies[] = module_filter
-dependencies[] = mollom
 dependencies[] = quicktabs
 dependencies[] = path
 dependencies[] = pathauto
