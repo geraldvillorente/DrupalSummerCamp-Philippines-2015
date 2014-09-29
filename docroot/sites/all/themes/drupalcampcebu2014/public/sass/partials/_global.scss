@@ -240,9 +240,10 @@ ul.menu {
       text-decoration: none;
       font-family: $font-logo;
       font-size: 24px;
-      padding: 25px;
+      padding: 25px 10px;
       padding-top: 4px;
       padding-left: 10px;
+      margin-right: 15px;
     }
     a:hover {
       background: url('../images/register-tab.png') no-repeat;
