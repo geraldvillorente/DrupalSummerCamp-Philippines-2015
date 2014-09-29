@@ -1,30 +1,25 @@
 <?php
 /**
  * @file
- * context_sitewide.context.inc
+ * context_sponsors.context.inc
  */
 
 /**
  * Implements hook_context_default_contexts().
  */
-function context_sitewide_context_default_contexts() {
+function context_sponsors_context_default_contexts() {
   $export = array();
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'sitewide';
-  $context->description = 'This is for the entire site\'s general layout';
+  $context->name = 'sponsors';
+  $context->description = 'This is for the sponsors layout.';
   $context->tag = '';
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        '~sponsors' => '~sponsors',
-      ),
-    ),
-    'sitewide' => array(
-      'values' => array(
-        1 => 1,
+        'sponsors' => 'sponsors',
       ),
     ),
   );
@@ -37,21 +32,21 @@ function context_sitewide_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
-        'views-sponsors-gold_block' => array(
+        'views-sponsors-gold_block_2' => array(
           'module' => 'views',
-          'delta' => 'sponsors-gold_block',
+          'delta' => 'sponsors-gold_block_2',
           'region' => 'grey-region',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
   );
-  $context->condition_mode = 1;
+  $context->condition_mode = 0;
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('This is for the entire site\'s general layout');
-  $export['sitewide'] = $context;
+  t('This is for the sponsors layout.');
+  $export['sponsors'] = $context;
 
   return $export;
 }

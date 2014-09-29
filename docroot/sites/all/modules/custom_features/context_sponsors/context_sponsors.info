@@ -1,0 +1,10 @@
+name = Context Sponsors
+description = This is for the sponsors page layout
+core = 7.x
+package = Context
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = sponsors
+features[ctools][] = context:context:3
+features[features_api][] = api:2
