@@ -411,6 +411,47 @@ ul.menu {
   }
 }
 
+.profile {
+  text-align: center;
+  color: #fff;
+  .field-type-image {
+    width: 330px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 200px;
+    margin: 0 auto 30px;
+    clear: both;
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 200px;
+      margin: 15px;
+    }
+  }
+  .field-name-field-user-first-name {
+    margin-right: 15px;
+  }
+  .field-name-field-user-first-name, .field-name-field-user-last-name {
+    display: inline;
+    .field-items {
+      display: inline;
+      .field-item {
+        display: inline;
+        font-family: $font-logo;
+        font-size: 72px;
+      }
+    }
+  }
+  .field-name-field-user-position, .field-name-field-user-company {
+    .field-items {
+      .field-item {
+        font-size: 50px;
+        line-height: 50px
+      }
+    }
+  }
+}
+
 .camp-footer {
   background-color: #1d2734;
 }

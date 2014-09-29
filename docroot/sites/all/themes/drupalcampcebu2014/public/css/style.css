@@ -534,6 +534,51 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 }
 
 /* line 414, ../sass/partials/_global.scss */
+.profile {
+  text-align: center;
+  color: #fff;
+}
+/* line 417, ../sass/partials/_global.scss */
+.profile .field-type-image {
+  width: 330px;
+  height: 330px;
+  background-color: #fff;
+  border-radius: 200px;
+  margin: 0 auto 30px;
+  clear: both;
+}
+/* line 424, ../sass/partials/_global.scss */
+.profile .field-type-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  margin: 15px;
+}
+/* line 431, ../sass/partials/_global.scss */
+.profile .field-name-field-user-first-name {
+  margin-right: 15px;
+}
+/* line 434, ../sass/partials/_global.scss */
+.profile .field-name-field-user-first-name, .profile .field-name-field-user-last-name {
+  display: inline;
+}
+/* line 436, ../sass/partials/_global.scss */
+.profile .field-name-field-user-first-name .field-items, .profile .field-name-field-user-last-name .field-items {
+  display: inline;
+}
+/* line 438, ../sass/partials/_global.scss */
+.profile .field-name-field-user-first-name .field-items .field-item, .profile .field-name-field-user-last-name .field-items .field-item {
+  display: inline;
+  font-family: "chinese rocks", sans-serif;
+  font-size: 72px;
+}
+/* line 447, ../sass/partials/_global.scss */
+.profile .field-name-field-user-position .field-items .field-item, .profile .field-name-field-user-company .field-items .field-item {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+/* line 455, ../sass/partials/_global.scss */
 .camp-footer {
   background-color: #1d2734;
 }
@@ -1059,7 +1104,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 @media (max-width: 768px) {
   /* line 136, ../sass/partials/_responsive.scss */
   .above-the-fold {
-    height: 1520px;
+    height: 1620px;
   }
   /* line 138, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
@@ -1146,6 +1191,29 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   .speaker-info .img-speaker {
     display: block;
     margin: auto !important;
+  }
+
+  /* line 220, ../sass/partials/_responsive.scss */
+  .camp-venue .container .row .col-md-12 .venue-info {
+    background: url("../images/venue-info-bg.png") no-repeat;
+    width: 90%;
+    max-width: 485px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    height: auto;
+  }
+  /* line 229, ../sass/partials/_responsive.scss */
+  .camp-venue .container .row .col-md-12 .venue-address {
+    font-family: 'SourceSansPro';
+    margin: 10px 40px;
+    color: #4F4F4F;
+    font-size: 18px;
+  }
+
+  /* line 239, ../sass/partials/_responsive.scss */
+  .view-header {
+    padding: 0 20px;
   }
 }
 /*******************************************************************************
