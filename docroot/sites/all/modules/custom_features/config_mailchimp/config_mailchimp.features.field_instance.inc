@@ -15,12 +15,7 @@ function config_mailchimp_field_default_field_instances() {
     'bundle' => 'user',
     'default_value' => array(
       0 => array(
-        'subscribe' => 0,
-        'interest_groups' => array(
-          9913 => array(
-            'Drupal Cebu Group' => 0,
-          ),
-        ),
+        'subscribe' => 1,
       ),
     ),
     'deleted' => 0,
@@ -28,8 +23,12 @@ function config_mailchimp_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'mailchimp_lists',
+        'settings' => array(
+          'interest_groups' => array(),
+          'show_interest_groups' => FALSE,
+        ),
+        'type' => 'mailchimp_lists_subscribe_default',
         'weight' => 7,
       ),
     ),
@@ -40,7 +39,7 @@ function config_mailchimp_field_default_field_instances() {
     'settings' => array(
       'interest_groups_title' => 'Interest Groups',
       'mergefields' => array(
-        'EMAIL' => 'field_user_email',
+        'EMAIL' => 'mail',
         'FNAME' => 'field_user_first_name',
         'LNAME' => 'field_user_last_name',
       ),
@@ -50,14 +49,14 @@ function config_mailchimp_field_default_field_instances() {
       ),
       'show_interest_groups' => 0,
       'unsubscribe_on_delete' => 1,
-      'user_register_form' => 0,
+      'user_register_form' => 1,
     ),
     'widget' => array(
       'active' => 0,
       'module' => 'mailchimp_lists',
       'settings' => array(),
       'type' => 'mailchimp_lists_select',
-      'weight' => 9,
+      'weight' => 43,
     ),
   );
 

@@ -112,7 +112,7 @@ function config_user_profile_field_group_info() {
     'label' => 'MailChimp Subscription',
     'weight' => '4',
     'children' => array(
-      0 => 'field_user_email',
+      0 => 'field_user_mailchimp',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
