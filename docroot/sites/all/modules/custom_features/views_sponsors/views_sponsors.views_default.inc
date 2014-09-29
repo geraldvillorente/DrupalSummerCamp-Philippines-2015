@@ -129,7 +129,7 @@ function views_sponsors_views_default_views() {
 <li>Promote and advertise your company</li>
 <li>Show your commitment to Drupal and to the open source community</li>
 </ul>
-<p class="speaker-announcement">If you would like to reserve a sponsorship spot, please contact jinky@drupalcampcebu.com or contact +639152300076.</p>';
+<p class="speaker-announcement">If you would like to reserve a sponsorship spot, please contact drupalcampcebu@gmail.com or contact Jinky on +639152300076.</p>';
   $handler->display->display_options['header']['area_1']['format'] = 'full_html';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';

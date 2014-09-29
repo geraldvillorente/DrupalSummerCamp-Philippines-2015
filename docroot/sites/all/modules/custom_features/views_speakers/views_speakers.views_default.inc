@@ -42,7 +42,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h6 class="speaker-description">Our speakers are international thinkers and doers from business, academia and activism, each bringing their view of the challenges and opportunities available to us.</h6>
+  $handler->display->display_options['header']['area']['content'] = '<h6 class="speaker-description">Our speakers are international thinkers and doers from business and academia, each bringing their view of the challenges and opportunities available to us.</h6>
 <p class="speaker-announcement">More speakers to be announced over this coming week.</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Relationship: Entity Reference: Referencing entity */
@@ -152,7 +152,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = '<h6 class="speaker-description">Be part of the group of international thinkers and doers from business, academia and activism.</h6>
+  $handler->display->display_options['empty']['area']['content'] = '<h6 class="speaker-description">Be part of the group of international thinkers and doers from business and academia.</h6>
 <p class="speaker-announcement">Share your view of the challenges and opportunities available to us by <a href="/node/add/session">submitting a proposal</a>.</p>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   $handler->display->display_options['path'] = 'speakers';
@@ -427,7 +427,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_user_company']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_user_company']['element_class'] = 'speaker-short-bio';
   $handler->display->display_options['fields']['field_user_company']['element_label_colon'] = FALSE;
-  /* Field: User: Position */
+  /* Field: User: Profession */
   $handler->display->display_options['fields']['field_user_position']['id'] = 'field_user_position';
   $handler->display->display_options['fields']['field_user_position']['table'] = 'field_data_field_user_position';
   $handler->display->display_options['fields']['field_user_position']['field'] = 'field_user_position';

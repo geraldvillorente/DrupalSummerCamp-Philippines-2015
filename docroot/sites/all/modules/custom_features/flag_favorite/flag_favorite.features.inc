@@ -36,11 +36,11 @@ function flag_favorite_flag_default_flags() {
     'access_author' => '',
     'show_contextual_link' => FALSE,
     'i18n' => 0,
-    'api_version' => 3,
     'module' => 'flag_favorite',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   return $flags;
 
