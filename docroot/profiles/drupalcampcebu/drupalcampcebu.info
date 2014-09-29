@@ -67,6 +67,7 @@ dependencies[] = content_session
 dependencies[] = content_sponsor
 dependencies[] = content_webform
 dependencies[] = context_sitewide
+dependencies[] = context_sponsors
 dependencies[] = context_homepage
 dependencies[] = flag_favorite
 dependencies[] = flag_partner
