@@ -240,9 +240,10 @@ ul.menu {
       text-decoration: none;
       font-family: $font-logo;
       font-size: 24px;
-      padding: 25px;
+      padding: 25px 10px;
       padding-top: 4px;
       padding-left: 10px;
+      margin-right: 15px;
     }
     a:hover {
       background: url('../images/register-tab.png') no-repeat;
@@ -407,6 +408,47 @@ ul.menu {
   .btn.btn-danger {
     float: none;
     margin-top: 0;
+  }
+}
+
+.profile {
+  text-align: center;
+  color: #fff;
+  .field-type-image {
+    width: 330px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 200px;
+    margin: 0 auto 30px;
+    clear: both;
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 200px;
+      margin: 15px;
+    }
+  }
+  .field-name-field-user-first-name {
+    margin-right: 15px;
+  }
+  .field-name-field-user-first-name, .field-name-field-user-last-name {
+    display: inline;
+    .field-items {
+      display: inline;
+      .field-item {
+        display: inline;
+        font-family: $font-logo;
+        font-size: 72px;
+      }
+    }
+  }
+  .field-name-field-user-position, .field-name-field-user-company {
+    .field-items {
+      .field-item {
+        font-size: 50px;
+        line-height: 50px
+      }
+    }
   }
 }
 

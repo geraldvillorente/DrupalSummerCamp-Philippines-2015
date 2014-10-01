@@ -134,7 +134,7 @@
 
 @media (max-width: 768px) {
   .above-the-fold {
-    height: 1520px;
+    height: 1620px;
     .logo-container,
     .drupalcamp-title,
     .venue-container {
@@ -212,5 +212,31 @@
       display: block;
       margin: auto !important;
     }
+  }
+  .camp-venue {
+    .container {
+      .row {
+        .col-md-12 {
+          .venue-info {
+            background: url("../images/venue-info-bg.png") no-repeat;
+            width: 90%;
+            max-width: 485px;
+            position: absolute;
+            top: 75px;
+            left: 20px;
+            height: auto;
+          }
+          .venue-address {
+            font-family: 'SourceSansPro';
+            margin: 10px 40px;
+            color: #4F4F4F;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .view-header {
+    padding: 0 20px;
   }
 }
