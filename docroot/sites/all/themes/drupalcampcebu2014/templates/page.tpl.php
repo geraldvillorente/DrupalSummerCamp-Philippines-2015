@@ -175,46 +175,45 @@ else {
     <div class="row">
       <div class="col-md-12 drupalcamp-speakers">
         <?php if (!empty($title)): ?>
-          
-            <?php 
-            // print $title; 
-
-            if (isset($cebuano_title_field)) {
-              print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
-            }
-            else {
-              print '<h1 class="page-header">' . $title . '</h1>';
-            }
-
-            ?>
-          <?php 
-            if (isset($cebuano_title_field)) {
-              print '<h2 class="english-title">' . $title . '</h2>';
-            }
-          ?>
+        <?php 
+          if (isset($cebuano_title_field)) {
+            print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
+          }
+          else {
+            print '<h1 class="page-header">' . $title . '</h1>';
+          }
+        ?>
+        <?php 
+          if (isset($cebuano_title_field)) {
+            print '<h2 class="english-title">' . $title . '</h2>';
+          }
+        ?>
         <?php endif; ?>
-<!--        <h3>Speakers</h3>-->
         <?php print $messages; ?>
         <?php if (!empty($tabs)): ?>
-          <?php print render($tabs); ?>
+        <?php print render($tabs); ?>
         <?php endif; ?>
         <?php print render($page['content']); ?>
         <?php if (!empty($page['yellow-region'])): ?>
-          <?php print render($page['yellow-region']); ?>
+        <?php print render($page['yellow-region']); ?>
         <?php endif; ?>
-      </div>
-      <div class="col-md-12 fb-and-twitter-button">
-      <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>" 
-        data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
-      </div>
-        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
     </div>
   </div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 fb-and-twitter-button">
+        <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>" 
+        data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+        </div>
+        <div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="DrupalCampCebu" data-hashtags="DrupalCampCebu">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <?php if (!empty($page['blue-region'])): ?>
