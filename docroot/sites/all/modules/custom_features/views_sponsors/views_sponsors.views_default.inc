@@ -184,7 +184,8 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area_1']['table'] = 'views';
   $handler->display->display_options['header']['area_1']['field'] = 'area';
   $handler->display->display_options['header']['area_1']['empty'] = TRUE;
-  $handler->display->display_options['header']['area_1']['content'] = '<h6>Check out some of the people that made this happen. Interested in <a href="/sponsors">becoming a sponsor</a>?</h6>';
+  $handler->display->display_options['header']['area_1']['content'] = '<h6>Check out some of the people that made this happen. Interested in <a href="/sponsors">becoming a sponsor</a>?</h6>
+<p class="sponsor-category">Gold</p>';
   $handler->display->display_options['header']['area_1']['format'] = 'full_html';
   $handler->display->display_options['block_description'] = 'Sponsor Block';
 
