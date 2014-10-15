@@ -84,7 +84,26 @@
       max-width: 55%;
     }
   }
+  #mc_embed_signup {
+  h2 {
+    color: #fff;
+    margin-left: -30px;
+    font-size: 3.4em;
+    margin-top: 55px;
+    }
+    .indicates-required {
+      color: #858585;
+    }
+    .mc-field-group {
+      color: #858585;
+    }
+    #mce-success-response {
+      color: #fff;
+      margin-top: -15px;
+    }
+  }
 }
+
 
 .page-sponsors {
   .content {

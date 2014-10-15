@@ -12,11 +12,12 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.woff");
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
+
 /* line 32, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 40px;
 }
 
@@ -37,7 +38,7 @@ h4 {
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
   font-size: 29px;
-  color: #fff;
+  color: white;
 }
 
 /* line 56, ../sass/partials/_base.scss */
@@ -54,29 +55,41 @@ p {
  * _global.scss
  ******************************************************************************/
 @-webkit-keyframes spin {
+  /* line 6, ../sass/partials/_global.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
+
+  /* line 7, ../sass/partials/_global.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-o-keyframes spin {
+  /* line 11, ../sass/partials/_global.scss */
   from {
     -o-transform: rotate(0deg);
   }
+
+  /* line 12, ../sass/partials/_global.scss */
   to {
     -o-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
+  /* line 16, ../sass/partials/_global.scss */
   from {
     transform: rotate(0deg);
   }
+
+  /* line 17, ../sass/partials/_global.scss */
   to {
     transform: rotate(360deg);
   }
 }
+
 /* line 20, ../sass/partials/_global.scss */
 .region-content .content .field-item {
   font-size: 22px;
@@ -116,7 +129,7 @@ ul.navbar-nav {
 }
 /* line 49, ../sass/partials/_global.scss */
 .camp-speakers .nav-tabs li a {
-  color: #fff;
+  color: white;
 }
 /* line 53, ../sass/partials/_global.scss */
 .camp-speakers .nav-tabs .active a {
@@ -238,12 +251,12 @@ ul.navbar-nav {
 }
 /* line 147, ../sass/partials/_global.scss */
 .above-the-fold .col-md-3 .book-now-tab a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 /* line 151, ../sass/partials/_global.scss */
 .above-the-fold .col-md-3 .book-now-tab p.book-now-tab-text {
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
   font-size: 26px;
   transform: rotate(-16deg);
@@ -252,7 +265,7 @@ ul.navbar-nav {
 }
 /* line 159, ../sass/partials/_global.scss */
 .above-the-fold .col-md-3 .book-now-tab p.book-now-tab-price {
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
   transform: rotate(-15deg);
   font-size: 75px;
@@ -329,7 +342,7 @@ ul.menu li div.logo-title-menu-hidden {
 /* line 221, ../sass/partials/_global.scss */
 ul.menu li span.title-1st {
   font-family: "chinese rocks", sans-serif;
-  color: #fff;
+  color: white;
   font-size: 24px;
 }
 /* line 226, ../sass/partials/_global.scss */
@@ -466,7 +479,7 @@ ul.menu div.col-md-12 {
 .toboggan-unified #login-message {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
-  color: #fff;
+  color: white;
   margin-top: 40px;
   font-size: 72px;
 }
@@ -672,41 +685,61 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 .camp-sponsors .saturday-sponsors img {
   max-width: 55%;
 }
+/* line 88, ../sass/partials/_sponsors.scss */
+.camp-sponsors #mc_embed_signup h2 {
+  color: #fff;
+  margin-left: -30px;
+  font-size: 3.4em;
+  margin-top: 55px;
+}
+/* line 94, ../sass/partials/_sponsors.scss */
+.camp-sponsors #mc_embed_signup .indicates-required {
+  color: #858585;
+}
+/* line 97, ../sass/partials/_sponsors.scss */
+.camp-sponsors #mc_embed_signup .mc-field-group {
+  color: #858585;
+}
+/* line 100, ../sass/partials/_sponsors.scss */
+.camp-sponsors #mc_embed_signup #mce-success-response {
+  color: #fff;
+  margin-top: -15px;
+}
 
-/* line 90, ../sass/partials/_sponsors.scss */
+/* line 109, ../sass/partials/_sponsors.scss */
 .page-sponsors .content {
   margin-top: 50px;
 }
-/* line 92, ../sass/partials/_sponsors.scss */
+/* line 111, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 {
   margin-bottom: 50px;
 }
-/* line 94, ../sass/partials/_sponsors.scss */
+/* line 113, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 h6 {
   color: #f1c419;
   font-size: 22px;
   text-align: center;
 }
-/* line 98, ../sass/partials/_sponsors.scss */
+/* line 117, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 h6 a {
   color: #fff;
 }
-/* line 101, ../sass/partials/_sponsors.scss */
+/* line 120, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 h6 a:hover {
   color: #f1c419;
   text-decoration: underline;
 }
-/* line 107, ../sass/partials/_sponsors.scss */
+/* line 126, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row {
   font-size: 24px;
   text-align: left;
 }
-/* line 110, ../sass/partials/_sponsors.scss */
+/* line 129, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row p {
   font-size: 24px;
   text-align: left;
 }
-/* line 113, ../sass/partials/_sponsors.scss */
+/* line 132, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row p.sponsor-category {
   color: #fff;
   font-size: 48px;
@@ -714,51 +747,51 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   margin: 50px 0 20px;
   font-family: "chinese rocks", sans-serif;
 }
-/* line 126, ../sass/partials/_sponsors.scss */
+/* line 145, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.gold-sponsors img {
   margin: 15px auto;
   display: block;
   max-width: 305px;
 }
-/* line 133, ../sass/partials/_sponsors.scss */
+/* line 152, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.silver-sponsors .col-md-3 img {
   margin: 15px auto;
   display: block;
   max-width: 210px;
 }
-/* line 141, ../sass/partials/_sponsors.scss */
+/* line 160, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.bronze-sponsors .col-md-2 img {
   margin: 15px auto;
   display: block;
   max-width: 140px;
 }
-/* line 147, ../sass/partials/_sponsors.scss */
+/* line 166, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.partners {
   clear: both;
 }
-/* line 151, ../sass/partials/_sponsors.scss */
+/* line 170, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .food-sponsors {
   text-align: center;
 }
-/* line 153, ../sass/partials/_sponsors.scss */
+/* line 172, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .food-sponsors img {
   max-width: 55%;
 }
-/* line 157, ../sass/partials/_sponsors.scss */
+/* line 176, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .coffee-sponsors {
   text-align: center;
 }
-/* line 159, ../sass/partials/_sponsors.scss */
+/* line 178, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .coffee-sponsors img {
   max-width: 55%;
 }
-/* line 163, ../sass/partials/_sponsors.scss */
+/* line 182, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .saturday-sponsors {
   text-align: center;
   margin-bottom: 75px;
   height: 1px;
 }
-/* line 167, ../sass/partials/_sponsors.scss */
+/* line 186, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .saturday-sponsors img {
   max-width: 55%;
 }
@@ -777,7 +810,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 /* line 7, ../sass/partials/_speakers.scss */
 .camp-speakers h1 {
   font-family: chinese rocks;
-  color: #fff;
+  color: white;
   font-size: 72px;
   text-align: center;
 }
@@ -849,7 +882,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   border: none !important;
   background: none !important;
   padding-top: 0;
-  color: #fff;
+  color: white;
   font-family: "chinese rocks", sans-serif;
 }
 /* line 33, ../sass/partials/_sessions.scss */
@@ -1106,7 +1139,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   .above-the-fold {
     height: 1620px;
   }
-  /* line 138, ../sass/partials/_responsive.scss */
+  /* line 140, ../sass/partials/_responsive.scss */
   .above-the-fold .logo-container,
   .above-the-fold .drupalcamp-title,
   .above-the-fold .venue-container {
@@ -1123,7 +1156,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
     font-size: 205px !important;
     line-height: 115px;
   }
-  /* line 152, ../sass/partials/_responsive.scss */
+  /* line 153, ../sass/partials/_responsive.scss */
   .above-the-fold .col-sm-5,
   .above-the-fold .col-sm-6 {
     width: 90%;
