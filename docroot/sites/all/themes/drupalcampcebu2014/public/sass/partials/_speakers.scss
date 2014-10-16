@@ -29,7 +29,19 @@
     z-index: 1;
     position: relative;
   }
+  .view-footer {
+    p {
+      text-align: center;
+      font-size: 24px;
+      margin-left: -10px;
+    }
+  }
 }
+
 .tabbable {
   min-height: 410px;
+}
+
+.speaker-info {
+  height: 500px;
 }
