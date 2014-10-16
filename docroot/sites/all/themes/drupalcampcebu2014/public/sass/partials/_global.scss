@@ -59,6 +59,7 @@ ul.navbar-nav {
 }
 .fb-and-twitter-button {
   text-align: center;
+  clear: both;
 }
 
 .fb-like {
@@ -454,4 +455,11 @@ ul.menu {
 
 .camp-footer {
   background-color: #1d2734;
+}
+
+.view-registration {
+  .view-footer {
+    padding-top: 10px;
+    clear: both;
+  }
 }
