@@ -139,7 +139,7 @@ else {
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="nav-container">
         <div class="nav">
-          <div class="camp-menu">
+          <div class="camp-menu" id="main-menu">
             <div class="row">
               <div class="col-md-12">
                 <?php if (!empty($primary_nav)): ?>

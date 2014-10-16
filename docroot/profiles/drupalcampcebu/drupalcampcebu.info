@@ -37,6 +37,7 @@ dependencies[] = module_filter
 dependencies[] = quicktabs
 dependencies[] = path
 dependencies[] = pathauto
+dependencies[] = responsive_menus
 dependencies[] = secure_permissions
 dependencies[] = strongarm
 dependencies[] = token
