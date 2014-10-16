@@ -30,6 +30,9 @@
       width: 26%;
       background-size: 68% 87%;
       height: 300px;
+      .book-now-tab {
+        margin-left: 108px;
+      }
     }
     .header-intro-text {
       margin-bottom: -25px;
@@ -73,6 +76,13 @@
 @media (max-width: 992px) and (min-width: 768px) {
   .above-the-fold {
     height: 1020px;
+    .container {
+      .camp-logo {
+        .row {
+          margin-right: -13px !important;
+        }
+      }
+    }
     .logo-container {
       img {
         width: 95%;
@@ -238,5 +248,30 @@
   }
   .view-header {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 455px) {
+  .above-the-fold {
+    .header-intro-text p {
+      font-size: 18px;
+    }
+    .col-md-4 {
+      .logo-whale {
+        width: 335px;
+        height: 311px;
+      }
+      .logo-sun {
+        width: 328px;
+        height: 328px;
+      }
+    }
+    .drupalcamp-title span {
+      font-size: 72px !important;
+      &.cebu {
+        font-size: 188px !important;
+        line-height: 115px;
+      }
+    }
   }
 }
