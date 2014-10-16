@@ -34,7 +34,7 @@ function config_mailchimp_field_default_field_instances() {
     ),
     'entity_type' => 'user',
     'field_name' => 'field_user_mailchimp',
-    'label' => 'Mailchimp',
+    'label' => 'Join the Drupal Cebu Newsletter',
     'required' => 0,
     'settings' => array(
       'interest_groups_title' => 'Interest Groups',
@@ -56,13 +56,13 @@ function config_mailchimp_field_default_field_instances() {
       'module' => 'mailchimp_lists',
       'settings' => array(),
       'type' => 'mailchimp_lists_select',
-      'weight' => 43,
+      'weight' => 5,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Mailchimp');
+  t('Join the Drupal Cebu Newsletter');
 
   return $field_instances;
 }
