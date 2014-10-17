@@ -16,3 +16,37 @@ function drupalcampcebu2014_helper_form_session_node_form_alter(&$form, &$form_s
     $form['field_speaker']['und']['#value'] = $user->uid;
   }
 }
+
+/**
+ * Implements hook_block_info();
+ */
+function drupalcampcebu2014_helper_block_info() {
+  $blocks = array();
+  $blocks['drupalcampcebu_hotel_booking'] = array(
+    'info' => t('Drupalcamp Cebu 2014 Hotel Booking'), 
+    'cache' => DRUPAL_CACHE_PER_USER,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function drupalcampcebu2014_helper_block_view($delta = '') {
+  switch ($delta) {
+    case 'drupalcampcebu_hotel_booking':
+      $block['content'] = drupalcampcebu2014_helper_hotel_block_content($delta);
+      break;
+  }
+  return $block;
+}
+
+/**
+ * 
+ */
+function drupalcampcebu2014_helper_hotel_block_content($delta) {
+  if ($delta == 'drupalcampcebu_hotel_booking') {
+    GLOBAL $user;
+    return '<p class="book-now-description">Interested in booking a room at Tune Hotel, Cebu City?<br>Click the link and we will do the rest (payment upon arrival). ' . flag_create_link('hotel', $user->uid) . '</p>';
+  }
+}
