@@ -210,9 +210,6 @@ function config_user_profile_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_user_email',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
     'foreign keys' => array(
       'format' => array(
         'columns' => array(

@@ -128,6 +128,8 @@ function views_proposals_views_default_views() {
   $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['relationship'] = 'reverse_field_speaker_node';
   $handler->display->display_options['fields']['field_body']['label'] = '';
+  $handler->display->display_options['fields']['field_body']['alter']['max_length'] = '200';
+  $handler->display->display_options['fields']['field_body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_body']['element_type'] = '0';
   $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = 'p';

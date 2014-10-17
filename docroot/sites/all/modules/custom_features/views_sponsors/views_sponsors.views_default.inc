@@ -636,6 +636,11 @@ function views_sponsors_views_default_views() {
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
+  /* Filter criterion: Content: Nid */
+  $handler->display->display_options['filters']['nid']['id'] = 'nid';
+  $handler->display->display_options['filters']['nid']['table'] = 'node';
+  $handler->display->display_options['filters']['nid']['field'] = 'nid';
+  $handler->display->display_options['filters']['nid']['value']['value'] = '9';
   $handler->display->display_options['displays'] = array(
     'gold_block' => 'gold_block',
     'gold_block_2' => 'gold_block_2',
@@ -748,16 +753,14 @@ function views_sponsors_views_default_views() {
   );
   $handler->display->display_options['attachment_position'] = 'after';
 
-  /* Display: Accommodation Partner */
-  $handler = $view->new_display('attachment', 'Accommodation Partner', 'accommodation');
+  /* Display: Partners */
+  $handler = $view->new_display('attachment', 'Partners', 'accommodation');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
-  $handler->display->display_options['css_class'] = 'row partners';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['css_class'] = 'row partners bronze-sponsors';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['style_options']['row_class'] = 'row coffee-sponsors';
+  $handler->display->display_options['style_options']['row_class'] = 'col-md-3';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -768,7 +771,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Accommodation Partner</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="sponsor-category">Partners</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Flags: partner */
@@ -836,6 +839,8 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
     16 => '16',
+    18 => '18',
+    17 => '17',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
@@ -845,6 +850,12 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '1';
+  /* Filter criterion: Content: Nid */
+  $handler->display->display_options['filters']['nid']['id'] = 'nid';
+  $handler->display->display_options['filters']['nid']['table'] = 'node';
+  $handler->display->display_options['filters']['nid']['field'] = 'nid';
+  $handler->display->display_options['filters']['nid']['operator'] = '!=';
+  $handler->display->display_options['filters']['nid']['value']['value'] = '9';
   $handler->display->display_options['displays'] = array(
     'gold_block_2' => 'gold_block_2',
     'default' => 0,
