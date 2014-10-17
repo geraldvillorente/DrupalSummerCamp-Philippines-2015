@@ -20,6 +20,7 @@ function context_hotel_context_default_contexts() {
     'path' => array(
       'values' => array(
         'recommended-accommodation' => 'recommended-accommodation',
+        'cheap-accommodation' => 'cheap-accommodation',
       ),
     ),
   );
