@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Flag hotel feature.
+ */
+
+include_once 'flag_hotel.features.inc';
