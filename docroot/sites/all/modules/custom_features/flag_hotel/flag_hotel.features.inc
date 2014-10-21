@@ -22,7 +22,7 @@ function flag_hotel_flag_default_flags() {
     'unflag_long' => '',
     'unflag_message' => '',
     'unflag_denied_text' => '',
-    'link_type' => 'toggle',
+    'link_type' => 'confirm',
     'weight' => 0,
     'show_in_links' => array(
       'full' => 'full',
@@ -35,11 +35,13 @@ function flag_hotel_flag_default_flags() {
     'show_contextual_link' => FALSE,
     'show_on_profile' => 1,
     'access_uid' => '',
-    'api_version' => 3,
+    'flag_confirmation' => 'Confirm your room booking at TUNE Hotel',
+    'unflag_confirmation' => 'Cancel your room booking at TUNE Hotel',
     'module' => 'flag_hotel',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   return $flags;
 
