@@ -18,6 +18,48 @@ function drupalcampcebu2014_helper_form_session_node_form_alter(&$form, &$form_s
 }
 
 /**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ *
+ * Theming the form for hotel flag.
+ */
+function drupalcampcebu2014_helper_form_flag_confirm_alter(&$form, &$form_state, $form_id) {
+  if (isset($form_state['build_info']['args'][0])) {
+    if ($form_state['build_info']['args'][0] == 'flag') {
+      $form['actions']['buttons'] = array(
+        '#type' => 'container',
+        '#prefix' => '<p>You are about to confirm a room at TUNE Hotel Cebu.</p>
+        <p>You will be added to a list which will be used by the hotel directly. To make your stay easier, we are coordinating directly 
+        with our accomodation partner TUNE Hotel Cebu.<br>
+        The payment upon arrival.</p>
+        <p>Please contact us if you have to cancel or if you change your mind.</p>',
+        '#attributes' => array(
+          'class' => array(
+              'hotel-confirm-button',
+            ),
+          ),
+        );
+    }
+    else {
+      $form['actions']['buttons'] = array(
+        '#type' => 'container',
+        '#prefix' => '<p>You are about to cancel your room at TUNE Hotel Cebu.</p>
+        <p>Please let us know if you change your mind. Send an email to drupalcebu@gmail.com 
+        and specify your username.</p>',
+        '#attributes' => array(
+          'class' => array(
+              'hotel-confirm-button',
+            ),
+          ),
+        );
+    }
+  }
+  $form['actions']['buttons']['submit'] = $form['actions']['submit'];
+  $form['actions']['buttons']['cancel'] = $form['actions']['cancel'];
+  unset($form['actions']['submit']);
+  unset($form['actions']['cancel']);
+}
+
+/**
  * Implements hook_block_info();
  */
 function drupalcampcebu2014_helper_block_info() {
