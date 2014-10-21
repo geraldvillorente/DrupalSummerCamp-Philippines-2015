@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Config Responsive Menus feature.
+ */
+
+include_once 'config_responsive_menus.features.inc';
