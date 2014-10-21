@@ -5,10 +5,10 @@
 }
 .camp-speakers {
   h1 {
-  font-family: chinese rocks;
-  color: $logo-color-white;
-  font-size: 72px;
-  text-align: center;
+    font-family: chinese rocks;
+    color: $logo-color-white;
+    font-size: 72px;
+    text-align: center;
   }
   background-color: #f1c419;
   h6.speaker-description {
@@ -35,6 +35,12 @@
       font-size: 24px;
       margin-left: -10px;
     }
+  }
+  .hotel-confirm-button {
+    margin-top: 40px;
+  }
+  h1.page-header {
+    margin-top: 50px;
   }
 }
 
