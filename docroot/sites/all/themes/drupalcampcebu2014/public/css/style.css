@@ -878,18 +878,26 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   font-size: 24px;
   margin-left: -10px;
 }
+/* line 39, ../sass/partials/_speakers.scss */
+.camp-speakers .hotel-confirm-button {
+  margin-top: 40px;
+}
+/* line 42, ../sass/partials/_speakers.scss */
+.camp-speakers h1.page-header {
+  margin-top: 50px;
+}
 
-/* line 41, ../sass/partials/_speakers.scss */
+/* line 47, ../sass/partials/_speakers.scss */
 .tabbable {
   min-height: 410px;
 }
 
-/* line 45, ../sass/partials/_speakers.scss */
+/* line 51, ../sass/partials/_speakers.scss */
 .speaker-info {
   height: 400px;
 }
 
-/* line 50, ../sass/partials/_speakers.scss */
+/* line 56, ../sass/partials/_speakers.scss */
 .page-registration .speaker-info,
 .page-registrants .speaker-info {
   height: 200px;
