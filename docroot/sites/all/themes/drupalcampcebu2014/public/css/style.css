@@ -889,8 +889,9 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   height: 400px;
 }
 
-/* line 49, ../sass/partials/_speakers.scss */
-.page-registration .speaker-info {
+/* line 50, ../sass/partials/_speakers.scss */
+.page-registration .speaker-info,
+.page-registrants .speaker-info {
   height: 200px;
 }
 
