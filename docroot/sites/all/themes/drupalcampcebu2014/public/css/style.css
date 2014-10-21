@@ -877,19 +877,20 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   text-align: center;
   font-size: 24px;
   margin-left: -10px;
+  text-align: center;
 }
 
-/* line 41, ../sass/partials/_speakers.scss */
+/* line 42, ../sass/partials/_speakers.scss */
 .tabbable {
   min-height: 410px;
 }
 
-/* line 45, ../sass/partials/_speakers.scss */
+/* line 46, ../sass/partials/_speakers.scss */
 .speaker-info {
   height: 400px;
 }
 
-/* line 50, ../sass/partials/_speakers.scss */
+/* line 51, ../sass/partials/_speakers.scss */
 .page-registration .speaker-info,
 .page-registrants .speaker-info {
   height: 200px;
