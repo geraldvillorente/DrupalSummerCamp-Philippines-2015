@@ -8,6 +8,7 @@ dependencies[] = field_group
 dependencies[] = image
 dependencies[] = list
 dependencies[] = mailchimp_lists
+dependencies[] = media_image_styles
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
