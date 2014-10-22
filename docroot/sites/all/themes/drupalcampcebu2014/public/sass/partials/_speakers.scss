@@ -43,6 +43,45 @@
   h1.page-header {
     margin-top: 50px;
   }
+  th.views-field-field-user-first-name {
+    padding-left: 220px;
+    width: 35%;
+  }
+  th.views-field-field-user-last-name {
+    width: 23%;
+  }
+  th.views-field {
+    border: none;
+    font-size: 20px;
+    padding-top: 40px;
+  }
+  tbody {
+    td.views-field-field-user-first-name {
+      padding-left: 220px;
+      width: 35%;
+    }
+    td.views-field {
+      font-size: 18px;
+    }
+  }
+  table {
+    thead {
+      tr {
+        th {
+          padding: 5px;
+        }
+      }
+    }
+  }
+  table {
+    tbody {
+      tr {
+        td {
+          padding: 5px;
+        }
+      }
+    }
+  }
 }
 
 .tabbable {
