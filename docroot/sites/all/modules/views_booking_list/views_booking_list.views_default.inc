@@ -61,10 +61,16 @@ function views_booking_list_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Relationship: Flags: hotel */
+  $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
+  $handler->display->display_options['relationships']['flag_content_rel']['table'] = 'users';
+  $handler->display->display_options['relationships']['flag_content_rel']['field'] = 'flag_content_rel';
+  $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'hotel';
   /* Field: User: First Name */
   $handler->display->display_options['fields']['field_user_first_name']['id'] = 'field_user_first_name';
   $handler->display->display_options['fields']['field_user_first_name']['table'] = 'field_data_field_user_first_name';
   $handler->display->display_options['fields']['field_user_first_name']['field'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['element_class'] = 'first-name';
   $handler->display->display_options['fields']['field_user_first_name']['element_label_colon'] = FALSE;
   /* Field: User: Last Name */
   $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
