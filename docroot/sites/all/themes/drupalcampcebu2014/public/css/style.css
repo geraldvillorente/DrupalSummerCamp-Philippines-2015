@@ -881,23 +881,24 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 /* line 39, ../sass/partials/_speakers.scss */
 .camp-speakers .hotel-confirm-button {
   margin-top: 40px;
+  text-align: center;
 }
-/* line 42, ../sass/partials/_speakers.scss */
+/* line 43, ../sass/partials/_speakers.scss */
 .camp-speakers h1.page-header {
   margin-top: 50px;
 }
 
-/* line 47, ../sass/partials/_speakers.scss */
+/* line 48, ../sass/partials/_speakers.scss */
 .tabbable {
   min-height: 410px;
 }
 
-/* line 51, ../sass/partials/_speakers.scss */
+/* line 52, ../sass/partials/_speakers.scss */
 .speaker-info {
   height: 400px;
 }
 
-/* line 56, ../sass/partials/_speakers.scss */
+/* line 57, ../sass/partials/_speakers.scss */
 .page-registration .speaker-info,
 .page-registrants .speaker-info {
   height: 200px;
