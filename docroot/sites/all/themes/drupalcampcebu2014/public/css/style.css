@@ -879,38 +879,32 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   margin-left: -10px;
   text-align: center;
 }
-/* line 39, ../sass/partials/_speakers.scss */
+/* line 40, ../sass/partials/_speakers.scss */
 .camp-speakers .hotel-confirm-button {
   margin-top: 40px;
 }
-/* line 42, ../sass/partials/_speakers.scss */
+/* line 43, ../sass/partials/_speakers.scss */
 .camp-speakers h1.page-header {
   margin-top: 50px;
 }
+/* line 46, ../sass/partials/_speakers.scss */
+.camp-speakers th.views-field {
+  border: none;
+  font-size: 20px;
+  padding-top: 40px;
+}
 
-<<<<<<< HEAD
-/* line 42, ../sass/partials/_speakers.scss */
-=======
-/* line 47, ../sass/partials/_speakers.scss */
->>>>>>> 6149afa7b7f337b8b2280294b41fe3062a5d4f0f
+/* line 53, ../sass/partials/_speakers.scss */
 .tabbable {
   min-height: 410px;
 }
 
-<<<<<<< HEAD
-/* line 46, ../sass/partials/_speakers.scss */
-=======
-/* line 51, ../sass/partials/_speakers.scss */
->>>>>>> 6149afa7b7f337b8b2280294b41fe3062a5d4f0f
+/* line 57, ../sass/partials/_speakers.scss */
 .speaker-info {
   height: 400px;
 }
 
-<<<<<<< HEAD
-/* line 51, ../sass/partials/_speakers.scss */
-=======
-/* line 56, ../sass/partials/_speakers.scss */
->>>>>>> 6149afa7b7f337b8b2280294b41fe3062a5d4f0f
+/* line 62, ../sass/partials/_speakers.scss */
 .page-registration .speaker-info,
 .page-registrants .speaker-info {
   height: 200px;
