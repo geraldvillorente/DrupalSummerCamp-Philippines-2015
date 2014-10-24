@@ -910,6 +910,20 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   height: 200px;
 }
 
+/* line 66, ../sass/partials/_speakers.scss */
+.views-field-title {
+  text-align: center;
+}
+/* line 68, ../sass/partials/_speakers.scss */
+.views-field-title a {
+  color: white;
+}
+/* line 71, ../sass/partials/_speakers.scss */
+.views-field-title a:hover {
+  color: #3c97d3;
+  text-decoration: none;
+}
+
 /* line 1, ../sass/partials/_sessions.scss */
 .camp-sessions {
   background-color: #0076b0;
