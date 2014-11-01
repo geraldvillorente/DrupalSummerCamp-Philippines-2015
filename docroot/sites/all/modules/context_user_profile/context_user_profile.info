@@ -1,0 +1,10 @@
+name = Context User Profile
+description = This is the session submitted displayed in user profile
+core = 7.x
+package = context
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+features[context][] = user-profile
+features[ctools][] = context:context:3
+features[features_api][] = api:2
