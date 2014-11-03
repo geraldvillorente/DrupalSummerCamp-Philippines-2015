@@ -641,25 +641,6 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   background: #333;
   padding-top: 25px;
   margin-top: 57px;
-  /*.food-sponsors {
-    text-align: center;
-    img{
-      max-width: 55%;
-    }
-  }
-  .coffee-sponsors {
-    text-align: center;
-    img {
-      max-width: 55%;
-    }
-  }
-  .saturday-sponsors {
-    text-align: center;
-    margin-bottom: 75px;
-    img {
-      max-width: 55%;
-    }
-  }*/
 }
 /* line 6, ../sass/partials/_sponsors.scss */
 .camp-sponsors::before {
@@ -716,69 +697,69 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   display: block;
   max-width: 140px;
 }
-/* line 87, ../sass/partials/_sponsors.scss */
+/* line 68, ../sass/partials/_sponsors.scss */
 .camp-sponsors .view-display-id-food {
   margin-top: 97px;
 }
-/* line 89, ../sass/partials/_sponsors.scss */
+/* line 70, ../sass/partials/_sponsors.scss */
 .camp-sponsors .view-display-id-food .field-content {
   margin-top: 26px;
 }
-/* line 94, ../sass/partials/_sponsors.scss */
+/* line 75, ../sass/partials/_sponsors.scss */
 .camp-sponsors #mc_embed_signup h2 {
   color: #fff;
   margin-left: -30px;
   font-size: 3.4em;
   margin-top: 55px;
 }
-/* line 100, ../sass/partials/_sponsors.scss */
+/* line 81, ../sass/partials/_sponsors.scss */
 .camp-sponsors #mc_embed_signup .indicates-required {
   color: #858585;
 }
-/* line 103, ../sass/partials/_sponsors.scss */
+/* line 84, ../sass/partials/_sponsors.scss */
 .camp-sponsors #mc_embed_signup .mc-field-group {
   color: #858585;
 }
-/* line 106, ../sass/partials/_sponsors.scss */
+/* line 87, ../sass/partials/_sponsors.scss */
 .camp-sponsors #mc_embed_signup #mce-success-response {
   color: #fff;
   margin-top: -15px;
 }
 
-/* line 115, ../sass/partials/_sponsors.scss */
+/* line 94, ../sass/partials/_sponsors.scss */
 .page-sponsors .content {
   margin-top: 50px;
 }
-/* line 117, ../sass/partials/_sponsors.scss */
+/* line 96, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 {
   margin-bottom: 50px;
 }
-/* line 119, ../sass/partials/_sponsors.scss */
+/* line 98, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 h6 {
   color: #f1c419;
   font-size: 22px;
   text-align: center;
 }
-/* line 123, ../sass/partials/_sponsors.scss */
+/* line 102, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 h6 a {
   color: #fff;
 }
-/* line 126, ../sass/partials/_sponsors.scss */
+/* line 105, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .col-md-12 h6 a:hover {
   color: #f1c419;
   text-decoration: underline;
 }
-/* line 132, ../sass/partials/_sponsors.scss */
+/* line 111, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row {
   font-size: 24px;
   text-align: left;
 }
-/* line 135, ../sass/partials/_sponsors.scss */
+/* line 114, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row p {
   font-size: 24px;
   text-align: left;
 }
-/* line 138, ../sass/partials/_sponsors.scss */
+/* line 117, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row p.sponsor-category {
   color: #fff;
   font-size: 48px;
@@ -786,29 +767,29 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   margin: 50px 0 20px;
   font-family: "chinese rocks", sans-serif;
 }
-/* line 146, ../sass/partials/_sponsors.scss */
+/* line 125, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row .col-md-6 {
   margin-top: 200px;
 }
-/* line 154, ../sass/partials/_sponsors.scss */
+/* line 133, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.gold-sponsors img {
   margin: 15px auto;
   display: block;
   max-width: 305px;
 }
-/* line 161, ../sass/partials/_sponsors.scss */
+/* line 140, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.silver-sponsors .col-md-3 img {
   margin: 15px auto;
   display: block;
   max-width: 210px;
 }
-/* line 169, ../sass/partials/_sponsors.scss */
+/* line 148, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.bronze-sponsors .col-md-2 img {
   margin: 15px auto;
   display: block;
   max-width: 140px;
 }
-/* line 175, ../sass/partials/_sponsors.scss */
+/* line 154, ../sass/partials/_sponsors.scss */
 .page-sponsors .content .row.partners {
   clear: both;
 }
