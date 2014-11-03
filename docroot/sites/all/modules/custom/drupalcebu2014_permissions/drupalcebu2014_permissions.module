@@ -46,6 +46,7 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'view own field_time',
     ),
     'authenticated user' => array(
+      'access checkout',
       'access content',
       'access user profiles',
       'create session content',

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Context camp store registration feature.
+ */
+
+include_once 'context_camp_store_registration.features.inc';
