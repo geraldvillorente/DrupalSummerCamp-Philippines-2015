@@ -12,7 +12,7 @@ function content_product_uuid_uuid_features_default_content() {
 
   $nodes[] = array(
   'uid' => 1,
-  'title' => 'Early Drupalcamp Professional Ticket',
+  'title' => 'Early Drupalcamp Professional Ticket P250',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -43,7 +43,7 @@ function content_product_uuid_uuid_features_default_content() {
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => 'Early Drupalcamp Student Ticket',
+  'title' => 'Early Drupalcamp Student Ticket P150',
   'log' => '',
   'status' => 1,
   'comment' => 0,
@@ -74,7 +74,7 @@ function content_product_uuid_uuid_features_default_content() {
 );
   $nodes[] = array(
   'uid' => 1,
-  'title' => 'Early Drupalcamp Cebu official tshirt',
+  'title' => 'Early Drupalcamp Cebu official tshirt P200',
   'log' => '',
   'status' => 1,
   'comment' => 0,

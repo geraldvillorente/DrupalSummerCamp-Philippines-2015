@@ -47,37 +47,37 @@ function content_product_strongarm() {
       'display' => array(
         'product:sku' => array(
           'default' => array(
-            'weight' => '-10',
+            'weight' => '6',
             'visible' => FALSE,
           ),
         ),
         'product:title' => array(
           'default' => array(
-            'weight' => '-5',
+            'weight' => '7',
             'visible' => FALSE,
           ),
         ),
         'product:status' => array(
           'default' => array(
-            'weight' => '5',
+            'weight' => '8',
             'visible' => FALSE,
           ),
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '4',
+            'weight' => '2',
             'visible' => TRUE,
           ),
         ),
         'product:field_image' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '0',
             'visible' => TRUE,
           ),
         ),
         'product:field_camp_tshirt_size' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),
