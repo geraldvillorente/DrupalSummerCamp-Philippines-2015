@@ -57,14 +57,14 @@ function content_product_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'large',
         ),
         'type' => 'image',
-        'weight' => 4,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -118,7 +118,7 @@ function content_product_field_default_field_instances() {
           'show_single_product_attributes' => 1,
         ),
         'type' => 'commerce_cart_add_to_cart_form',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',

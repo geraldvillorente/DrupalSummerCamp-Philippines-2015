@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Context Camp Store Cart Link feature.
+ */
+
+include_once 'context_camp_store_cart_link.features.inc';
