@@ -73,7 +73,7 @@
     border: none;
     font-size: 20px;
     padding-top: 40px;
-  }
+  } 
 }
 
 .tabbable {
@@ -94,3 +94,13 @@
     margin-top: 25px;
 }
  
+.views-field-title {
+  text-align: center;
+  a {
+    color: $logo-color-white;
+  }
+  a:hover {
+    color:  #3c97d3;
+    text-decoration: none;
+  }
+}
