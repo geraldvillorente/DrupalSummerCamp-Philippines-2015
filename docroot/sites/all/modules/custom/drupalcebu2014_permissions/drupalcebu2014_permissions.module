@@ -54,6 +54,7 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'edit own session content',
       'view field_day',
       'view field_time',
+      'view own commerce_order entities of bundle commerce_order',
       'view own field_day',
       'view own field_time',
     ),
