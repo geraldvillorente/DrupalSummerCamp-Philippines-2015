@@ -10,3 +10,4 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[variable][] = site_frontpage
 features[views_view][] = speakers
+features[views_view][] = speakers_sort

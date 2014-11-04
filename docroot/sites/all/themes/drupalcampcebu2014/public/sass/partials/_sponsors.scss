@@ -14,7 +14,7 @@
   }
   background: #333;
   padding-top: 25px;
-  margin-top: 50px;
+  margin-top: 57px;
   .col-md-12 {
     margin-bottom: 50px;
     h6 {
@@ -84,7 +84,26 @@
       max-width: 55%;
     }
   }
+  #mc_embed_signup {
+    h2 {
+      color: #fff;
+      margin-left: -30px;
+      font-size: 3.4em;
+      margin-top: 55px;
+    }
+    .indicates-required {
+      color: #858585;
+    }
+    .mc-field-group {
+      color: #858585;
+    }
+    #mce-success-response {
+      color: #fff;
+      margin-top: -15px;
+    }
+  }
 }
+
 
 .page-sponsors {
   .content {
@@ -105,12 +124,18 @@
       }
     }
     .row {
+      font-size: 24px;
+      text-align: left;
       p {
-        color: #fff;
-        font-size: 48px;
-        text-align: center;
-        margin: 50px 0 20px;
-        font-family: $font-logo;
+        font-size: 24px;
+        text-align: left;
+        &.sponsor-category {
+          color: #fff;
+          font-size: 48px;
+          text-align: center;
+          margin: 50px 0 20px;
+          font-family: $font-logo;
+        }
       }
       @mixin sponsor_img {
         margin: 15px auto;
@@ -138,6 +163,9 @@
           }
         }
       }
+      &.partners {
+        clear: both;
+      }
     }
     .food-sponsors {
       text-align: center;
@@ -154,6 +182,7 @@
     .saturday-sponsors {
       text-align: center;
       margin-bottom: 75px;
+      height: 1px;
       img {
         max-width: 55%;
       }

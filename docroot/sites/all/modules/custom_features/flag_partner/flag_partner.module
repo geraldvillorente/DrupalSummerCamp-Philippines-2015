@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Flag Partner feature.
+ */
+
+include_once 'flag_partner.features.inc';

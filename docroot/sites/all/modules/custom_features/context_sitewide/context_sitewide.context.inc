@@ -17,6 +17,11 @@ function context_sitewide_context_default_contexts() {
   $context->description = 'This is for the entire site\'s general layout';
   $context->tag = '';
   $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '~sponsors' => '~sponsors',
+      ),
+    ),
     'sitewide' => array(
       'values' => array(
         1 => 1,
@@ -32,10 +37,16 @@ function context_sitewide_context_default_contexts() {
           'region' => 'navigation',
           'weight' => '-10',
         ),
+        'views-sponsors-gold_block' => array(
+          'module' => 'views',
+          'delta' => 'sponsors-gold_block',
+          'region' => 'grey-region',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.

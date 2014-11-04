@@ -18,11 +18,11 @@ function config_user_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'user',
@@ -31,7 +31,7 @@ function config_user_profile_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
-      'user_register_form' => 0,
+      'user_register_form' => 1,
     ),
     'widget' => array(
       'active' => 1,
@@ -44,6 +44,66 @@ function config_user_profile_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'user-user-field_buy_tshirt'
+  $field_instances['user-user-field_buy_tshirt'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'PRICING : before Oct 31 (1 t-shirt for PHP200), After Oct 31 (1 t-shirt for PHP230)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_buy_tshirt',
+    'label' => 'I will buy the tshirt of the camp',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => 1,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 43,
+    ),
+  );
+
+  // Exported field_instance: 'user-user-field_food_preference'
+  $field_instances['user-user-field_food_preference'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_food_preference',
+    'label' => 'Food preference',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => 1,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_image'
   $field_instances['user-user-field_image'] = array(
     'bundle' => 'user',
@@ -51,14 +111,14 @@ function config_user_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'speaker-large',
         ),
         'type' => 'image',
-        'weight' => 8,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'user',
@@ -88,6 +148,36 @@ function config_user_profile_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'user-user-field_tshirt_size'
+  $field_instances['user-user-field_tshirt_size'] = array(
+    'bundle' => 'user',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'user',
+    'field_name' => 'field_tshirt_size',
+    'label' => 'tshirt size',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => 1,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 44,
+    ),
+  );
+
   // Exported field_instance: 'user-user-field_user_company'
   $field_instances['user-user-field_user_company'] = array(
     'bundle' => 'user',
@@ -96,7 +186,7 @@ function config_user_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -109,7 +199,7 @@ function config_user_profile_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
-      'user_register_form' => 0,
+      'user_register_form' => 1,
     ),
     'widget' => array(
       'active' => 1,
@@ -131,10 +221,9 @@ function config_user_profile_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
+        'type' => 'hidden',
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'user',
@@ -152,7 +241,7 @@ function config_user_profile_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 6,
     ),
   );
 
@@ -164,11 +253,11 @@ function config_user_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'user',
@@ -198,7 +287,7 @@ function config_user_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -224,61 +313,6 @@ function config_user_profile_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'user-user-field_user_mailchimp'
-  $field_instances['user-user-field_user_mailchimp'] = array(
-    'bundle' => 'user',
-    'default_value' => array(
-      0 => array(
-        'subscribe' => 0,
-        'interest_groups' => array(
-          9913 => array(
-            'Drupal Cebu Group' => 0,
-          ),
-        ),
-      ),
-    ),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'mailchimp_lists',
-        'settings' => array(
-          'interest_groups' => array(),
-          'show_interest_groups' => FALSE,
-        ),
-        'type' => 'mailchimp_lists_subscribe_default',
-        'weight' => 7,
-      ),
-    ),
-    'entity_type' => 'user',
-    'field_name' => 'field_user_mailchimp',
-    'label' => 'Mailchimp',
-    'required' => 0,
-    'settings' => array(
-      'interest_groups_title' => 'Interest Groups',
-      'mergefields' => array(
-        'EMAIL' => 'field_user_email',
-        'FNAME' => 'field_user_first_name',
-        'LNAME' => 'field_user_last_name',
-      ),
-      'options' => array(
-        'interest_groups' => array(),
-        'subscribe' => FALSE,
-      ),
-      'show_interest_groups' => 0,
-      'unsubscribe_on_delete' => 1,
-      'user_register_form' => 0,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'mailchimp_lists',
-      'settings' => array(),
-      'type' => 'mailchimp_lists_select',
-      'weight' => 9,
-    ),
-  );
-
   // Exported field_instance: 'user-user-field_user_position'
   $field_instances['user-user-field_user_position'] = array(
     'bundle' => 'user',
@@ -287,20 +321,20 @@ function config_user_profile_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'user',
     'field_name' => 'field_user_position',
-    'label' => 'Position',
+    'label' => 'Profession',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
-      'user_register_form' => 0,
+      'user_register_form' => 1,
     ),
     'widget' => array(
       'active' => 1,
@@ -318,11 +352,14 @@ function config_user_profile_field_default_field_instances() {
   t('Biography');
   t('Company');
   t('First Name');
+  t('Food preference');
+  t('I will buy the tshirt of the camp');
   t('Image');
   t('Last Name');
-  t('Mailchimp');
   t('Mailchimp Email');
-  t('Position');
+  t('PRICING : before Oct 31 (1 t-shirt for PHP200), After Oct 31 (1 t-shirt for PHP230)');
+  t('Profession');
+  t('tshirt size');
 
   return $field_instances;
 }
