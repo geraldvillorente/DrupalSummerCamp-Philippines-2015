@@ -563,7 +563,7 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['attachment_position'] = 'after';
 
   /* Display: Community Sponsor */
-  $handler = $view->new_display('attachment', 'Community Sponsor', 'coffee');
+  $handler = $view->new_display('attachment', 'Community Sponsor', 'community_sponsor');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'col-md-3';
   $handler->display->display_options['pager']['type'] = 'some';
@@ -641,15 +641,10 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['field_sponsor_type_tid']['table'] = 'field_data_field_sponsor_type';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['field'] = 'field_sponsor_type_tid';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['value'] = array(
-    18 => '18',
+    21 => '21',
   );
   $handler->display->display_options['filters']['field_sponsor_type_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_sponsor_type_tid']['vocabulary'] = 'sponsor_type';
-  /* Filter criterion: Content: Nid */
-  $handler->display->display_options['filters']['nid']['id'] = 'nid';
-  $handler->display->display_options['filters']['nid']['table'] = 'node';
-  $handler->display->display_options['filters']['nid']['field'] = 'nid';
-  $handler->display->display_options['filters']['nid']['value']['value'] = '9';
   $handler->display->display_options['displays'] = array(
     'gold_block' => 'gold_block',
     'gold_block_2' => 'gold_block_2',
@@ -755,12 +750,6 @@ function views_sponsors_views_default_views() {
   $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
   $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
   $handler->display->display_options['filters']['flagged']['value'] = '1';
-  /* Filter criterion: Content: Nid */
-  $handler->display->display_options['filters']['nid']['id'] = 'nid';
-  $handler->display->display_options['filters']['nid']['table'] = 'node';
-  $handler->display->display_options['filters']['nid']['field'] = 'nid';
-  $handler->display->display_options['filters']['nid']['operator'] = '!=';
-  $handler->display->display_options['filters']['nid']['value']['value'] = '9';
   $handler->display->display_options['displays'] = array(
     'gold_block_2' => 'gold_block_2',
     'default' => 0,
