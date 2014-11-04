@@ -78,6 +78,12 @@ function views_drupalcamp_shopping_cart_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'drupalcamp_cart_block');
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<p><a href=\'/cart\'>View my cart</a></p>';
   $export['drupalcamp_shopping_cart_block'] = $view;
 
   return $export;

@@ -938,6 +938,12 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   height: 200px;
 }
 
+/* line 92, ../sass/partials/_speakers.scss */
+.node-product {
+  text-align: center;
+  margin-top: 25px;
+}
+
 /* line 1, ../sass/partials/_sessions.scss */
 .camp-sessions {
   background-color: #0076b0;

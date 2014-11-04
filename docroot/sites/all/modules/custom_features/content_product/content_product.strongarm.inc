@@ -65,20 +65,20 @@ function content_product_strongarm() {
         ),
         'product:commerce_price' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '3',
             'visible' => TRUE,
           ),
         ),
         'product:field_image' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '1',
             'visible' => TRUE,
           ),
         ),
         'product:field_camp_tshirt_size' => array(
           'default' => array(
-            'weight' => '1',
-            'visible' => TRUE,
+            'weight' => '2',
+            'visible' => FALSE,
           ),
         ),
       ),

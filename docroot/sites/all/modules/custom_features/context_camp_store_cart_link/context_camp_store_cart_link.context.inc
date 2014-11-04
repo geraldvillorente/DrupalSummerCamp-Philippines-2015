@@ -26,11 +26,17 @@ function context_camp_store_cart_link_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-f57a465c8e6c29f82c77a667ed2ed9eb' => array(
+          'module' => 'views',
+          'delta' => 'f57a465c8e6c29f82c77a667ed2ed9eb',
+          'region' => 'yellow-region',
+          'weight' => '-10',
+        ),
         'views-9a76aaa89a58bb2a020b1c0f25d3d82d' => array(
           'module' => 'views',
           'delta' => '9a76aaa89a58bb2a020b1c0f25d3d82d',
           'region' => 'yellow-region',
-          'weight' => '-10',
+          'weight' => '-9',
         ),
       ),
     ),
