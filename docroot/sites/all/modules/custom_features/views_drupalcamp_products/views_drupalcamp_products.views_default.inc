@@ -65,6 +65,18 @@ function views_drupalcamp_products_views_default_views() {
 
   /* Display: Camp products block */
   $handler = $view->new_display('block', 'Camp products block', 'camp_product_block');
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page_buy');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Unfiltered text */
+  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<p>You can pay online using this page. But we also have alternatives for you. You can do a Deposit payment with the Bank of the Philippine Islands or give us the payment directly in Cebu City (Promet Source\'s office near Ayala).<br>
+More information on <a href="/registration">the registration page</a>.</p>
+<p>Select one of the following products :</p>';
+  $handler->display->display_options['path'] = 'buy-ticket';
   $export['drupalcamp_products'] = $view;
 
   return $export;
