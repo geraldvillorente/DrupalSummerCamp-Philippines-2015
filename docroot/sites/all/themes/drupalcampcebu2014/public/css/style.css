@@ -1032,33 +1032,38 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   font-family: "Source Sans Pro", sans-serif;
 }
 /* line 91, ../sass/partials/_sessions.scss */
-.view-id-sessions tbody {
+.view-id-sessions table {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* line 94, ../sass/partials/_sessions.scss */
+.view-id-sessions table tbody {
   float: right;
   width: 85%;
   padding-left: 15px;
 }
-/* line 95, ../sass/partials/_sessions.scss */
-.view-id-sessions tbody tr td.activity {
+/* line 98, ../sass/partials/_sessions.scss */
+.view-id-sessions table tbody tr td.activity {
   line-height: 1.42857143;
 }
-/* line 97, ../sass/partials/_sessions.scss */
-.view-id-sessions tbody tr td.activity span {
+/* line 100, ../sass/partials/_sessions.scss */
+.view-id-sessions table tbody tr td.activity span {
   font-size: 15px;
 }
-/* line 99, ../sass/partials/_sessions.scss */
-.view-id-sessions tbody tr td.activity span.type {
+/* line 102, ../sass/partials/_sessions.scss */
+.view-id-sessions table tbody tr td.activity span.type {
   color: #f0c419;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
 }
-/* line 104, ../sass/partials/_sessions.scss */
-.view-id-sessions tbody tr td.activity span.level {
+/* line 107, ../sass/partials/_sessions.scss */
+.view-id-sessions table tbody tr td.activity span.level {
   color: #00496d;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
 }
-/* line 109, ../sass/partials/_sessions.scss */
-.view-id-sessions tbody tr td.activity span.room {
+/* line 112, ../sass/partials/_sessions.scss */
+.view-id-sessions table tbody tr td.activity span.room {
   color: #f0c419;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;

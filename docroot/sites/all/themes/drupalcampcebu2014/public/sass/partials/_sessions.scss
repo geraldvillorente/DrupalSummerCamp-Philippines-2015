@@ -88,28 +88,32 @@
     color: #f1c419;
     font-family: $font-text;
   }
-  tbody {
-    float: right;
-    width: 85%;
-    padding-left: 15px;
-    tr td.activity {
-      line-height: 1.42857143;
-      span {
-        font-size: 15px;
-        &.type {
-          color: #f0c419;
-          text-transform: uppercase;
-          font-family: $font-text;
-        }
-        &.level {
-          color: #00496d;
-          text-transform: uppercase;
-          font-family: $font-text;
-        }
-        &.room {
-          color: #f0c419;
-          text-transform: uppercase;
-          font-family: $font-text;
+  table {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    tbody {
+      float: right;
+      width: 85%;
+      padding-left: 15px;
+      tr td.activity {
+        line-height: 1.42857143;
+        span {
+          font-size: 15px;
+          &.type {
+            color: #f0c419;
+            text-transform: uppercase;
+            font-family: $font-text;
+          }
+          &.level {
+            color: #00496d;
+            text-transform: uppercase;
+            font-family: $font-text;
+          }
+          &.room {
+            color: #f0c419;
+            text-transform: uppercase;
+            font-family: $font-text;
+          }
         }
       }
     }
