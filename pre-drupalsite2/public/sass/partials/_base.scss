@@ -1,0 +1,55 @@
+/*******************************************************************************
+ * _base.scss
+ ******************************************************************************/
+ 
+@import "compass/css3";
+
+/* Chinese Rocks */
+@font-face {
+  font-family: 'chinese rocks';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/chinese_rocks/chinese_rocks.woff');
+  src: url('../fonts/chinese_rocks/chinese_rocks.ttf') format('truetype'), 
+       url('../fonts/chinese_rocks/chinese_rocks.svg') format('svg');
+}
+
+// Colors.
+$logo-color-white: #fff;
+$color-grey: #e3e3e3;
+$logo-color-yellow: #f0c419;
+$logo-color-blue: #3b97d3;
+$logo-color-white: #fff;
+
+// Fonts names.
+$font-logo: 'chinese rocks', sans-serif;
+$font-text: 'Source Sans Pro', sans-serif;
+
+// Levels.
+$level3-size: 72px;
+
+// Title styling.
+h3 {
+  font-family: $font-logo;
+  font-size: $level3-size;
+  text-align: center;
+  color: $logo-color-white;
+  margin-top: 40px;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: $font-text;
+  font-style: italic;
+  font-size: 29px;
+  color: $logo-color-white;
+}
+
+h6 {
+  font-family: $font-text;
+}
+
+p {
+  font-family: $font-text;
+}

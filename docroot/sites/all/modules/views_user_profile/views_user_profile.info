@@ -1,0 +1,9 @@
+name = Views User Profile
+description = This is a block for sessions submitted by a user displayed on a user profile 
+core = 7.x
+package = Views
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = sessions_list
+features_exclude[dependencies][ctools] = ctools

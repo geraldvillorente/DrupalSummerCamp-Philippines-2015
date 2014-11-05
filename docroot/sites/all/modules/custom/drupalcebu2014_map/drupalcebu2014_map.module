@@ -1,0 +1,112 @@
+<?php
+/**
+ * @file
+ * Code for the Drupal Cebu 2014 Map.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function drupalcebu2014_map_menu() {
+  $items = array();
+  $items['admin/config/system/venue'] = array(
+    'title' => 'Camp Venue',
+    'description' => 'Configure the map and directions to the venue of the camp.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('drupalcebu2014_map_admin'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_NORMAL_ITEM,
+   );
+  $items['venue/map'] = array(
+    'title' => 'Venue',
+    'page callback' => 'drupalcebu2014_map_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+   );
+  return $items;
+}
+
+/**
+ * Page callback: Configuration page for venue.
+ */
+function drupalcebu2014_map_admin() {
+  $form = array();
+  $form['drupalcebu2014_map_venue'] = array(
+    '#type' => 'text_format',
+    '#title' => t('Venue'),
+    '#default_value' => variable_get('drupalcebu2014_map_venue', ''),
+    '#rows' => 10,
+    '#description' => t('Configure the contents of the venue, inclucing mao and directions, here.'),
+    '#format' => 'full_html',
+  );
+  return system_settings_form($form);
+}
+
+/**
+ * Page callback: Configuration page for venue.
+ */
+function drupalcebu2014_map_page() {
+  return _drupalcebu2014_map_default(FALSE);
+}
+
+/**
+ * Implements hook_block_info().
+ * This hook declares what blocks are provided by the module.
+ */
+function drupalcebu2014_map_block_info() {
+  $blocks = array();
+  $blocks['drupalcebu2014_map_text'] = array(
+    'info' => t('Drupal Cebu 2014 Map'),
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ * This hook declares configuration options for blocks provided by this module.
+ */
+function drupalcebu2014_map_block_configure($delta = '') {
+  $form = array();
+  if ($delta == 'drupalcebu2014_map_text') {
+    $form['drupalcebu2014_map_text'] = array(
+      '#type' => 'text_format',
+      '#title' => t('Map Content'),
+      '#row' => 5,
+      '#description' => t('This text will appear in the map block.'),
+      '#default_value' => variable_get('drupalcebu2014_map_text', ''),
+      '#format' => 'full_html',
+    );
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ *
+ * This hook declares how the configured options for a block
+ * provided by this module are saved.
+ */
+function drupalcebu2014_map_block_save($delta = '', $edit = array()) {
+  if ($delta == 'drupalcebu2014_map_text') {
+    // Have Drupal save the string to the database.
+    variable_set('drupalcebu2014_map_text', $edit['drupalcebu2014_map_text']);
+  }
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * This hook generates the contents of the blocks themselves.
+ */
+function drupalcebu2014_map_block_view($delta = '') {
+  // The $delta parameter tells us which block is being requested.
+  switch ($delta) {
+    case 'drupalcebu2014_map_text':
+      $block['content'] = array(
+        '#markup' => variable_get('drupalcebu2014_map_text', ''),
+      );
+      break;
+  }
+  return $block;
+}

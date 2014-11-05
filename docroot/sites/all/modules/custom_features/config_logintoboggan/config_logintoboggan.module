@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Config Logintoboggan feature.
+ */
+
+include_once 'config_logintoboggan.features.inc';

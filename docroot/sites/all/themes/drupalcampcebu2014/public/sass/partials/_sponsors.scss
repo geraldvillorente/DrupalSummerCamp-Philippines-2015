@@ -1,0 +1,159 @@
+/*******************************************************************************
+ * _sponsors.scss
+ ******************************************************************************/
+
+.camp-sponsors {
+  &::before {
+    background: url("../images/black-wave.png") no-repeat 0 20px;
+    content: "";
+    display: block;
+    height: 70px;
+    margin-top: -85px;
+    z-index: 1;
+    position: relative;
+  }
+  background: #333;
+  padding-top: 25px;
+  margin-top: 57px;
+  .col-md-12 {
+    margin-bottom: 50px;
+    h6 {
+      color: #f1c419;
+      font-size: 22px;
+      text-align: center;
+      a {
+        color: #fff;
+      }
+      a:hover {
+        color: #f1c419;
+        text-decoration: underline;
+      }
+    }
+  }
+  .row {
+    p {
+      color: #858585;
+      font-size: 48px;
+      text-align: center;
+      margin: 50px 0 20px;
+      font-family: $font-logo;
+    }
+    @mixin sponsor_img {
+      margin: 15px auto;
+      display: block;
+    }
+    &.gold-sponsors {
+      img {
+        @include sponsor_img;
+        max-width: 305px;
+      }
+    }
+    &.silver-sponsors {
+      .col-md-3 {
+        img {
+          @include sponsor_img;
+          max-width: 210px;
+        }
+      }
+    }
+    &.bronze-sponsors {
+      .col-md-2 {
+        img {
+          @include sponsor_img;
+          max-width: 140px;
+        }
+      }
+    }
+  }
+  .view-display-id-food {
+    margin-top: 97px;
+    .field-content {
+      margin-top: 26px;
+    }
+  }
+  #mc_embed_signup {
+    h2 {
+      color: #fff;
+      margin-left: -30px;
+      font-size: 3.4em;
+      margin-top: 55px;
+    }
+    .indicates-required {
+      color: #858585;
+    }
+    .mc-field-group {
+      color: #858585;
+    }
+    #mce-success-response {
+      color: #fff;
+      margin-top: -15px;
+    }
+  }
+}
+.page-sponsors {
+  .content {
+    margin-top: 50px;
+    .col-md-12 {
+      margin-bottom: 50px;
+      h6 {
+        color: #f1c419;
+        font-size: 22px;
+        text-align: center;
+        a {
+          color: #fff;
+        }
+        a:hover {
+          color: #f1c419;
+          text-decoration: underline;
+        }
+      }
+    }
+    .row {
+      font-size: 24px;
+      text-align: left;
+      p {
+        font-size: 24px;
+        text-align: left;
+        &.sponsor-category {
+          color: #fff;
+          font-size: 48px;
+          text-align: center;
+          margin: 50px 0 20px;
+          font-family: $font-logo;
+        }
+      }
+      .col-md-6 {
+        margin-top: 200px;
+      }
+      @mixin sponsor_img {
+        margin: 15px auto;
+        display: block;
+      }
+      &.gold-sponsors {
+        img {
+          @include sponsor_img;
+          max-width: 305px;
+        }
+      }
+      &.silver-sponsors {
+        .col-md-3 {
+          img {
+            @include sponsor_img;
+            max-width: 210px;
+          }
+        }
+      }
+      &.bronze-sponsors {
+        .col-md-2 {
+          img {
+            @include sponsor_img;
+            max-width: 140px;
+          }
+        }
+      }
+      &.partners {
+        clear: both;
+      }
+    }
+  }
+}

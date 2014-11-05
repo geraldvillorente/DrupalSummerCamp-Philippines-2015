@@ -1,0 +1,60 @@
+/*
+Error: File to import not found or unreadable: compass/css3.
+       Load path: /Applications/MAMP/htdocs/DrupalcampCebu2014/docroot/sites/all/themes/drupalcampcebu2014
+        on line 5 of drupalcampcebu2014/public/sass/style.scss
+
+1: /*******************************************************************************
+2:  * style.scss
+3:  ******************************************************************************\/
+4: 
+5: @import "compass/css3";
+6: 
+7: //////////////////////////////
+8: // Import Base
+9: //////////////////////////////
+10: @import "partials/base";
+
+Backtrace:
+drupalcampcebu2014/public/sass/style.scss:5
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/import_node.rb:45:in `import'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/stack.rb:79:in `block in with_base'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/stack.rb:115:in `with_frame'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/stack.rb:79:in `with_base'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:208:in `each'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:464:in `on_file_changed'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:324:in `block in watch'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547@global/gems/listen-2.7.5/lib/listen/listener.rb:159:in `call'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547@global/gems/listen-2.7.5/lib/listen/listener.rb:159:in `block in _wait_for_changes'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547@global/gems/listen-2.7.5/lib/listen/listener.rb:148:in `loop'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547@global/gems/listen-2.7.5/lib/listen/listener.rb:148:in `_wait_for_changes'
+/Users/marychris/.rvm/gems/ruby-1.9.3-p547@global/gems/listen-2.7.5/lib/listen/listener.rb:41:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass/css3.\A        Load path: /Applications/MAMP/htdocs/DrupalcampCebu2014/docroot/sites/all/themes/drupalcampcebu2014\A         on line 5 of drupalcampcebu2014/public/sass/style.scss\A \A 1: /*******************************************************************************\A 2:  * style.scss\A 3:  ******************************************************************************/\A 4: \A 5: @import \"compass/css3\";\A 6: \A 7: //////////////////////////////\A 8: // Import Base\A 9: //////////////////////////////\A 10: @import \"partials/base\";"; }

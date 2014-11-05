@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Views Sessions List feature.
+ */
+
+include_once 'views_sessions_list.features.inc';

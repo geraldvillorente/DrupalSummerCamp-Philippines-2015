@@ -1,0 +1,82 @@
+name = Drupalcamp Cebu 2014
+description = This is the installation profile for the Drupalcamp in Cebu edition 2014.
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = field_group
+dependencies[] = image
+dependencies[] = libraries
+dependencies[] = menu
+dependencies[] = taxonomy
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = ckeditor
+dependencies[] = ckeditor_image
+dependencies[] = date
+dependencies[] = disqus
+dependencies[] = entityreference
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = field_permissions
+dependencies[] = flag
+dependencies[] = imagecache_token
+dependencies[] = imce
+dependencies[] = imce_uploader
+dependencies[] = jquery_update
+dependencies[] = link
+dependencies[] = logintoboggan
+dependencies[] = metatag
+dependencies[] = metatag_views
+dependencies[] = metatag_opengraph
+dependencies[] = module_filter
+dependencies[] = quicktabs
+dependencies[] = path
+dependencies[] = pathauto
+dependencies[] = responsive_menus
+dependencies[] = secure_permissions
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = views
+dependencies[] = url
+dependencies[] = uuid
+dependencies[] = uuid_features
+dependencies[] = webform
+dependencies[] = draggableviews
+
+; Custom
+dependencies[] = drupalcebu2014_map
+dependencies[] = drupalcebu2014_permissions
+dependencies[] = drupalcampcebu2014_helper
+
+; Features
+dependencies[] = config_ckeditor_profiles
+dependencies[] = config_environment_indicator
+dependencies[] = config_imce_profiles
+dependencies[] = config_logintoboggan
+dependencies[] = config_metatag
+dependencies[] = config_pathauto
+dependencies[] = config_secure_permissions
+dependencies[] = config_user_profile
+dependencies[] = content_page
+dependencies[] = content_session
+dependencies[] = content_sponsor
+dependencies[] = content_webform
+dependencies[] = context_hotel
+dependencies[] = context_sitewide
+dependencies[] = context_sponsors
+dependencies[] = context_homepage
+dependencies[] = flag_favorite
+dependencies[] = flag_partner
+dependencies[] = flag_session_approval
+dependencies[] = media_image_styles
+dependencies[] = views_proposals
+dependencies[] = views_registration
+dependencies[] = views_sessions
+dependencies[] = views_speakers
+dependencies[] = views_sponsors
+dependencies[] = views_sponsors

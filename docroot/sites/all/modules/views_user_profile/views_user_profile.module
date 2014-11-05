@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Views User Profile feature.
+ */
+
+include_once 'views_user_profile.features.inc';

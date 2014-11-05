@@ -1,0 +1,57 @@
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1030px)  {
+	// body{border: 10px solid pink;}
+
+	div.above-the-fold {
+		div.camp-logo {
+			div.drupalcamp-title {
+				margin-left: 15px;
+
+				span {
+					font-size: 80px;
+				}
+				span.cebu {
+					font-size: 200px !important;
+				}
+			}
+		}
+		div.venue-container {
+			span.date {
+				font-size: 28px !important;
+			}
+			span.uni, span.uni-name {
+				font-size: 40px !important;
+			}
+			span.cebucity {
+				font-size: 60px !important;
+			}
+		}
+		div.camp-menu {
+			ul.menu {
+				li {
+					a {
+						padding: 0 0 0 10px;
+					}
+				}
+			}
+		}
+		div.camp-logo {
+			div.header-intro-text {
+				p {
+					margin-top: -20px;
+				}
+			}
+		}
+	}
+
+	div.camp-sessions {
+		ul#camp_session_list {
+			li {
+				&:nth-child(1) {
+		      margin-left: 140px;
+		    }
+			}
+		}
+	}
+}

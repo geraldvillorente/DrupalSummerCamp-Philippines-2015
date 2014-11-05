@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Views booking list feature.
+ */
+
+include_once 'views_booking_list.features.inc';

@@ -1,0 +1,8 @@
+name = Environment Indicator
+description = Configuration feature for the module Environment Indicator.
+core = 7.x
+package = Configurations
+dependencies[] = ctools
+features[ctools][] = environment_indicator:default_environment_indicator_environments:1
+features[features_api][] = api:2
+features_exclude[dependencies][environment_indicator] = environment_indicator

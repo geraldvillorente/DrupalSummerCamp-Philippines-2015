@@ -1,0 +1,2 @@
+# Ignore sass-cache directory created by Scout app
+.sass-cache

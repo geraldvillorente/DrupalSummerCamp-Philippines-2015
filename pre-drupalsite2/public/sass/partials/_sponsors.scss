@@ -1,0 +1,56 @@
+/*******************************************************************************
+ * _sponsors.scss
+ ******************************************************************************/
+
+.camp-sponsors {
+  &::before {
+    background: url("../images/black-wave.png") no-repeat 0 20px;
+    content: "";
+    display: block;
+    height: 70px;
+    margin-top: -85px;
+  }
+  background: #333;
+  padding-top: 25px;
+  margin-top: 50px;
+  .col-md-12 {
+    h6 {
+      color: #f1c419;
+    }
+  }
+  .row {
+    p {
+      color: #858585;
+      font-size: 36px;
+      text-align: center;
+      margin: 50px 0 20px;
+      font-family: $font-logo;
+    }
+    @mixin sponsor_img {
+      margin: 15px auto;
+      display: block;
+    }
+    &.gold-sponsors {
+      img {
+        @include sponsor_img;
+        max-width: 305px;
+      }
+    }
+    &.silver-sponsors {
+      .col-md-3 {
+        img {
+          @include sponsor_img;
+          max-width: 210px;
+        }
+      }
+    }
+    &.bronze-sponsors {
+      .col-md-2 {
+        img {
+          @include sponsor_img;
+          max-width: 140px;
+        }
+      }
+    }
+  }
+}

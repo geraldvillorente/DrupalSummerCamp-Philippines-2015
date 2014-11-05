@@ -1,0 +1,495 @@
+/*******************************************************************************
+ * _global.scss
+ ******************************************************************************/
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+  from { -o-transform: rotate(0deg); }
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.region-content .content .field-item {
+  font-size: 22px;
+  font-family: $font-text;
+}
+
+.navbar-inverse {
+  background-color: black;
+}
+
+ul.navbar-nav {
+  float: right;
+  margin-right: 398px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, {
+  color: #afafaf;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.camp-speakers .nav {
+  height: 50px;
+}
+.camp-speakers .nav-tabs {
+  li {
+    font-family: $font-logo;
+    font-size: 20px;
+    a {
+      color: $logo-color-white;
+    }
+  }
+  .active a {
+    color: $logo-color-yellow;
+  }
+  a:hover {
+    background-color: $logo-color-yellow;
+  }
+}
+.fb-and-twitter-button {
+  text-align: center;
+  clear: both;
+  margin-left: 30px;
+}
+
+.fb-like {
+  text-align: center;
+  margin-top: 55px;
+  margin-left: -105px;
+  }
+.twitter-share-button {
+  position: absolute;
+  margin-top: -19px;
+  margin-left: 30px;
+}
+
+
+
+.register-container {
+  background-color: blue;
+}
+
+.above-the-fold {
+  height: 895px;
+  background-color: #1d2734;
+  padding-top: 60px;
+  .col-md-4 {
+    padding: 0px;
+    .logo-whale {
+      position: absolute;
+      margin-top: 50px;
+      z-index: 1;
+    }
+    .logo-sun {
+      -webkit-animation: spin 30s infinite linear;
+      -o-animation: spin 30s infinite linear;
+      animation: spin 30s infinite linear;
+    }
+  }
+  .col-md-5 {
+    padding: 0px;
+    .drupalcamp-title {
+      margin-top: 35px;
+      line-height: 90px;
+    }
+    span {
+      font-size: 100px;
+      font-family: $font-logo;
+    }
+    span.cebu {
+      font-size: 263px;
+      line-height: 162px;
+    }
+  }
+  .col-md-3 {
+    padding: 0px;
+    background: url('../images/underscore-img.png');
+    background-repeat: repeat-x;
+    height: 383px;
+    margin-top: 40px;
+    .venue-container {
+      margin-top: 24px;
+      span {
+        font-family: "chinese rocks";
+      }
+      span.date {
+        font-size: 38px;
+      }
+      span.uni {
+        font-size: 55px;
+        line-height: 50px;
+      }
+      span.uni-name {
+        font-size: 66px;
+        line-height: 63px;
+      }
+      span.cebucity {
+        font-size: 80px;
+        line-height: 67px;
+      }
+    }
+    .book-now-tab {
+      background-image: url('../images/book-now-bg.png');
+      width: 166px;
+      height: 147px;
+      position: absolute;
+      margin-top: -22px;
+      margin-left: 116px;
+      a {
+        color: $logo-color-white;
+        text-decoration: none;
+      }
+      p.book-now-tab-text {
+        color: $logo-color-white;
+        font-family: $font-logo;
+        font-size: 26px;
+        transform: rotate(-16deg);
+        margin-top: 21px;
+        margin-left: 10px;
+      }
+      p.book-now-tab-price {
+        color: $logo-color-white;
+        font-family: $font-logo;
+        transform: rotate(-15deg);
+        font-size: 75px;
+        margin-left: 21px;
+        margin-top: -37px;
+      }
+    }
+  }
+}
+
+h1.cebuano-title {
+    margin-bottom: 0px;
+  }
+h2.english-title {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 37px;
+  }
+  
+.header-intro-text p {
+  color: $color-grey;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 51px;
+  margin-top: 30px;
+}
+
+.page-header {
+  border: none;
+}
+
+.nav-container  { 
+  background-color: #1d2734;
+}
+
+.f-nav { 
+  z-index: 9999; 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  width: 100%; text-align: center;
+  padding: 5px 0px 7px;
+}
+
+.nav {
+  height: 42px;
+}
+
+.responsive-menus.responsified {
+  span.toggler {
+    background: url('../images/drupalcamp-textlogo.png') no-repeat;
+    margin-left: 50px;
+    border-radius: 0px;
+    box-shadow: 2px 2px 2px #1d2734;
+    text-align: right;
+    margin-right: 50px;
+    font-family: $font-logo;
+    border: none !important;
+  }
+  .responsive-menus-simple {
+    background: none;
+    li.logo-title-menu-hidden {
+      display: none;
+    }
+    li.first {
+      border-top: solid 1px rgba(255,255,255,0.5);
+      margin-top: 10px;
+    }
+  }
+}
+
+ul.menu {
+  margin-top: 6px;
+  text-align: center;
+  div.col-md-3 {
+    background: none;
+    height: 0px;
+    margin-top: 0px;
+  }
+  li {
+    div.logo-title-menu-hidden {
+      float: left;
+    }
+    span.title-1st {
+      font-family: $font-logo;
+      color: $logo-color-white;
+      font-size: 24px;
+    }
+    span.title-2nd {
+      font-family: $font-logo;
+      color: #3c97d3;
+      font-size: 24px;
+    }
+    span.title-3rd {
+      font-family: $font-logo;
+      color: #f0c419;
+      font-size: 24px;
+      padding-right: 25px;
+    }
+    display: inline;
+    a {
+      color: #ececec;
+      text-decoration: none;
+      font-family: $font-logo;
+      font-size: 24px;
+      padding: 25px 10px;
+      padding-top: 4px;
+      padding-left: 10px;
+      margin-right: 15px;
+    }
+    a:hover {
+      background: url('../images/register-tab.png') no-repeat;
+    }
+    a.active {
+      background: url('../images/register-tab.png') no-repeat;
+    }
+  }
+  div.col-md-12 {
+    clear: both;
+  }
+}
+
+.region-content {
+  .content {
+    .field-item {
+      font-size: 22px;
+    }
+  }
+}
+
+.view {
+  .view-header {
+    font-size: 22px;
+  }
+}
+
+.col-md-3 {
+  margin-top: 55px;
+  .img-speaker {
+    text-align: center;
+    width: 128px;
+    height: 128px;
+    background-color: #fff;
+    border-radius: 100px;
+    margin-left: 25%;
+    img {
+      width: 118px;
+      height: 118px;
+      border-radius: 100px;
+      margin-top: 5px;
+    }
+  }
+  p.speaker-drupalcamp-topic {
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+      font-family: $font-logo;
+      margin-top: 25px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+  }
+  p.speaker-drupalcamp {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 0px;
+  }
+  .topic-summary {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
+.table {
+  margin-left: 60px;
+  margin-bottom: 50px;
+  tbody {
+    tr {
+    .time {
+      width: 15%;
+      color: #f1c419;
+      font-family: "SourceSansPro";
+      font-size: 22px;
+    }
+    td {
+      border-top: 0px;
+    }
+    p {
+      text-align: left;
+    }
+    p.place {
+      color: #00496d;
+      font-size: 15px;
+      span.category {
+        color: $logo-color-yellow;
+      }
+    }
+    p.speaker {
+      color: #fff;
+      margin-bottom: 0px;
+      font-size: 15px;
+    }
+    }
+  }
+}
+
+.toboggan-unified {
+  #login-message {
+    font-family: $font-logo;
+    text-align: center;
+    color: $logo-color-white;
+    margin-top: 40px;
+    font-size: $main-title-font-size;
+  }
+  #login-links {
+    min-height: 100px;
+    width: 500px;
+    margin: 30px auto 10px;
+    clear: both;
+    a {
+      border: none;
+      background: none;
+      float: left;
+      color: #fff;
+      font-family: "chinese rocks";
+      font-size: 30px;
+      width: 248px;
+      height: 84px;
+      position: relative;
+      text-decoration: none;
+      line-height: 30px;
+      &:hover {
+        border: none;
+        background: none;
+      }
+      &.lt-active {
+        background: url('../images/tab-active.png') no-repeat;
+        color: #f0c419;
+        border: none;
+        display: block;
+        &:hover {
+          background: url('../images/tab-active.png') no-repeat;
+          color: #f0c419;
+          border: none;
+          display: block;
+        }
+      }
+      &#login-link {
+        line-height: 50px;
+      }
+    }
+  }
+}
+ a.lt-active, .toboggan-unified #login-links a.lt-active:hover
+
+.tabbable {
+  .panel-body{
+    min-height: 325px;
+  }
+}
+
+.image-widget-data {
+  .btn {
+    float: right;
+    position: relative;
+    margin-top: -34px;
+  }
+  .btn.btn-danger {
+    float: none;
+    margin-top: 0;
+  }
+}
+
+.profile {
+  text-align: center;
+  color: #fff;
+  .field-type-image {
+    width: 330px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 200px;
+    margin: 0 auto 30px;
+    clear: both;
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 200px;
+      margin: 15px;
+    }
+  }
+  .field-name-field-user-first-name {
+    margin-right: 15px;
+  }
+  .field-name-field-user-first-name, .field-name-field-user-last-name {
+    display: inline;
+    .field-items {
+      display: inline;
+      .field-item {
+        display: inline;
+        font-family: $font-logo;
+        font-size: 72px;
+      }
+    }
+  }
+  .field-name-field-user-position, .field-name-field-user-company {
+    .field-items {
+      .field-item {
+        font-size: 50px;
+        line-height: 50px
+      }
+    }
+  }
+}
+
+.content {
+  p.book-now-description {
+    font-size: 22px;
+  }
+}
+
+.camp-footer {
+  background-color: #1d2734;
+}
+
+.view-registration {
+  .view-footer {
+    padding-top: 10px;
+    clear: both;
+  }
+}

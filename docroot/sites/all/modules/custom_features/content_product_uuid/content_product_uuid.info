@@ -1,0 +1,16 @@
+name = Content Product UUID
+description = Content exported using UUID for products
+core = 7.x
+package = Content UUID
+dependencies[] = content_product
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = uuid_features
+__drupal_alter_by_ref[][node][product] = product
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = 5c4e87be-f0ef-4a97-bdfa-fce3123450dc
+features[uuid_node][] = 8643950a-03ff-4b00-9e29-0309f1adc552
+features[uuid_node][] = f3e25625-ef0a-47d5-9e99-75b0648fef5c
+project path = sites/all/modules/custom_features

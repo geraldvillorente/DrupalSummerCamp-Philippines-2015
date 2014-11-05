@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Config IMCE Profiles feature.
+ */
+
+include_once 'config_imce_profiles.features.inc';

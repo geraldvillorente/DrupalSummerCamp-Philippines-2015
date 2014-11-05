@@ -1,0 +1,290 @@
+/*******************************************************************************
+ * _global.scss
+ ******************************************************************************/
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+  from { -o-transform: rotate(0deg); }
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.navbar-inverse {
+  background-color: black;
+}
+
+ul.navbar-nav {
+  float: right;
+  margin-right: 398px;
+}
+
+.navbar-inverse .navbar-nav > .active > a, {
+  color: #afafaf;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.register-container {
+  background-color: blue;
+}
+
+.above-the-fold {
+  height: 895px;
+  background-color: #1d2734;
+  padding-top: 60px;
+  .col-md-4 {
+    padding: 0px;
+    .logo-whale {
+      position: absolute;
+      margin-top: 50px;
+      z-index: 9999;
+    }
+    .logo-sun {
+      -webkit-animation: spin 30s infinite linear;
+      -o-animation: spin 30s infinite linear;
+      animation: spin 30s infinite linear;
+    }
+  }
+  .col-md-5 {
+    padding: 0px;
+    .drupalcamp-title {
+      margin-top: 35px;
+      line-height: 90px;
+    }
+    span {
+      font-size: 100px;
+      font-family: $font-logo;
+    }
+    span.cebu {
+      font-size: 263px;
+      line-height: 162px;
+    }
+  }
+  .col-md-3 {
+    padding: 0px;
+    background: url('../images/underscore-img.png');
+    background-repeat: repeat-x;
+    height: 383px;
+    margin-top: 40px;
+    .venue-container {
+      margin-top: 24px;
+      span {
+        font-family: "chinese rocks";
+      }
+      span.date {
+        font-size: 38px;
+      }
+      span.uni {
+        font-size: 55px;
+        line-height: 50px;
+      }
+      span.uni-name {
+        font-size: 66px;
+        line-height: 63px;
+      }
+      span.cebucity {
+        font-size: 80px;
+        line-height: 67px;
+      }
+    }
+  }
+}
+
+.header-intro-text p {
+  color: $color-grey;
+  font-size: 20px;
+  text-align: center;
+}
+
+ul.menu {
+  margin-top: 95px;
+  text-align: center;
+  li {
+    display: inline;
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: $font-logo;
+      font-size: 24px;
+      padding: 25px;
+            padding-top: 4px;
+      padding-left: 10px;
+    }
+    a:hover {
+      background: url('../images/register-tab.png') no-repeat;
+    }
+  }
+}
+
+.camp-speakers-wave {
+  background: url('../images/yellow-wave.png');
+  height: 40px;
+  margin-top: -115px;
+}
+.camp-speakers {
+  background-color: #f1c419;
+  h6 {
+    margin-top: 30px;
+    font-family: $font-logo;
+    font-size: 29px;
+    text-align: center;
+    color: $logo-color-white;
+  }
+  #mc_embed_signup .button {
+    background-color: $logo-color-blue;
+  }
+  h6.speaker-description {
+    font-size: 22px;
+    text-align: center;
+  }
+  p.speaker-announcement {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+.speakers-list {
+  margin-bottom: 75px;
+  .speaker-info {
+    img {
+      text-align: center;
+    }
+    p.speaker-name {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    p.speaker-short-bio {
+      font-size: 18px;
+      color: white;
+      text-align: center;
+    }
+    p.speaker-bio {
+      font-size: 16px;
+    }
+    .img-speaker {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+.camp-sessions-wave {
+  background: url('../images/blue-wave.png');
+  height: 40px;
+  margin-top: -39px;
+}
+.camp-sessions {
+  background-color: #0076b0;
+    h6 {
+      font-family: "SourceSansPro";
+      font-size: 22px;
+      color: white;
+      text-align: center;
+    }
+    p {
+      font-size: 24px;
+      color: white;
+      text-align: center;
+    }
+}
+
+
+ul.nav-tabs {
+  border-bottom: 0px;
+  margin: 50px 0px;
+  li {
+    width: 248px;
+    height: 84px;
+    &:nth-child(1) {
+      margin-left: 205px;
+    }
+    a {
+      border: none !important;
+      background: none !important;
+      padding-top: 0;
+      color: $logo-color-white;
+      font-family: $font-logo;
+      span.tab-title {
+        font-size: 58px;
+        float: left;
+      }
+      span.tab-left-first {
+        font-size: 30px;
+        float: right;
+        line-height: 17px;
+        margin-top: 24px;
+      }
+      span.tab-left-second {
+        font-size: 20px;
+        float: right;
+      }
+    }
+  }
+  li.active {
+    background: url('../images/tab-active.png') no-repeat;
+    a {
+      color: $logo-color-yellow;
+    }
+    a:hover {
+      background-color: transparent;
+      padding-top: 0;
+      color: $logo-color-yellow;
+    }
+  }
+}
+
+.table {
+  margin-left: 60px;
+  margin-bottom: 50px;
+  tbody {
+    tr {
+    .time {
+      width: 15%;
+      color: #f1c419;
+      font-family: "SourceSansPro";
+      font-size: 22px;
+    }
+    td {
+      border-top: 0px;
+    }
+    p {
+      text-align: left;
+    }
+    p.place {
+      color: #00496d;
+      font-size: 15px;
+      span.category {
+        color: $logo-color-yellow;
+      }
+    }
+    p.speaker {
+      color: #fff;
+      margin-bottom: 0px;
+      font-size: 15px;
+    }
+    }
+  }
+}
+
+.camp-sponsors {
+  h6 {
+    text-align: center;
+  }
+}
+
+.camp-footer {
+  background-color: #1d2734;
+}
+
+

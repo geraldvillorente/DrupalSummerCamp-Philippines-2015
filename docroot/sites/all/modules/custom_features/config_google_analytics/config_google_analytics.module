@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Config Google Analytics feature.
+ */
+
+include_once 'config_google_analytics.features.inc';

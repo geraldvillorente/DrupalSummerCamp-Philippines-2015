@@ -1,0 +1,12 @@
+name = Image styles
+description = Includes all necessary images styles for the site.
+core = 7.x
+package = Media
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = drupal-speakers
+features[image][] = speaker-large
+features[image][] = sponsor-bronze
+features[image][] = sponsor-misc
+features[image][] = sponsor-silver
+features[image][] = sponsors-gold

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Context Sitewide feature.
+ */
+
+include_once 'context_sitewide.features.inc';
