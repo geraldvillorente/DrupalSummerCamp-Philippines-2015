@@ -11,7 +11,7 @@ function content_session_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'BEGINNER',
+    'name' => 'Beginner',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 0,
@@ -29,7 +29,7 @@ function content_session_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'ADVANCED',
+    'name' => 'Advanced',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 2,
@@ -47,7 +47,7 @@ function content_session_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'INTERMEDIATE',
+    'name' => 'Intermediate',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 1,
