@@ -72,7 +72,6 @@
  *
  * @ingroup themeable
  */
-
 global $base_path;
 $images_dir = '/public/images/';
 

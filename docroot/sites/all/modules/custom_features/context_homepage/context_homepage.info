@@ -4,6 +4,7 @@ core = 7.x
 package = Context
 dependencies[] = context
 dependencies[] = ctools
+dependencies[] = drupalcampcebu2014_helper
 dependencies[] = drupalcebu2014_map
 dependencies[] = quicktabs
 dependencies[] = views

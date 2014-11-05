@@ -68,6 +68,10 @@ function drupalcampcebu2014_helper_block_info() {
     'info' => t('Drupalcamp Cebu 2014 Hotel Booking'), 
     'cache' => DRUPAL_CACHE_PER_USER,
   );
+  $blocks['drupalcampcebu_sessions_display'] = array(
+    'info' => t('Drupalcamp Cebu 2014 Session Display'), 
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
   return $blocks;
 }
 
@@ -79,16 +83,57 @@ function drupalcampcebu2014_helper_block_view($delta = '') {
     case 'drupalcampcebu_hotel_booking':
       $block['content'] = drupalcampcebu2014_helper_hotel_block_content($delta);
       break;
+    case 'drupalcampcebu_sessions_display':
+      $block['content'] = drupalcampcebu2014_helper_sessions_display($delta);
+      break;
   }
   return $block;
 }
 
 /**
- * 
+ * Implements hook_block_content().
  */
 function drupalcampcebu2014_helper_hotel_block_content($delta) {
   if ($delta == 'drupalcampcebu_hotel_booking') {
     GLOBAL $user;
     return '<p class="book-now-description">Interested in booking a room at Tune Hotel, Cebu City?<br>Click the link and we will do the rest (payment upon arrival). ' . flag_create_link('hotel', $user->uid) . '</p>';
+  }
+}
+
+/**
+ * Display the content for block sessions display.
+ */
+function drupalcampcebu2014_helper_sessions_display($delta) {
+  $sessions_display_prefix = '<div class="col-md-1"></div>
+    <div class="col-md-9">
+      <ul id="camp_session_list" class="nav nav-tabs">
+        <li class="active">
+          <a href="#day_one" role="tab" data-toggle="tab">
+            <span class="tab-title">DAY 01</span>
+            <span class="tab-left-first">NOV 14</span>
+            <span class="tab-left-second">SATURDAY</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="#day_two" role="tab" data-toggle="tab">
+            <span class="tab-title">DAY 02</span>
+            <span class="tab-left-first">NOV 15</span>
+            <span class="tab-left-second">SUNDAY</span>
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content">';
+  $sessions_display = '<div class="tab-pane fade active in" id="day_one">' . views_embed_view('sessions', 'day_one') . '</div>';
+  $sessions_display .= '<div class="tab-pane fade" id="day_two">' . views_embed_view('sessions', 'day_two') . '</div>';
+  $sessions_display_suffix = '</div></div>';
+  return $sessions_display_prefix . $sessions_display . $sessions_display_suffix;
+}
+
+/**
+ * Adds the fontawesome library.
+ */
+function drupalcampcebu2014_helper_init() {
+  if (current_path() == 'speakers/featured' || current_path() == 'sessions') {
+    drupal_add_css('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array('type' => 'external'));
   }
 }
