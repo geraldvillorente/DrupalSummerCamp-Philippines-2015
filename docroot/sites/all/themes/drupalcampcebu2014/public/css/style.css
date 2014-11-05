@@ -810,16 +810,6 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 .camp-speakers {
   padding-bottom: 150px;
   background-color: #f1c419;
-  /*&::after {
-    background: url('../images/clear-yellow-wave.png');
-    height: 57px;
-    margin-top: 60px;
-    margin-bottom: -57px;
-    content: "";
-    display: block;
-    z-index: 1;
-    position: relative;
-  }*/
 }
 /* line 8, ../sass/partials/_speakers.scss */
 .camp-speakers h1 {
@@ -865,59 +855,59 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
   font-size: 24px;
   text-align: center;
 }
-/* line 60, ../sass/partials/_speakers.scss */
+/* line 51, ../sass/partials/_speakers.scss */
 .camp-speakers .view-footer p {
   text-align: center;
   font-size: 24px;
   margin-left: -10px;
   text-align: center;
 }
-/* line 67, ../sass/partials/_speakers.scss */
+/* line 58, ../sass/partials/_speakers.scss */
 .camp-speakers .hotel-confirm-button {
   margin-top: 40px;
 }
-/* line 70, ../sass/partials/_speakers.scss */
+/* line 61, ../sass/partials/_speakers.scss */
 .camp-speakers h1.page-header {
   margin-top: 50px;
 }
-/* line 73, ../sass/partials/_speakers.scss */
+/* line 64, ../sass/partials/_speakers.scss */
 .camp-speakers th.views-field {
   border: none;
   font-size: 20px;
   padding-top: 40px;
 }
 
-/* line 80, ../sass/partials/_speakers.scss */
+/* line 71, ../sass/partials/_speakers.scss */
 .tabbable {
   min-height: 410px;
 }
 
-/* line 84, ../sass/partials/_speakers.scss */
+/* line 75, ../sass/partials/_speakers.scss */
 .speaker-info {
   height: 400px;
 }
 
-/* line 89, ../sass/partials/_speakers.scss */
+/* line 80, ../sass/partials/_speakers.scss */
 .page-registration .speaker-info,
 .page-registrants .speaker-info {
   height: 200px;
 }
 
-/* line 93, ../sass/partials/_speakers.scss */
+/* line 84, ../sass/partials/_speakers.scss */
 .node-product {
   text-align: center;
   margin-top: 25px;
 }
 
-/* line 98, ../sass/partials/_speakers.scss */
+/* line 89, ../sass/partials/_speakers.scss */
 .views-field-title {
   text-align: center;
 }
-/* line 100, ../sass/partials/_speakers.scss */
+/* line 91, ../sass/partials/_speakers.scss */
 .views-field-title a {
   color: white;
 }
-/* line 103, ../sass/partials/_speakers.scss */
+/* line 94, ../sass/partials/_speakers.scss */
 .views-field-title a:hover {
   color: #3c97d3;
   text-decoration: none;
