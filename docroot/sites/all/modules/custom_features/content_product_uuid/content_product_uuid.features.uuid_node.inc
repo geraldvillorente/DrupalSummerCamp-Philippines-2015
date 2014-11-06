@@ -12,7 +12,7 @@ function content_product_uuid_uuid_features_default_content() {
 
   $nodes[] = array(
   'uid' => 1,
-  'title' => 'Drupalcamp Student Ticket P250',
+  'title' => 'Drupalcamp Student Ticket P300',
   'log' => '',
   'status' => 1,
   'comment' => 0,
