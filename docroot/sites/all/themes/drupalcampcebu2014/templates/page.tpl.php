@@ -119,8 +119,7 @@ else {
             <span style="color: white;" class="date">15/16 NOVEMBER 2014</span> <span style="color: #3b97d3;" class="uni">UNIVERSITY OF</span> <span style="color: #3b97d3;" class="uni-name">SAN CARLOS</span> <span style="color: white;" class="cebucity">CEBU CITY</span>
           </div>
            <div class="book-now-tab">
-            <p class="book-now-tab-text"><a href="#">BOOK NOW FOR</a></p>
-            <p class="book-now-tab-price"><a href="<?php print url(variable_get('registration_page', '')); ?>">P250</a></p>
+            <p class="book-now-tab-price"><a href="<?php print url(variable_get('registration_page', '')); ?>">P500</a></p>
           </div>
         </div>
       </div>
