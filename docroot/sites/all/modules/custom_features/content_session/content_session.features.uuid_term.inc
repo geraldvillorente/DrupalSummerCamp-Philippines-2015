@@ -65,7 +65,7 @@ function content_session_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'Front end',
+    'name' => 'Front End',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 1,
@@ -74,7 +74,7 @@ function content_session_uuid_features_default_terms() {
     'metatags' => array(),
   );
   $terms[] = array(
-    'name' => 'Back end',
+    'name' => 'Back End',
     'description' => '',
     'format' => 'plain_text',
     'weight' => 1,

@@ -1,3 +1,8 @@
+.camp-sessions-wave {
+  background: url('../images/blue-wave.png');
+  height: 40px;
+  margin-top: -100px;
+}
 .camp-sessions {
   background-color: #0076b0;
   .container {
@@ -72,5 +77,45 @@
     -o-transform: rotate(180deg);
     z-index: 1;
     position: relative;
+  }
+}
+.view-id-sessions {
+  caption {
+    float: left;
+    width: 15%;
+    margin-top: 7px;
+    font-size: 22px;
+    color: #f1c419;
+    font-family: $font-text;
+  }
+  table {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    tbody {
+      float: right;
+      width: 85%;
+      padding-left: 15px;
+      tr td.activity {
+        line-height: 1.42857143;
+        span {
+          font-size: 15px;
+          &.type {
+            color: #f0c419;
+            text-transform: uppercase;
+            font-family: $font-text;
+          }
+          &.level {
+            color: #00496d;
+            text-transform: uppercase;
+            font-family: $font-text;
+          }
+          &.room {
+            color: #f0c419;
+            text-transform: uppercase;
+            font-family: $font-text;
+          }
+        }
+      }
+    }
   }
 }

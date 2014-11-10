@@ -4,6 +4,7 @@
   margin-top: -115px;
 }
 .camp-speakers {
+  padding-bottom: 150px;
   h1 {
   font-family: chinese rocks;
   color: $logo-color-white;
@@ -45,16 +46,7 @@
     font-size: 24px;
     text-align: center;
   }
-  &::after {
-    background: url('../images/clear-yellow-wave.png');
-    height: 57px;
-    margin-top: 60px;
-    margin-bottom: -57px;
-    content: "";
-    display: block;
-    z-index: 1;
-    position: relative;
-  }
+  
   .view-footer {
     p {
       text-align: center;
