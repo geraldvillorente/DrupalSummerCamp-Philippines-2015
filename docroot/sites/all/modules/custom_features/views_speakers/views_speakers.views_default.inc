@@ -58,7 +58,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['relationships']['flag_content_rel']['label'] = 'Approved';
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'session_approval';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
-  /* Field: User: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -106,13 +106,22 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
   $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
   $handler->display->display_options['fields']['field_user_last_name']['label'] = '';
-  $handler->display->display_options['fields']['field_user_last_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_user_last_name']['alter']['text'] = 'by [field_user_first_name] [field_user_last_name]';
+  $handler->display->display_options['fields']['field_user_last_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_user_last_name']['element_type'] = '0';
   $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_type'] = 'p';
-  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_class'] = 'speaker-drupalcamp';
   $handler->display->display_options['fields']['field_user_last_name']['element_default_classes'] = FALSE;
+  /* Field: User: Link */
+  $handler->display->display_options['fields']['view_user']['id'] = 'view_user';
+  $handler->display->display_options['fields']['view_user']['table'] = 'users';
+  $handler->display->display_options['fields']['view_user']['field'] = 'view_user';
+  $handler->display->display_options['fields']['view_user']['label'] = '';
+  $handler->display->display_options['fields']['view_user']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_user']['alter']['text'] = 'by [field_user_first_name] [field_user_last_name]';
+  $handler->display->display_options['fields']['view_user']['element_type'] = 'p';
+  $handler->display->display_options['fields']['view_user']['element_class'] = 'speaker-drupalcamp';
+  $handler->display->display_options['fields']['view_user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_user']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['view_user']['element_default_classes'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['field_body']['id'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['table'] = 'field_data_field_body';
@@ -241,7 +250,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['relationships']['flag_content_rel']['label'] = 'Approved';
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'session_approval';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
-  /* Field: User: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -379,7 +388,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: User: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

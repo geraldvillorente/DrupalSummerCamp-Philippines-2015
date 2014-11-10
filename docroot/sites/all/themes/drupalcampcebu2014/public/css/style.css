@@ -13,7 +13,7 @@
   src: url("../fonts/chinese_rocks/chinese_rocks.ttf") format("truetype"), url("../fonts/chinese_rocks/chinese_rocks.svg") format("svg");
 }
 
-/* line 32, ../sass/partials/_base.scss */
+/* line 31, ../sass/partials/_base.scss */
 h1, h2, h3 {
   font-family: "chinese rocks", sans-serif;
   text-align: center;
@@ -21,17 +21,17 @@ h1, h2, h3 {
   margin-top: 40px;
 }
 
-/* line 39, ../sass/partials/_base.scss */
+/* line 38, ../sass/partials/_base.scss */
 h1 {
   font-size: 72px;
 }
 
-/* line 43, ../sass/partials/_base.scss */
+/* line 42, ../sass/partials/_base.scss */
 h3 {
   font-size: 72px;
 }
 
-/* line 47, ../sass/partials/_base.scss */
+/* line 46, ../sass/partials/_base.scss */
 h4 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -41,12 +41,12 @@ h4 {
   color: white;
 }
 
-/* line 56, ../sass/partials/_base.scss */
+/* line 55, ../sass/partials/_base.scss */
 h6 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* line 60, ../sass/partials/_base.scss */
+/* line 59, ../sass/partials/_base.scss */
 p {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -891,17 +891,8 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 }
 
 /* line 89, ../sass/partials/_speakers.scss */
-.views-field-title {
-  text-align: center;
-}
-/* line 91, ../sass/partials/_speakers.scss */
-.views-field-title a {
+p.speaker-drupalcamp a {
   color: white;
-}
-/* line 94, ../sass/partials/_speakers.scss */
-.views-field-title a:hover {
-  color: #3c97d3;
-  text-decoration: none;
 }
 
 /* line 1, ../sass/partials/_sessions.scss */
