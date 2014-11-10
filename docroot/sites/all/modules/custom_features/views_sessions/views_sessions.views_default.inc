@@ -102,6 +102,13 @@ function views_sessions_views_default_views() {
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  /* Relationship: Flags: session_approval */
+  $handler->display->display_options['relationships']['flag_content_rel']['id'] = 'flag_content_rel';
+  $handler->display->display_options['relationships']['flag_content_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['flag_content_rel']['field'] = 'flag_content_rel';
+  $handler->display->display_options['relationships']['flag_content_rel']['label'] = 'Approved';
+  $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'session_approval';
+  $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
   /* Field: Content: Time */
   $handler->display->display_options['fields']['field_time']['id'] = 'field_time';
   $handler->display->display_options['fields']['field_time']['table'] = 'field_data_field_time';
@@ -202,45 +209,25 @@ function views_sessions_views_default_views() {
   $handler->display->display_options['filters']['field_day_tid']['table'] = 'field_data_field_day';
   $handler->display->display_options['filters']['field_day_tid']['field'] = 'field_day_tid';
   $handler->display->display_options['filters']['field_day_tid']['value'] = array(
-    0 => '10',
+    0 => '15',
   );
   $handler->display->display_options['filters']['field_day_tid']['expose']['operator_id'] = 'field_day_tid_op';
   $handler->display->display_options['filters']['field_day_tid']['expose']['label'] = 'Day (field_day)';
   $handler->display->display_options['filters']['field_day_tid']['expose']['operator'] = 'field_day_tid_op';
   $handler->display->display_options['filters']['field_day_tid']['expose']['identifier'] = 'field_day_tid';
   $handler->display->display_options['filters']['field_day_tid']['vocabulary'] = 'day';
+  /* Filter criterion: Flags: Flagged */
+  $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
+  $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
+  $handler->display->display_options['filters']['flagged']['value'] = '1';
 
   /* Display: Day 1 */
   $handler = $view->new_display('block', 'Day 1', 'day_one');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'session' => 'session',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Day (field_day) */
-  $handler->display->display_options['filters']['field_day_tid']['id'] = 'field_day_tid';
-  $handler->display->display_options['filters']['field_day_tid']['table'] = 'field_data_field_day';
-  $handler->display->display_options['filters']['field_day_tid']['field'] = 'field_day_tid';
-  $handler->display->display_options['filters']['field_day_tid']['value'] = array(
-    15 => '15',
-  );
-  $handler->display->display_options['filters']['field_day_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_day_tid']['vocabulary'] = 'day';
 
   /* Display: Day 2 */
   $handler = $view->new_display('block', 'Day 2', 'day_two');
@@ -276,6 +263,12 @@ function views_sessions_views_default_views() {
   $handler->display->display_options['filters']['field_day_tid']['expose']['operator'] = 'field_day_tid_op';
   $handler->display->display_options['filters']['field_day_tid']['expose']['identifier'] = 'field_day_tid';
   $handler->display->display_options['filters']['field_day_tid']['vocabulary'] = 'day';
+  /* Filter criterion: Flags: Flagged */
+  $handler->display->display_options['filters']['flagged']['id'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['table'] = 'flagging';
+  $handler->display->display_options['filters']['flagged']['field'] = 'flagged';
+  $handler->display->display_options['filters']['flagged']['relationship'] = 'flag_content_rel';
+  $handler->display->display_options['filters']['flagged']['value'] = '1';
   $export['sessions'] = $view;
 
   return $export;
