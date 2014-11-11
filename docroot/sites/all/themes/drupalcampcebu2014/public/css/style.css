@@ -895,6 +895,22 @@ p.speaker-drupalcamp a {
   color: white;
 }
 
+/* line 94, ../sass/partials/_speakers.scss */
+.speaker-space-text p {
+  font-size: 18px;
+}
+/* line 97, ../sass/partials/_speakers.scss */
+.speaker-space-text ul li {
+  text-align: left;
+  list-style: disc;
+  font-size: 18px;
+}
+
+/* line 105, ../sass/partials/_speakers.scss */
+span.file a {
+  font-size: 18px;
+}
+
 /* line 1, ../sass/partials/_sessions.scss */
 .camp-sessions-wave {
   background: url("../images/blue-wave.png");
