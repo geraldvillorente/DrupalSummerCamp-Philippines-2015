@@ -25,6 +25,14 @@ function content_session_taxonomy_default_vocabularies() {
       'module' => 'taxonomy',
       'weight' => 0,
     ),
+    'room' => array(
+      'name' => 'Room',
+      'machine_name' => 'room',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
+    ),
     'type' => array(
       'name' => 'Type',
       'machine_name' => 'type',

@@ -4,6 +4,7 @@
   margin-top: -115px;
 }
 .camp-speakers {
+  padding-bottom: 150px;
   h1 {
   font-family: chinese rocks;
   color: $logo-color-white;
@@ -45,16 +46,7 @@
     font-size: 24px;
     text-align: center;
   }
-  &::after {
-    background: url('../images/clear-yellow-wave.png');
-    height: 57px;
-    margin-top: 60px;
-    margin-bottom: -57px;
-    content: "";
-    display: block;
-    z-index: 1;
-    position: relative;
-  }
+  
   .view-footer {
     p {
       text-align: center;
@@ -93,14 +85,25 @@
     text-align: center;
     margin-top: 25px;
 }
- 
-.views-field-title {
-  text-align: center;
-  a {
-    color: $logo-color-white;
+
+p.speaker-drupalcamp a {
+  color: $logo-color-white;
+}
+
+.speaker-space-text {
+  p {
+    font-size: 18px;
   }
-  a:hover {
-    color:  #3c97d3;
-    text-decoration: none;
+  ul li {
+  text-align: left;
+  list-style: disc;
+  font-size: 18px;
   }
 }
+
+span.file {
+  a {
+    font-size: 18px;
+  }
+}
+

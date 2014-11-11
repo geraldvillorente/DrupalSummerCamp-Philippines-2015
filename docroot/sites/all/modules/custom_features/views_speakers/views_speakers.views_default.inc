@@ -58,7 +58,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['relationships']['flag_content_rel']['label'] = 'Approved';
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'session_approval';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
-  /* Field: User: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -79,6 +79,8 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_speaker_node';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '43';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'p';
@@ -106,30 +108,40 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
   $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
   $handler->display->display_options['fields']['field_user_last_name']['label'] = '';
-  $handler->display->display_options['fields']['field_user_last_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_user_last_name']['alter']['text'] = 'by [field_user_first_name] [field_user_last_name]';
+  $handler->display->display_options['fields']['field_user_last_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_user_last_name']['element_type'] = '0';
   $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_type'] = 'p';
-  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_class'] = 'speaker-drupalcamp';
   $handler->display->display_options['fields']['field_user_last_name']['element_default_classes'] = FALSE;
+  /* Field: User: Link */
+  $handler->display->display_options['fields']['view_user']['id'] = 'view_user';
+  $handler->display->display_options['fields']['view_user']['table'] = 'users';
+  $handler->display->display_options['fields']['view_user']['field'] = 'view_user';
+  $handler->display->display_options['fields']['view_user']['label'] = '';
+  $handler->display->display_options['fields']['view_user']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['view_user']['alter']['text'] = 'by [field_user_first_name] [field_user_last_name]';
+  $handler->display->display_options['fields']['view_user']['element_type'] = 'p';
+  $handler->display->display_options['fields']['view_user']['element_class'] = 'speaker-drupalcamp';
+  $handler->display->display_options['fields']['view_user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_user']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['view_user']['element_default_classes'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['field_body']['id'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['table'] = 'field_data_field_body';
   $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['relationship'] = 'reverse_field_speaker_node';
   $handler->display->display_options['fields']['field_body']['label'] = '';
+  $handler->display->display_options['fields']['field_body']['alter']['max_length'] = '199';
+  $handler->display->display_options['fields']['field_body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_body']['element_type'] = '0';
   $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = 'p';
   $handler->display->display_options['fields']['field_body']['element_wrapper_class'] = 'topic-summary';
   $handler->display->display_options['fields']['field_body']['element_default_classes'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sort criterion: Weight: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['table'] = 'weight_weights';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'speakers_sorting_view:speaker_sort_order';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
+  $handler->display->display_options['sorts']['weight']['relationship'] = 'reverse_field_speaker_node';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -241,7 +253,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['relationships']['flag_content_rel']['label'] = 'Approved';
   $handler->display->display_options['relationships']['flag_content_rel']['flag'] = 'session_approval';
   $handler->display->display_options['relationships']['flag_content_rel']['user_scope'] = 'any';
-  /* Field: User: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -297,12 +309,10 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_body']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_body']['element_class'] = 'speaker-bio';
   $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sort criterion: Broken/missing handler */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'speakers_sorting_view:speaker_sort_order';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -379,7 +389,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: User: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
@@ -446,7 +456,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_biography']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_biography']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_biography']['element_label_colon'] = FALSE;
-  /* Field: Draggableviews: User */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'users';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
@@ -454,8 +464,6 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['save_button_label'] = 'update';
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
   $handler->display->display_options['path'] = 'admin/config/people/speakers-sorting';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Sort Speakers';

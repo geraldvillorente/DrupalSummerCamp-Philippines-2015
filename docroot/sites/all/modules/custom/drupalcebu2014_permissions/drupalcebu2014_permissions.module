@@ -20,6 +20,7 @@ function drupalcebu2014_permissions_secure_permissions_roles() {
     'authenticated user',
     'administrator',
     'editor',
+    'speaker',
   );
 }
 
@@ -41,6 +42,8 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'access content',
       'access user profiles',
       'view field_day',
+      'view field_room',
+      'view field_speaker',
       'view field_time',
       'view own field_day',
       'view own field_time',
@@ -52,7 +55,10 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'create session content',
       'delete own session content',
       'edit own session content',
+      'use text format filtered_html',
       'view field_day',
+      'view field_room',
+      'view field_speaker',
       'view field_time',
       'view own commerce_order entities of bundle commerce_order',
       'view own field_day',
@@ -203,6 +209,8 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'view own field_day',
       'view own unpublished content',
       'view revisions',
+    ),
+    'speaker' => array(
     ),
   );
   if (isset($permissions[$role])) {

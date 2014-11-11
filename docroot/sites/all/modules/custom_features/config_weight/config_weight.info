@@ -1,0 +1,8 @@
+name = Config Weight
+core = 7.x
+package = Configurations
+dependencies[] = features
+dependencies[] = weight
+features[features_api][] = api:2
+features[weight][] = session
+project path = sites/all/modules/custom_features

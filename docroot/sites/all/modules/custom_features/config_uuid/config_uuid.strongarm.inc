@@ -15,6 +15,7 @@ function config_uuid_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'uuid_features_entity_node';
   $strongarm->value = array(
+    'page_resource' => 'page_resource',
     'product' => 'product',
     'page' => 0,
     'session' => 0,
@@ -33,6 +34,7 @@ function config_uuid_strongarm() {
     'level' => 0,
     'type' => 0,
     'food_preference' => 0,
+    'room' => 0,
   );
   $export['uuid_features_entity_taxonomy_term'] = $strongarm;
 
@@ -56,6 +58,7 @@ function config_uuid_strongarm() {
   $strongarm->name = 'uuid_features_file_node';
   $strongarm->value = array(
     'page' => 0,
+    'page_resource' => 0,
     'product' => 0,
     'session' => 0,
     'sponsor' => 0,
@@ -80,6 +83,7 @@ function config_uuid_strongarm() {
     'level' => 0,
     'type' => 0,
     'food_preference' => 0,
+    'room' => 0,
   );
   $export['uuid_features_file_taxonomy_term'] = $strongarm;
 

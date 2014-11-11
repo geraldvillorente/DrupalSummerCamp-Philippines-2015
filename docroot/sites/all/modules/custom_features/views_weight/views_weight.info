@@ -1,9 +1,9 @@
-name = Views Sessions List
-description = This is the views for submitted sessions displayed on user profile
+name = Views Weight
 core = 7.x
 package = Views
 dependencies[] = views
+dependencies[] = weight
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[views_view][] = sessions_list
 features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/custom_features

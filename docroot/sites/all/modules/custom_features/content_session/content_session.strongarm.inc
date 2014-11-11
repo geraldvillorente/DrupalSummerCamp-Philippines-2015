@@ -14,7 +14,7 @@ function content_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_session';
-  $strongarm->value = 'edit-diff';
+  $strongarm->value = 'edit-weight-settings';
   $export['additional_settings__active_tab_session'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -44,7 +44,17 @@ function content_session_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'metatags' => array(
+          'weight' => '10',
+        ),
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '9',
+        ),
+      ),
       'display' => array(),
     ),
   );

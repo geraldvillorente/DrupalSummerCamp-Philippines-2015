@@ -334,13 +334,16 @@ ul.menu {
   tbody {
     tr {
     .time {
-      width: 15%;
+      width: 17%;
       color: #f1c419;
       font-family: "SourceSansPro";
       font-size: 22px;
     }
     td {
       border-top: 0px;
+      a {
+        color: #fff;
+      }
     }
     p {
       text-align: left;
