@@ -137,12 +137,11 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = 'p';
   $handler->display->display_options['fields']['field_body']['element_wrapper_class'] = 'topic-summary';
   $handler->display->display_options['fields']['field_body']['element_default_classes'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sort criterion: Weight: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
+  $handler->display->display_options['sorts']['weight']['table'] = 'weight_weights';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'speakers_sorting_view:speaker_sort_order';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
+  $handler->display->display_options['sorts']['weight']['relationship'] = 'reverse_field_speaker_node';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -310,12 +309,10 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_body']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_body']['element_class'] = 'speaker-bio';
   $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
-  /* Sort criterion: Draggableviews: Weight */
+  /* Sort criterion: Broken/missing handler */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'speakers_sorting_view:speaker_sort_order';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -459,7 +456,7 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_biography']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_biography']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_biography']['element_label_colon'] = FALSE;
-  /* Field: Draggableviews: User */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'users';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
@@ -467,8 +464,6 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['save_button_label'] = 'update';
-  $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
   $handler->display->display_options['path'] = 'admin/config/people/speakers-sorting';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Sort Speakers';
