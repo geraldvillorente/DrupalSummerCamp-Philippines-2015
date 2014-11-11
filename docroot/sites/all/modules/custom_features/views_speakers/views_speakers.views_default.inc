@@ -79,6 +79,8 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'reverse_field_speaker_node';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '43';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'p';
@@ -128,6 +130,8 @@ function views_speakers_views_default_views() {
   $handler->display->display_options['fields']['field_body']['field'] = 'field_body';
   $handler->display->display_options['fields']['field_body']['relationship'] = 'reverse_field_speaker_node';
   $handler->display->display_options['fields']['field_body']['label'] = '';
+  $handler->display->display_options['fields']['field_body']['alter']['max_length'] = '199';
+  $handler->display->display_options['fields']['field_body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_body']['element_type'] = '0';
   $handler->display->display_options['fields']['field_body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_body']['element_wrapper_type'] = 'p';
