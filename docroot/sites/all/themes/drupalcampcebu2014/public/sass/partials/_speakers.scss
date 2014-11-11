@@ -90,3 +90,20 @@ p.speaker-drupalcamp a {
   color: $logo-color-white;
 }
 
+.speaker-space-text {
+  p {
+    font-size: 18px;
+  }
+  ul li {
+  text-align: left;
+  list-style: disc;
+  font-size: 18px;
+  }
+}
+
+span.file {
+  a {
+    font-size: 18px;
+  }
+}
+
