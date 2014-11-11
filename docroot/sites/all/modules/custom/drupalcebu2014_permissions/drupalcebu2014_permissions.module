@@ -53,6 +53,7 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'create session content',
       'delete own session content',
       'edit own session content',
+      'use text format filtered_html',
       'view field_day',
       'view field_time',
       'view own commerce_order entities of bundle commerce_order',
