@@ -17,6 +17,9 @@ function content_session_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_body',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -116,7 +119,7 @@ function content_session_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_room',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'foreign keys' => array(
       'tid' => array(
