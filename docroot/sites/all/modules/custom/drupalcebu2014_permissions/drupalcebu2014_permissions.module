@@ -20,6 +20,7 @@ function drupalcebu2014_permissions_secure_permissions_roles() {
     'authenticated user',
     'administrator',
     'editor',
+    'speaker',
   );
 }
 
@@ -203,6 +204,8 @@ function drupalcebu2014_permissions_secure_permissions($role) {
       'view own field_day',
       'view own unpublished content',
       'view revisions',
+    ),
+    'speaker' => array(
     ),
   );
   if (isset($permissions[$role])) {

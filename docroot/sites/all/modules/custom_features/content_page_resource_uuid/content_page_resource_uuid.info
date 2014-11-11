@@ -1,0 +1,13 @@
+name = Content Page Resource UUID
+core = 7.x
+package = Content UUID
+dependencies[] = content_page_resource
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = uuid_features
+__drupal_alter_by_ref[][node][page_resource] = page_resource
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = c03d5f8c-e41b-4188-ab6d-56abf80dc8d3
+project path = sites/all/modules/custom_features

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Content Page Resource UUID feature.
+ */
+
+include_once 'content_page_resource_uuid.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Content Page Resource feature.
+ */
+
+include_once 'content_page_resource.features.inc';
