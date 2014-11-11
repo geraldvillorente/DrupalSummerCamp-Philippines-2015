@@ -553,7 +553,7 @@ ul.menu div.col-md-12 {
 /* line 417, ../sass/partials/_global.scss */
 a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 .tabbable .panel-body {
-  min-height: 325px;
+  min-height: 488px;
 }
 
 /* line 423, ../sass/partials/_global.scss */
@@ -870,7 +870,7 @@ a.lt-active .panel-body, .toboggan-unified #login-links a.lt-active:hover
 
 /* line 71, ../sass/partials/_speakers.scss */
 .tabbable {
-  min-height: 410px;
+  min-height: 500px;
 }
 
 /* line 75, ../sass/partials/_speakers.scss */
