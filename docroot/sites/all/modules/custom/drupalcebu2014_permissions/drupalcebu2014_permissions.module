@@ -21,6 +21,7 @@ function drupalcebu2014_permissions_secure_permissions_roles() {
     'administrator',
     'editor',
     'speaker',
+    'camp attendee',
   );
 }
 
