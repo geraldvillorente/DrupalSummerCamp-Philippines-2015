@@ -57,16 +57,11 @@ function views_attendee_certificate_views_default_views() {
   $handler->display->display_options['fields']['field_user_first_name']['table'] = 'field_data_field_user_first_name';
   $handler->display->display_options['fields']['field_user_first_name']['field'] = 'field_user_first_name';
   $handler->display->display_options['fields']['field_user_first_name']['label'] = '';
-  $handler->display->display_options['fields']['field_user_first_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_user_first_name']['element_label_colon'] = FALSE;
   /* Field: User: Last Name */
   $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
   $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
   $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
-  $handler->display->display_options['fields']['field_user_last_name']['label'] = '';
-  $handler->display->display_options['fields']['field_user_last_name']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_user_last_name']['alter']['text'] = '<a href="/user/[uid]/attendee-certificate">[field_user_first_name] [field_user_last_name]</a>';
-  $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
   /* Sort criterion: User: Created date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'users';
@@ -95,6 +90,39 @@ function views_attendee_certificate_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: User: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'users';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['element_label_colon'] = FALSE;
+  /* Field: User: Uid */
+  $handler->display->display_options['fields']['uid']['id'] = 'uid';
+  $handler->display->display_options['fields']['uid']['table'] = 'users';
+  $handler->display->display_options['fields']['uid']['field'] = 'uid';
+  $handler->display->display_options['fields']['uid']['label'] = '';
+  $handler->display->display_options['fields']['uid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['uid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['uid']['link_to_user'] = FALSE;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_user_first_name']['id'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['table'] = 'field_data_field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['field'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_first_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_user_first_name']['element_label_colon'] = FALSE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_last_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_user_last_name']['alter']['text'] = '<a href="/user/[uid]/drupalcampcebu-certificate-pdf">[field_user_first_name] [field_user_last_name]</a>';
+  $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'user/%/drupalcampcebu-certificate';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Attendee Certificate';
@@ -117,7 +145,7 @@ function views_attendee_certificate_views_default_views() {
   $handler->display->display_options['default_page_format'] = 'LETTER';
   $handler->display->display_options['default_page_orientation'] = 'L';
   $handler->display->display_options['leading_template'] = '0';
-  $handler->display->display_options['template'] = 'DrupalcampCebu_v2-for-pdf_2.jpg';
+  $handler->display->display_options['template'] = 'DrupalcampCebu_v2_1.pdf';
   $handler->display->display_options['succeed_template'] = '0';
   $export['attendee_certificate'] = $view;
 
