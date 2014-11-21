@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Content Attendee Certificate feature.
- */
-
-include_once 'content_attendee_certificate.features.inc';
