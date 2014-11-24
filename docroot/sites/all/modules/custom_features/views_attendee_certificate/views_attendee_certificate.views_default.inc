@@ -170,11 +170,11 @@ function views_attendee_certificate_views_default_views() {
   );
   $handler->display->display_options['default_page_format'] = 'LETTER';
   $handler->display->display_options['default_page_orientation'] = 'L';
-  $handler->display->display_options['margin_left'] = '0';
-  $handler->display->display_options['margin_right'] = '78';
+  $handler->display->display_options['margin_left'] = '115';
+  $handler->display->display_options['margin_right'] = '30';
   $handler->display->display_options['margin_top'] = '45';
   $handler->display->display_options['leading_template'] = '0';
-  $handler->display->display_options['template'] = 'template-drupalcampcebu.pdf';
+  $handler->display->display_options['template'] = 'DC-template_0.pdf';
   $handler->display->display_options['succeed_template'] = '0';
   $handler->display->display_options['default_font_style'] = array(
     'b' => 'b',
@@ -184,8 +184,32 @@ function views_attendee_certificate_views_default_views() {
     'o' => 0,
   );
   $handler->display->display_options['default_font_size'] = '25';
-  $handler->display->display_options['default_text_align'] = 'R';
+  $handler->display->display_options['default_text_align'] = 'C';
   $handler->display->display_options['default_font_color'] = '255,255,255';
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: User: First Name */
+  $handler->display->display_options['fields']['field_user_first_name']['id'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['table'] = 'field_data_field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['field'] = 'field_user_first_name';
+  $handler->display->display_options['fields']['field_user_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_first_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_user_first_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_first_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_user_first_name']['element_default_classes'] = FALSE;
+  /* Field: User: Last Name */
+  $handler->display->display_options['fields']['field_user_last_name']['id'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['table'] = 'field_data_field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['field'] = 'field_user_last_name';
+  $handler->display->display_options['fields']['field_user_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_user_last_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_user_last_name']['alter']['text'] = '[field_user_first_name] [field_user_last_name]';
+  $handler->display->display_options['fields']['field_user_last_name']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_user_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_user_last_name']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_user_last_name']['element_default_classes'] = FALSE;
   $export['attendee_certificate'] = $view;
 
   return $export;
