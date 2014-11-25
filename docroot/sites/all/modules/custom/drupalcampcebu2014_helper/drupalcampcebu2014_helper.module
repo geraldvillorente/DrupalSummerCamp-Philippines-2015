@@ -138,12 +138,18 @@ function drupalcampcebu2014_helper_init() {
   }
 }
 
+/**
+ * Implements hook_views_access_callbacks().
+ */
 function drupalcampcebu2014_helper_views_access_callbacks() {
   return array(
     'drupalcampcebu2014_helper_user_has_access' => t('Allow access to current user profile'),
   );
 }
 
+/**
+ * Checks if the current page is the current user profile page.
+ */
 function drupalcampcebu2014_helper_user_has_access() {
   global $user;
   if (arg(0) == 'user' && $user->uid == arg(1)){
