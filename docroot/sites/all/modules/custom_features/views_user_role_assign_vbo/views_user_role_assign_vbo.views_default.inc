@@ -24,8 +24,10 @@ function views_user_role_assign_vbo_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Assigning User Role';
   $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['access']['perm'] = 'access user profiles';
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+  );
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -227,7 +229,14 @@ function views_user_role_assign_vbo_views_default_views() {
   $handler->display->display_options['fields']['field_user_last_name']['element_type'] = '0';
   $handler->display->display_options['fields']['field_user_last_name']['element_label_type'] = '0';
   $handler->display->display_options['fields']['field_user_last_name']['element_default_classes'] = FALSE;
-  $handler->display->display_options['path'] = 'user-vbo';
+  $handler->display->display_options['path'] = 'admin/config/people/user-role-vbo';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'User role VBO';
+  $handler->display->display_options['menu']['description'] = 'Change the roles of several users using views and views VBO modules.';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'management';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['user_vbo'] = $view;
 
   return $export;
