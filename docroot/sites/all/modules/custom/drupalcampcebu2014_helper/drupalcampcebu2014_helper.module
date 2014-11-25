@@ -137,3 +137,19 @@ function drupalcampcebu2014_helper_init() {
     drupal_add_css('http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array('type' => 'external'));
   }
 }
+
+function drupalcampcebu2014_helper_views_access_callbacks() {
+  return array(
+    'drupalcampcebu2014_helper_user_has_access' => t('Allow access to current user profile'),
+  );
+}
+
+function drupalcampcebu2014_helper_user_has_access() {
+  global $user;
+  if (arg(0) == 'user' && $user->uid == arg(1)){
+    return TRUE;
+  }
+  else {
+    return FALSE;
+  }
+}
