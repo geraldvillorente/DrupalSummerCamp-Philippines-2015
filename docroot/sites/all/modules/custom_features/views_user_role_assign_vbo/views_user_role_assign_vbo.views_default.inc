@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * views_user_vbo.views_default.inc
+ * views_user_role_assign_vbo.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function views_user_vbo_views_default_views() {
+function views_user_role_assign_vbo_views_default_views() {
   $export = array();
 
   $view = new view();

@@ -1,9 +1,11 @@
-name = Views User VBO
+name = Views User role assign VBO
 description = This enables a list of user's username, first name, last name and a checkbox to modify a role that has been assigned.
 core = 7.x
 package = Views
 dependencies[] = views
+dependencies[] = views_bulk_operations
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[views_view][] = user_vbo
 features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/custom_features
