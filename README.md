@@ -4,9 +4,9 @@ DrupalcampCebu2014
 ## Drupalcamp Cebu 2014 repository
 
 - [x] Web design PSD (Thanks to Rein).
-- [ ] Static version.
-- [ ] Drupal version.
-- [ ] Wiki documentation.
+- [x] Static version.
+- [x] Drupal version.
+- [x] Wiki documentation.
 
 Folders:
 
@@ -24,5 +24,6 @@ drupalcampcebu profile.
 
 ## For questions, here is the contacts reference list (not complete yet):
 
+* Front end (Drupal): Mary Chris Casis
 * Front end (outside drupal): Alfie Besin
-* Drupal front end & back end: Luc Bézier
+* Drupal back end: Luc Bézier
