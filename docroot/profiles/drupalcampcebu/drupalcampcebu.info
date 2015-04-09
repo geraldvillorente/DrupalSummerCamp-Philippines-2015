@@ -1,5 +1,5 @@
-name = Drupalcamp Cebu 2014
-description = This is the installation profile for the Drupalcamp in Cebu edition 2014.
+name = Drupal Summer Camp PH 2015
+description = This is the installation profile for the Drupal Summer Camp in Manila edition 2015.
 core = 7.x
 
 ; Core

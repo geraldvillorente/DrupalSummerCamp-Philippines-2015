@@ -111,15 +111,19 @@ else {
         </div>
         <div class="col-md-5 col-sm-6">
           <div class="drupalcamp-title">
-            <span style="color: white;">DRUPAL</span><span style="color: #f0c419">CAMP</span> <span style="color: #3b97d3" class="cebu">CEBU</span>
+            <span style="color: white;">DRUPAL PH</span>
+            <br/>
+            <span style="color: #f0c419">SUMMER</span>
+            <span style="color: #f0c419">CAMP</span>
+            <span style="color: #3b97d3" class="cebu">2015</span>
           </div>
         </div>
         <div class="col-md-3 col-sm-4">
           <div class="venue-container">
-            <span style="color: white;" class="date">15/16 NOVEMBER 2014</span> <span style="color: #3b97d3;" class="uni">UNIVERSITY OF</span> <span style="color: #3b97d3;" class="uni-name">SAN CARLOS</span> <span style="color: white;" class="cebucity">CEBU CITY</span>
+            <span style="color: white;" class="date">16/17 MAY 2015</span> <span style="color: #3b97d3;" class="uni">UNIVERSITY OF</span> <span style="color: #3b97d3;" class="uni-name">METRO</span> <span style="color: white;" class="cebucity">MANILA</span>
           </div>
            <div class="book-now-tab">
-            <p class="book-now-tab-price"><a href="<?php print url(variable_get('registration_page', '')); ?>">P500</a></p>
+            <p class="book-now-tab-price"><a href="<?php print url(variable_get('registration_page', '')); ?>">P150</a></p>
           </div>
         </div>
       </div>
@@ -144,8 +148,8 @@ else {
                   <ul class="menu">
                       <a class="menu-logo-text" href="<?php print $front_page; ?>">
                         <li class="logo-title-menu logo-title-menu-hidden">
-                          <span class="title-1st">DRUPAL</span><span class="title-2nd">CAMP</span>
-                          <span class="title-3rd">CEBU</span>
+                          <span class="title-1st">DRUPAL</span><span class="title-2nd">SUMMER CAMP</span>
+                          <span class="title-3rd">PH</span>
                         </li>
                       </a>
                       <?php
@@ -173,7 +177,7 @@ else {
     <div class="row">
       <div class="col-md-12 drupalcamp-speakers">
         <?php if (!empty($title)): ?>
-        <?php 
+        <?php
           if (isset($cebuano_title_field)) {
             print '<h1 class="page-header cebuano-title">' . render($cebuano_title_field) . '</h1>';
           }
@@ -181,7 +185,7 @@ else {
             print '<h1 class="page-header">' . $title . '</h1>';
           }
         ?>
-        <?php 
+        <?php
           if (isset($cebuano_title_field)) {
             print '<h2 class="english-title">' . $title . '</h2>';
           }
@@ -201,7 +205,7 @@ else {
   <div class="container">
     <div class="row">
       <div class="col-md-12 fb-and-twitter-button">
-        <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>" 
+        <div class="fb-like" data-href="<?php print $base_path . current_path(); ?>"
         data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
         </div>
         <div>
@@ -292,7 +296,7 @@ else {
     <div class="row">
       <div class="col-md-7">
         <h3>ABOUT</h3>
-        <p class="footer-description">This camp is brought to you by the Drupal Cebu User Group.
+        <p class="footer-description">This camp is brought to you by the Philippine Drupal User Group.
           All the sources of this website based on Drupal are Open Source, under GNU GENERAL PUBLIC LICENSE on <a href="https://github.com/Luukyb/DrupalcampCebu2014">github.com</a></p>
       </div>
       <div class="col-md-5">
@@ -306,10 +310,10 @@ else {
     </div> <!-- row -->
     <div class="row">
       <div class="col-md-12">
-        <p class="copyright">&copy; Copyright 2014 Drupalcamp Cebu. All rights reserved. 
+        <p class="copyright">&copy; Copyright 2015 DrupalSummerCamp PH. All rights reserved.
           Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="http://buytaert.net/">Dries Buytaert</a>.<br>
-          Logo by <a href="http://ph.linkedin.com/in/lordgeltzdale">Lord Geltzdale de Vera</a>. 
-          Design by <a href="https://www.linkedin.com/pub/reina-figuracion/50/446/522">Rein Figuracion</a>. 
+          Logo by <a href="http://ph.linkedin.com/in/lordgeltzdale">Lord Geltzdale de Vera</a>.
+          Design by <a href="https://www.linkedin.com/pub/reina-figuracion/50/446/522">Rein Figuracion</a>.
           Web development by these <a href="https://github.com/Luukyb/DrupalcampCebu2014/graphs/contributors">amazing guys!</a></p>
       </div>
     </div> <!-- row -->
